@@ -1,6 +1,6 @@
 # Task 03 — Build Charts and Dashboards
 
-**Status:** In progress. Checkpoint 1 — data preparation — is complete based on the learner's reported Excel results.
+**Status:** In progress. Checkpoints 1–5 are complete based on the learner's reported Excel results, including the annual summary and the Unit Sales by Year line chart.
 
 Workbook: [Account Sales Data for Dashboard Practice](../material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
 
@@ -174,6 +174,8 @@ For a PivotChart, select a cell inside the relevant PivotTable, then choose **In
 
 For the top 10 bar chart, keep the categories in descending sales order. Make account labels readable; use a horizontal bar chart rather than squeezing long account names into columns.
 
+**Learner-reported chart progress:** The updated workbook now includes the **Unit Sales by Year** line chart, created from `Annual_Sales_Summary`. Its source values are the six learner-reported annual totals listed above. The chart has been added to the workbook; independent inspection of the workbook/chart object has not been performed.
+
 ## 6. Build the Dashboard worksheet
 
 1. Insert a new worksheet and name it `Dashboard`.
@@ -204,8 +206,9 @@ For the top 10 bar chart, keep the categories in descending sales order. Make ac
 | Create and validate the two 2021 sales PivotTables | Complete — learner-reported results and totals checked |
 | Prepare annual sales summary | Complete — learner-reported values; 2021 cross-check matches the reported PivotTable total |
 | Independently reconcile all six annual totals against source columns | Pending |
-| Complete chart-type activity | Pending |
-| Create and format three charts | Pending |
+| Complete chart-type activity | Complete — learner-reported chart selection and line chart created |
+| Create and format the Unit Sales by Year line chart | Complete — learner-reported |
+| Create and format the Top 10 bar chart and account-type column chart | Pending |
 | Assemble Dashboard worksheet | Pending |
 | Final validation and submission | Pending |
 
