@@ -1,6 +1,6 @@
 # Charts and Dashboards
 
-**Status:** Task 03 — Build Charts and Dashboards is in progress.
+**Status:** Task 03 — Build Charts and Dashboards is in progress. The annual sales summary and the Unit Sales by Year line chart are complete based on learner-reported workbook updates.
 
 ## Task 03 — Prepare Your Data for Visualization
 
@@ -21,7 +21,7 @@ The learner reported the following results after preparing the workbook in Excel
 | Account records | 40 |
 | Excel Table | `AccountSales` — created |
 
-Checkpoints 1–3 are complete based on learner-reported Excel results. Both 2021 sales PivotTables have been created, with their displayed totals adding up correctly. Annual sales totals, charts, and dashboard assembly remain in progress.
+Checkpoints 1–5 are complete based on learner-reported Excel results. Both 2021 sales PivotTables have been created, with their displayed totals adding up correctly. The annual sales summary is complete, and the Unit Sales by Year line chart has been added to the updated workbook. The Top 10 bar chart, account-type column chart, and dashboard assembly remain in progress.
 
 ## PivotTable plan
 
@@ -127,6 +127,10 @@ Chart selection principles:
 - [ ] Ensure the top 10 bar chart is sorted from highest to lowest.
 - [ ] Check that every chart uses the correct summary data.
 
+### Line chart progress
+
+The learner reports adding the **Unit Sales by Year** line chart to the updated workbook using the six-year annual summary above. The chart communicates the upward trend from 9,773 units in 2016 to 17,278 in 2021. This represents an increase of 7,505 units (approximately 76.8%). The workbook update is learner-reported; the chart object and plotted ranges have not been independently inspected.
+
 ## Dashboard layout
 
 Create a worksheet named `Dashboard` and place all three charts on it. A practical layout is the annual trend across the top, with the top-10 ranking and account-type comparison side by side below. Keep charts aligned, readable, and non-overlapping.
@@ -153,7 +157,8 @@ Record only insights supported by the finished PivotTables and charts. Explain w
 - [x] Prepare the annual sales summary for 2016–2021 and record the learner-reported values; 2021 matches the reported PivotTable total.
 - [ ] Independently reconcile all six annual totals against the source columns.
 - [ ] Complete the chart-type activity.
-- [ ] Create the required line, bar, and column charts.
+- [x] Create the Unit Sales by Year line chart (learner-reported).
+- [ ] Create the Top 10 bar chart and account-type column chart.
 - [ ] Assemble all three charts on the `Dashboard` worksheet.
 - [ ] Validate chart values, labels, layout, and totals.
 - [ ] Save and submit the completed workbook.
