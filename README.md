@@ -37,7 +37,8 @@
 
 - [Program overview](#program-overview)
 - [Learning roadmap](#learning-roadmap)
-- [Current exercise: Conditional Formatting](#current-exercise-conditional-formatting)
+- [Completed exercise: Conditional Formatting](#completed-exercise-conditional-formatting)
+- [Current exercise: Formulas and Functions](#current-exercise-formulas-and-functions)
 - [Repository guide](#repository-guide)
 - [How I work through each exercise](#how-i-work-through-each-exercise)
 - [Skills in scope](#skills-in-scope)
@@ -124,6 +125,40 @@ The green CAGR condition uses a numeric check so text values such as `Formula Er
 
 </details>
 
+
+## Current exercise: Formulas and Functions
+
+<details open>
+<summary><strong>Task 02 — Put Formulas Into Practice</strong> · <code>In progress</code></summary>
+
+This exercise applies Excel functions to account-level sales data and a summary section. The workbook is being completed locally; its results and supporting notes will be added here after the formulas have been checked.
+
+**Formula confirmed for Sales Level**
+
+The workbook provides a threshold of **500** in cell `U2`. The Sales Level calculation compares each account's 2021 Unit Sales in column `L` against that fixed threshold:
+
+```excel
+=IF(L2>=$U$2,"High","Standard")
+```
+
+The absolute reference `$U$2` keeps the threshold fixed when the formula is filled down. The relative reference `L2` updates for each account. Values of 500 or more return `High`; values below 500 return `Standard`.
+
+**Remaining calculations**
+
+- Total Unit Sales — `SUM`
+- Average Annual Unit Sales — `AVERAGE`
+- Highest Annual Unit Sales — `MAX`
+- Lowest Annual Unit Sales — `MIN`
+- Sales Change — `IFERROR`
+- Product 2 account count — `COUNTIF`
+- 2021 Unit Sales total for Retail accounts — `SUMIF`
+
+The exact formulas and ranges for these calculations will be documented after confirming the workbook's column layout and validating the completed results.
+
+**Practice material location:** `material/02-formulas-and-functions/`
+
+</details>
+
 ## Repository guide
 
 The repository separates learning documentation from the Excel files used during practice.
@@ -138,7 +173,8 @@ forage-excel-skills-job-simulation/
 ├── docs/
 │   ├── Excel Keyboard Shortcuts.docx
 │   ├── Excel Formula Quick Reference Guide.docx
-│   └── 01-conditional-formatting-findings.md
+│   ├── 01-conditional-formatting-findings.md
+│   └── (Task 02 formula findings to be added after validation)
 │
 ├── learning-notes/
 │   ├── data-preparation.md
@@ -204,7 +240,7 @@ These are the skills covered by the learning plan; the presence of a badge does 
 
 ## Progress
 
-The overall simulation is **in progress**. Task 01 — Conditional Formatting is completed, with the source workbook, completed workbook, and findings document published in the repository. Future exercises will be documented as they are completed.
+The overall simulation is **in progress**. Task 01 — Conditional Formatting is completed and documented. Task 02 — Put Formulas Into Practice is currently in progress; the Sales Level formula and threshold reference have been recorded, and the remaining calculations will be documented after validation.
 
 For session-by-session updates, see [LEARNING_LOG.md](LEARNING_LOG.md).
 
