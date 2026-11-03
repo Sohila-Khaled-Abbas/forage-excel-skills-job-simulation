@@ -1,12 +1,13 @@
 # Charts and Dashboards
 
-**Status:** Task 03 — Build Charts and Dashboards is in progress. The annual sales summary and the Unit Sales by Year line chart are complete based on learner-reported workbook updates.
+**Status:** Task 03 — Build Charts and Dashboards is in progress. The annual sales summary and all three required charts are complete based on learner-reported workbook updates. The updated working workbook is saved in the repository; dashboard assembly and final review remain.
 
 ## Task 03 — Prepare Your Data for Visualization
 
 ### Source workbook
 
-[Account Sales Data for Dashboard Practice](../material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
+[Updated working workbook — Account Sales Data for Dashboard Practice](../material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice_Working.xlsx)  
+[Original practice workbook](../material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
 
 [Task 03 preparation, chart selection, and dashboard guide](../docs/03-chart-and-dashboard-preparation.md)
 
@@ -21,7 +22,7 @@ The learner reported the following results after preparing the workbook in Excel
 | Account records | 40 |
 | Excel Table | `AccountSales` — created |
 
-Checkpoints 1–5 are complete based on learner-reported Excel results. Both 2021 sales PivotTables have been created, with their displayed totals adding up correctly. The annual sales summary is complete, and the Unit Sales by Year line chart has been added to the updated workbook. The Top 10 bar chart, account-type column chart, and dashboard assembly remain in progress.
+Checkpoints 1–6 are complete based on learner-reported Excel results. Both 2021 sales PivotTables have been created, with their displayed totals adding up correctly. The annual sales summary and all three required charts are complete. The learner confirms that Cloudline Commerce appears at the top of the Top 10 bar chart and Online is the highest account-type column. The updated working workbook is saved in the repository. Dashboard assembly and final review remain in progress.
 
 ## PivotTable plan
 
@@ -120,16 +121,22 @@ Chart selection principles:
 
 ## Chart formatting checklist
 
-- [ ] Add a descriptive title to every chart.
-- [ ] Use readable axis labels and number formats.
-- [ ] Keep a legend only when it helps explain the visual.
-- [ ] Remove unnecessary clutter.
-- [ ] Ensure the top 10 bar chart is sorted from highest to lowest.
-- [ ] Check that every chart uses the correct summary data.
+- [x] Add a descriptive title to every chart (learner-confirmed).
+- [x] Use readable axis labels and number formats (learner-confirmed).
+- [x] Keep a legend only when it helps explain the visual (learner-confirmed).
+- [x] Remove unnecessary clutter (learner-confirmed).
+- [x] Ensure the top 10 bar chart is sorted from highest to lowest; Cloudline Commerce is at the top (learner-confirmed).
+- [x] Check that every chart uses the correct summary data (learner-confirmed).
 
-### Line chart progress
+### Chart completion
 
-The learner reports adding the **Unit Sales by Year** line chart to the updated workbook using the six-year annual summary above. The chart communicates the upward trend from 9,773 units in 2016 to 17,278 in 2021. This represents an increase of 7,505 units (approximately 76.8%). The workbook update is learner-reported; the chart object and plotted ranges have not been independently inspected.
+The learner confirms that all three required charts have been created and saved in the updated working workbook:
+
+- **Unit Sales by Year** — line chart using the six-year annual summary. The reported trend rises from 9,773 units in 2016 to 17,278 in 2021, an increase of 7,505 units (approximately 76.8%).
+- **Top 10 Accounts by 2021 Unit Sales** — horizontal bar chart, with Cloudline Commerce (1,450 units) at the top.
+- **2021 Unit Sales by Account Type** — column chart, with Online (5,140 units) as the highest category.
+
+These chart details and visual checks are learner-reported. The workbook's chart objects and plotted ranges have not been independently inspected.
 
 ## Dashboard layout
 
@@ -156,11 +163,13 @@ Record only insights supported by the finished PivotTables and charts. Explain w
 - [x] Create the descending Top 10 accounts PivotTable and check that the ten displayed values add to its Grand Total (learner-reported).
 - [x] Prepare the annual sales summary for 2016–2021 and record the learner-reported values; 2021 matches the reported PivotTable total.
 - [ ] Independently reconcile all six annual totals against the source columns.
-- [ ] Complete the chart-type activity.
+- [x] Complete the chart-type activity (learner-reported).
 - [x] Create the Unit Sales by Year line chart (learner-reported).
-- [ ] Create the Top 10 bar chart and account-type column chart.
+- [x] Create the Top 10 bar chart; Cloudline Commerce is at the top (learner-reported).
+- [x] Create the account-type column chart; Online is the highest category (learner-reported).
+- [x] Save the updated working workbook in the repository.
 - [ ] Assemble all three charts on the `Dashboard` worksheet.
 - [ ] Validate chart values, labels, layout, and totals.
 - [ ] Save and submit the completed workbook.
 
-**Documentation rule:** PivotTable and annual-summary results above are learner-reported. The annual summary's 2021 value matches the PivotTable total; all six source-column totals have not been independently audited. Do not mark charts or the dashboard complete until they have been created and checked in Excel.
+**Documentation rule:** PivotTable, annual-summary, and chart details above are learner-reported. The annual summary's 2021 value matches the PivotTable total; all six source-column totals have not been independently audited. The three charts are marked complete based on the learner's confirmation, but their objects and plotted ranges have not been independently inspected. Do not mark the dashboard complete until it has been assembled and checked in Excel.
