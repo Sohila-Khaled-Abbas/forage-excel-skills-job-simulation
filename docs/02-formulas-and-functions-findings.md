@@ -12,7 +12,7 @@ This exercise applies Excel aggregation, conditional logic, error handling, and 
 
 [Excel Formula Practice workbook](../material/02-formulas-and-functions/Excel_Formula_Practice.xlsx)
 
-The repository currently contains one workbook in the Task 02 folder. It was uploaded after the learner confirmed completion. The workbook has not been independently recalculated or audited in this documentation pass, so the formulas below document the task logic and the confirmed Sales Level expression rather than claiming an independent formula-by-formula verification.
+The Task 02 folder contains both the original practice workbook and the separately named completed workbook. The completed copy was uploaded after the learner confirmed completion. The workbook has not been independently recalculated or audited in this documentation pass, so the formulas below document the task logic and the confirmed Sales Level expression rather than claiming an independent formula-by-formula verification.
 
 ## 1. Account-level calculations
 
