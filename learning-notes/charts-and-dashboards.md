@@ -91,6 +91,19 @@ The source has separate annual sales columns for 2016–2021. Build a two-column
 
 Use the exact Table headers in Excel if they differ. Check the totals against the corresponding source columns.
 
+**Learner-reported annual summary results:**
+
+| Year | Total Unit Sales |
+|---|---:|
+| 2016 | 9,773 |
+| 2017 | 10,380 |
+| 2018 | 11,115 |
+| 2019 | 12,283 |
+| 2020 | 14,193 |
+| 2021 | 17,278 |
+
+The reported series increases in every year. The 2021 value matches the reported account-type PivotTable total. Across the period, unit sales increased by 7,505, or approximately 76.8%. The six values are learner-reported; independent reconciliation to the source workbook remains outstanding.
+
 ## Chart selection and dashboard specification
 
 | Required visual | Business question | Chart type | Supporting data |
@@ -137,11 +150,12 @@ Record only insights supported by the finished PivotTables and charts. Explain w
 - [x] Convert the dataset into an Excel Table named `AccountSales` (learner-reported).
 - [x] Create the account-type PivotTable and check that the displayed category values add to its Grand Total (learner-reported).
 - [x] Create the descending Top 10 accounts PivotTable and check that the ten displayed values add to its Grand Total (learner-reported).
-- [ ] Prepare and validate annual sales totals for 2016–2021.
+- [x] Prepare the annual sales summary for 2016–2021 and record the learner-reported values; 2021 matches the reported PivotTable total.
+- [ ] Independently reconcile all six annual totals against the source columns.
 - [ ] Complete the chart-type activity.
 - [ ] Create the required line, bar, and column charts.
 - [ ] Assemble all three charts on the `Dashboard` worksheet.
 - [ ] Validate chart values, labels, layout, and totals.
 - [ ] Save and submit the completed workbook.
 
-**Documentation rule:** PivotTable completion and totals above are learner-reported. Do not mark annual summaries, charts, or the dashboard complete until they have been created and checked in Excel.
+**Documentation rule:** PivotTable and annual-summary results above are learner-reported. The annual summary's 2021 value matches the PivotTable total; all six source-column totals have not been independently audited. Do not mark charts or the dashboard complete until they have been created and checked in Excel.
