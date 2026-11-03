@@ -39,6 +39,7 @@
 - [Learning roadmap](#learning-roadmap)
 - [Completed exercise: Conditional Formatting](#completed-exercise-conditional-formatting)
 - [Completed exercise: Formulas and Functions](#completed-exercise-formulas-and-functions)
+- [Current exercise: Build Charts and Dashboards](#current-exercise-build-charts-and-dashboards)
 - [Repository guide](#repository-guide)
 - [How I work through each exercise](#how-i-work-through-each-exercise)
 - [Skills in scope](#skills-in-scope)
@@ -167,6 +168,31 @@ The completed calculations and documented findings have now been reviewed and ve
 
 </details>
 
+
+## Current exercise: Build Charts and Dashboards
+
+<details open>
+<summary><strong>Task 03 — Prepare Your Data for Visualization</strong> · <code>In progress</code></summary>
+
+Task 03 begins with preparing the account sales dataset for visualization. The current stage is to preserve the source data, convert the dataset into an Excel Table, and create PivotTables on separate worksheets before moving on to chart selection and dashboard design.
+
+**Source workbook:** [Account Sales Data for Dashboard Practice](material/03-dashboard/Account_Sales_Data_for_Dashboard_Practice.xlsx)
+
+**Preparation guide:** [Task 03 — Charts and Dashboard Preparation](docs/03-chart-and-dashboard-preparation.md)
+
+### Current objectives
+
+1. Save a separate working copy of the supplied workbook.
+2. Inspect the worksheet, headers, record count, and data range.
+3. Convert the source dataset into an Excel Table named `AccountSales`.
+4. Create PivotTables on separate worksheets.
+5. Check field placement, aggregation choices, and totals against the source.
+6. Continue to chart selection and dashboard design after the preparation stage.
+
+The Table and PivotTables are not marked complete until they have been created and checked in Excel.
+
+</details>
+
 ## Repository guide
 
 The repository separates learning documentation from the Excel files used during practice.
@@ -182,7 +208,8 @@ forage-excel-skills-job-simulation/
 │   ├── Excel Keyboard Shortcuts.docx
 │   ├── Excel Formula Quick Reference Guide.docx
 │   ├── 01-conditional-formatting-findings.md
-│   └── 02-formulas-and-functions-findings.md
+│   ├── 02-formulas-and-functions-findings.md
+│   └── 03-chart-and-dashboard-preparation.md
 │
 ├── learning-notes/
 │   ├── data-preparation.md
@@ -194,9 +221,11 @@ forage-excel-skills-job-simulation/
 └── material/
     ├── 01-conditional-formatting/
     │   └── Account Sales Data for Analysis.xlsx
-    └── 02-formulas-and-functions/
-        ├── Excel_Formula_Practice.xlsx
-        └── Excel_Formula_Practice_Completed.xlsx
+    ├── 02-formulas-and-functions/
+    │   ├── Excel_Formula_Practice.xlsx
+    │   └── Excel_Formula_Practice_Completed.xlsx
+    └── 03-dashboard/
+        └── Account_Sales_Data_for_Dashboard_Practice.xlsx
 ~~~
 
 ### Quick navigation
@@ -213,6 +242,8 @@ forage-excel-skills-job-simulation/
 | [Reflection](learning-notes/reflection.md) | Summarize learning outcomes and improvement opportunities. |
 | [Task 01 findings](docs/01-conditional-formatting-findings.md) | Review the dataset findings, exact affected accounts, conditional-formatting logic, and key takeaways. |
 | [Task 02 findings](docs/02-formulas-and-functions-findings.md) | Review the account-level formulas, summary calculations, assumptions, and validation checklist. |
+| [Task 03 preparation guide](docs/03-chart-and-dashboard-preparation.md) | Follow the Excel Table and PivotTable preparation steps before charting. |
+| [Task 03 source workbook](material/03-dashboard/Account_Sales_Data_for_Dashboard_Practice.xlsx) | Open the account sales dataset supplied for dashboard practice. |
 | [Completed Task 02 workbook](material/02-formulas-and-functions/Excel_Formula_Practice_Completed.xlsx) | Open the completed formula-practice workbook. |
 | [Completed Task 01 workbook](material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx.xlsx) | Open the completed conditional-formatting workbook. |
 | [Practice materials](material/) | Browse the Excel workbooks used for the exercises. |
@@ -253,7 +284,7 @@ These are the skills covered by the learning plan; the presence of a badge does 
 
 ## Progress
 
-The overall simulation is **in progress**. Task 01 — Conditional Formatting and Task 02 — Put Formulas Into Practice are completed and documented. The next Forage Excel Skills exercise remains to be completed.
+The overall simulation is **in progress**. Task 01 — Conditional Formatting and Task 02 — Put Formulas Into Practice are completed and documented. Task 03 — Build Charts and Dashboards is now in progress.
 
 For session-by-session updates, see [LEARNING_LOG.md](LEARNING_LOG.md).
 
