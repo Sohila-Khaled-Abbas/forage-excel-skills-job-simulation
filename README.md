@@ -174,7 +174,7 @@ The completed calculations and documented findings have now been reviewed and ve
 <details open>
 <summary><strong>Task 03 — Prepare Your Data for Visualization</strong> · <code>In progress</code></summary>
 
-Task 03 begins with preparing the account sales dataset for visualization. The current stage is to preserve the source data, convert the dataset into an Excel Table, and create PivotTables on separate worksheets before moving on to chart selection and dashboard design.
+Task 03 begins with preparing the account sales dataset for visualization. The initial inspection and Excel Table setup have been completed and reported: the `AccountSales` worksheet contains the range `A1:M41` (40 account records), and the dataset has been converted into an Excel Table named `AccountSales`. The next stage is to create and validate PivotTables before moving on to chart selection and dashboard design.
 
 **Source workbook:** [Account Sales Data for Dashboard Practice](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
 
@@ -183,13 +183,13 @@ Task 03 begins with preparing the account sales dataset for visualization. The c
 ### Current objectives
 
 1. Save a separate working copy of the supplied workbook.
-2. Inspect the worksheet, headers, record count, and data range.
-3. Convert the source dataset into an Excel Table named `AccountSales`.
+2. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Inspect the `AccountSales` worksheet: range `A1:M41`, 40 account records.
+3. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Convert the source dataset into an Excel Table named `AccountSales`.
 4. Create PivotTables on separate worksheets.
 5. Check field placement, aggregation choices, and totals against the source.
 6. Continue to chart selection and dashboard design after the preparation stage.
 
-The Table and PivotTables are not marked complete until they have been created and checked in Excel.
+Checkpoint 1 is complete based on the learner's reported Excel results. PivotTables, charts, and the dashboard remain in progress.
 
 </details>
 
