@@ -174,7 +174,7 @@ The completed calculations and documented findings have now been reviewed and ve
 <details open>
 <summary><strong>Task 03 — Prepare Your Data for Visualization</strong> · <code>In progress</code></summary>
 
-Task 03 begins with preparing the account sales dataset for visualization. The current stage is to preserve the source data, convert the dataset into an Excel Table, and create PivotTables on separate worksheets before moving on to chart selection and dashboard design.
+Task 03 Checkpoint 1 is complete based on the learner's reported Excel results: the `AccountSales` worksheet contains `A1:M41` (40 account records), and the source data is an Excel Table named `AccountSales`. The next stage is to create PivotTables, select appropriate chart types, and build the required three-chart dashboard.
 
 **Source workbook:** [Account Sales Data for Dashboard Practice](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
 
@@ -182,14 +182,18 @@ Task 03 begins with preparing the account sales dataset for visualization. The c
 
 ### Current objectives
 
-1. Save a separate working copy of the supplied workbook.
-2. Inspect the worksheet, headers, record count, and data range.
-3. Convert the source dataset into an Excel Table named `AccountSales`.
-4. Create PivotTables on separate worksheets.
-5. Check field placement, aggregation choices, and totals against the source.
-6. Continue to chart selection and dashboard design after the preparation stage.
+1. Save a separate working copy of the supplied workbook and preserve the original.
+2. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Inspect the `AccountSales` worksheet: range `A1:M41`, 40 account records.
+3. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Create the Excel Table named `AccountSales`.
+4. Create and validate PivotTables for 2021 sales by account type and the top 10 accounts.
+5. Prepare annual sales totals for 2016–2021 and create the required charts.
+6. Build a `Dashboard` worksheet containing all three charts:
+   - Unit Sales by Year — line chart.
+   - Top 10 Accounts by 2021 Unit Sales — bar chart.
+   - 2021 Unit Sales by Account Type — column chart.
+7. Format, reconcile, and review the dashboard before submission.
 
-The Table and PivotTables are not marked complete until they have been created and checked in Excel.
+Checkpoint 1 is complete based on the learner's reported results. PivotTables, charts, and the dashboard remain in progress.
 
 </details>
 
@@ -242,7 +246,7 @@ forage-excel-skills-job-simulation/
 | [Reflection](learning-notes/reflection.md) | Summarize learning outcomes and improvement opportunities. |
 | [Task 01 findings](docs/01-conditional-formatting-findings.md) | Review the dataset findings, exact affected accounts, conditional-formatting logic, and key takeaways. |
 | [Task 02 findings](docs/02-formulas-and-functions-findings.md) | Review the account-level formulas, summary calculations, assumptions, and validation checklist. |
-| [Task 03 preparation guide](docs/03-chart-and-dashboard-preparation.md) | Follow the Excel Table and PivotTable preparation steps before charting. |
+| [Task 03 preparation guide](docs/03-chart-and-dashboard-preparation.md) | Follow the Excel Table, PivotTable, chart-selection, and dashboard workflow. |
 | [Task 03 source workbook](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx) | Open the account sales dataset supplied for dashboard practice. |
 | [Completed Task 02 workbook](material/02-formulas-and-functions/Excel_Formula_Practice_Completed.xlsx) | Open the completed formula-practice workbook. |
 | [Completed Task 01 workbook](material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx.xlsx) | Open the completed conditional-formatting workbook. |
