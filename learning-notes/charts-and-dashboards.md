@@ -8,7 +8,7 @@
 
 [Account Sales Data for Dashboard Practice](../material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
 
-[Task 03 preparation guide](../docs/03-chart-and-dashboard-preparation.md)
+[Task 03 preparation, chart selection, and dashboard guide](../docs/03-chart-and-dashboard-preparation.md)
 
 ### Checkpoint 1 — Data preparation results
 
@@ -21,59 +21,96 @@ The learner reported the following results after preparing the workbook in Excel
 | Account records | 40 |
 | Excel Table | `AccountSales` — created |
 
-The source inspection and Table creation are complete. PivotTables and chart work are still pending.
+Checkpoint 1 is complete. PivotTables, charts, and dashboard assembly remain in progress.
 
-### Preparation workflow
+## PivotTable plan
 
-1. Save a working copy and preserve the supplied source workbook.
-2. Inspect worksheet names, field headers, record count, data types, and the complete data range.
-3. Convert the dataset into an Excel Table using `Ctrl + T`.
-4. Confirm **My table has headers** and name the table `AccountSales` from **Table Design**.
-5. Create PivotTables from the Table using **Insert → PivotTable**, placing each PivotTable on a new worksheet.
-6. Check field placement, aggregation type, number formats, and totals against the source.
+### 1. 2021 Unit Sales by Account Type
 
-### Dashboard brief
+| Area | Field |
+|---|---|
+| Rows | Account Type |
+| Values | Sum of 2021 Unit Sales |
 
-- **Audience:** To be defined after exploring the data and task requirements.
-- **Decision or question supported:** To be defined.
-- **Time period / scope:** Account sales data provided in the Task 03 workbook.
-- **KPIs and definitions:** To be defined after inspecting the available fields.
-- **Filters or interactions:** To be determined from the analysis needs.
+Purpose: compare 2021 sales across account types and provide the source for the required column chart.
 
-### Preparation evidence to capture
+Suggested worksheet: `PT_Sales_by_Type`.
+
+### 2. Top 10 Accounts by 2021 Unit Sales
+
+| Area | Field |
+|---|---|
+| Rows | Account Name |
+| Values | Sum of 2021 Unit Sales |
+
+Sort descending and apply a Top 10 value filter based on Sum of 2021 Unit Sales.
+
+Suggested worksheet: `PT_Top10_2021`.
+
+### 3. Annual sales summary
+
+The source has separate annual sales columns for 2016–2021. Build a two-column summary on `Annual_Sales_Summary`, with Year and Total Unit Sales. Structured-reference examples:
+
+- 2016: `=SUM(AccountSales[2016 Unit Sales])`
+- 2017: `=SUM(AccountSales[2017 Unit Sales])`
+- 2018: `=SUM(AccountSales[2018 Unit Sales])`
+- 2019: `=SUM(AccountSales[2019 Unit Sales])`
+- 2020: `=SUM(AccountSales[2020 Unit Sales])`
+- 2021: `=SUM(AccountSales[2021 Unit Sales])`
+
+Use the exact Table headers in Excel if they differ. Check the totals against the corresponding source columns.
+
+## Chart selection and dashboard specification
+
+| Required visual | Business question | Chart type | Supporting data |
+|---|---|---|---|
+| Unit Sales by Year | How did total unit sales change from 2016 through 2021? | Line | Annual_Sales_Summary |
+| Top 10 Accounts by 2021 Unit Sales | Which 10 accounts had the highest 2021 unit sales? | Bar | PT_Top10_2021 |
+| 2021 Unit Sales by Account Type | How do 2021 unit sales compare across account types? | Column | PT_Sales_by_Type |
+
+Chart selection principles:
+- Use a line chart to show change over time.
+- Use a column chart to compare a small number of categories.
+- Use a horizontal bar chart to rank several items, especially when category names are long.
+- Use stacked charts only when showing meaningful component contributions to a total.
+
+## Chart formatting checklist
+
+- [ ] Add a descriptive title to every chart.
+- [ ] Use readable axis labels and number formats.
+- [ ] Keep a legend only when it helps explain the visual.
+- [ ] Remove unnecessary clutter.
+- [ ] Ensure the top 10 bar chart is sorted from highest to lowest.
+- [ ] Check that every chart uses the correct summary data.
+
+## Dashboard layout
+
+Create a worksheet named `Dashboard` and place all three charts on it. A practical layout is the annual trend across the top, with the top-10 ranking and account-type comparison side by side below. Keep charts aligned, readable, and non-overlapping.
+
+## Evidence and business takeaways
 
 | Item | Record after completing it |
 |---|---|
-| Source worksheet | Actual worksheet name |
-| Source range | Actual Excel range |
-| Record count | Number of account records |
-| Table name | Expected: `AccountSales` |
-| PivotTable worksheets | Actual worksheet names |
-| PivotTable fields | Rows, Columns, Values, Filters |
+| PivotTable worksheet names | Actual worksheet names |
+| PivotTable field placements | Rows, Columns, Values, Filters |
 | Aggregations | Sum, Count, Average, etc. |
-| Reconciliation | Whether PivotTable totals match the source |
+| Annual totals | Actual 2016–2021 values |
+| Chart sources and types | Confirm each chart uses its specified source and type |
+| Dashboard review | Confirm titles, labels, spacing, and reconciliation |
 
-## Visual design decisions
-
-| Visual | Why it was selected | Metric / dimension | Main interpretation |
-|---|---|---|---|
-| Add a visual after creating it | Explain why it fits the question | Identify the actual fields used | Record only an observed, validated interpretation |
-
-## Business takeaways
-
-1. Record an insight supported by a completed PivotTable or chart.
-2. Explain why the finding matters to the intended audience.
-3. Add a recommendation with its rationale and any caveats.
+Record only insights supported by the finished PivotTables and charts. Explain why each finding matters to the intended audience and note any limitations.
 
 ## Progress checklist
 
-- [ ] Save a separate working copy.
 - [x] Inspect the `AccountSales` worksheet and identify range `A1:M41` (40 account records; learner-reported).
 - [x] Convert the dataset into an Excel Table named `AccountSales` (learner-reported).
-- [ ] Create and validate PivotTables on separate worksheets.
-- [ ] Complete the chart-type exercise.
-- [ ] Build and format the dashboard.
-- [ ] Validate chart values, filters, labels, and totals.
-- [ ] Record findings and add appropriate screenshots.
+- [ ] Create and validate the account-type PivotTable.
+- [ ] Create and validate the top-10 accounts PivotTable.
+- [ ] Prepare and validate annual sales totals for 2016–2021.
+- [ ] Complete the chart-type activity.
+- [ ] Create the required line, bar, and column charts.
+- [ ] Assemble all three charts on the `Dashboard` worksheet.
+- [ ] Validate chart values, labels, layout, and totals.
+- [ ] Save and submit the completed workbook.
 
-**Documentation rule:** Do not mark the Table, PivotTables, charts, or dashboard as complete until they have been created and checked in Excel.
+**Documentation rule:** Do not mark PivotTables, charts, or the dashboard complete until they have been created and checked in Excel.
