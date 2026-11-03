@@ -25,6 +25,20 @@ Prepare the supplied account sales dataset for visualization. Preserve the sourc
 6. Open **Table Design** and rename the table `AccountSales`.
 7. Check that filter arrows appear and the table includes all records.
 
+## Checkpoint 1 — Data preparation results
+
+**Learner-reported results:**
+
+| Item | Result |
+|---|---|
+| Worksheet | `AccountSales` |
+| Dataset range | `A1:M41` |
+| Account records | 40 |
+| Excel Table name | `AccountSales` |
+| Table created | Yes |
+
+The source inspection and Table creation steps are complete. The next work is PivotTable creation and validation. The worksheet and Table happen to share the reported name `AccountSales`; Excel treats worksheet names and Table names as separate objects.
+
 ## 3. Create PivotTables
 
 1. Select a cell inside `AccountSales`.
@@ -49,6 +63,8 @@ Use the actual field names available in the workbook. These are exploratory sugg
 ## 4. Validate
 
 - [ ] Save a working copy separately from the supplied source.
+- [x] Inspect the `AccountSales` worksheet and confirm range `A1:M41` contains 40 account records (learner-reported).
+- [x] Create the Excel Table named `AccountSales` (learner-reported).
 - [ ] Confirm the Excel Table includes all intended rows and columns.
 - [ ] Confirm `AccountSales` is the table name.
 - [ ] Confirm PivotTables use the table as their source.
@@ -60,4 +76,4 @@ Use the actual field names available in the workbook. These are exploratory sugg
 
 After completing the exercise, document the actual table name, worksheet, source range, record count, PivotTable names, field placements, aggregation choices, and any data-quality issues. Add your own screenshots if useful and safe to share.
 
-**Scope note:** This is a preparation guide. It does not claim the Table or PivotTables have already been created or validated. Continue to the chart-type guidance after this preparation stage.
+**Scope note:** Checkpoint 1 is recorded from the learner's reported results. PivotTables have not yet been reported as created or validated. Continue with PivotTables, then use the chart-selection guide to match each visual to a business question.
