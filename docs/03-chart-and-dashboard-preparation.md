@@ -116,13 +116,27 @@ The source stores each year in a separate column. A compact two-column summary i
 
 Create this summary on a separate worksheet named `Annual_Sales_Summary`. Use the actual Table column headers if they differ. Format totals as whole numbers. This is a simple summary table using structured-reference SUM formulas; it avoids treating the six annual columns as six unrelated chart series.
 
+**Learner-reported annual summary results:**
+
+| Year | Total Unit Sales |
+|---|---:|
+| 2016 | 9,773 |
+| 2017 | 10,380 |
+| 2018 | 11,115 |
+| 2019 | 12,283 |
+| 2020 | 14,193 |
+| 2021 | 17,278 |
+
+The reported totals increase in each successive year. The 2021 figure matches the reported Account Type PivotTable Grand Total. From 2016 to 2021, total unit sales increase by 7,505 units, approximately 76.8%. The learner-reported values are documented here; a separate independent workbook audit has not been performed.
+
 ### PivotTable validation
 
 - [x] Both PivotTables have been created; the learner confirmed Sum aggregation and the reported results.
 - [x] The account-type totals add to the reported Grand Total of 17,278.
 - [x] The Top 10 PivotTable contains 10 accounts in descending order; its values add to the reported Grand Total of 8,221.
 - [ ] Independently reconcile both PivotTables against the working workbook and source data.
-- [ ] Annual totals recalculate correctly and match the source columns.
+- [x] Record the learner-reported annual summary values; the 2021 total matches the reported PivotTable Grand Total.
+- [ ] Independently reconcile all six annual totals against the source columns.
 
 ## 4. Choose the right chart
 
@@ -188,7 +202,8 @@ For the top 10 bar chart, keep the categories in descending sales order. Make ac
 | Inspect worksheet and confirm range / record count | Complete — learner-reported |
 | Create Excel Table `AccountSales` | Complete — learner-reported |
 | Create and validate the two 2021 sales PivotTables | Complete — learner-reported results and totals checked |
-| Prepare and validate annual sales summary | Pending |
+| Prepare annual sales summary | Complete — learner-reported values; 2021 cross-check matches the reported PivotTable total |
+| Independently reconcile all six annual totals against source columns | Pending |
 | Complete chart-type activity | Pending |
 | Create and format three charts | Pending |
 | Assemble Dashboard worksheet | Pending |

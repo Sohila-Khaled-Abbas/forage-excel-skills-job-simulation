@@ -174,7 +174,7 @@ The completed calculations and documented findings have now been reviewed and ve
 <details open>
 <summary><strong>Task 03 — Prepare Your Data for Visualization</strong> · <code>In progress</code></summary>
 
-Task 03 Checkpoints 1–3 are complete based on the learner's reported Excel results: the `AccountSales` worksheet contains `A1:M41` (40 account records), the source data is an Excel Table named `AccountSales`, and both required 2021 sales PivotTables have been created and their totals checked. The next stage is to prepare annual sales totals, create the three required charts, and assemble the dashboard.
+Task 03 Checkpoints 1–4 are complete based on the learner's reported Excel results: the `AccountSales` worksheet contains `A1:M41` (40 account records), the source data is an Excel Table named `AccountSales`, both required 2021 sales PivotTables have been created, and the 2016–2021 annual sales summary has been prepared. The next stage is to create the three required charts and assemble the dashboard.
 
 **Source workbook:** [Account Sales Data for Dashboard Practice](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
 
@@ -186,14 +186,14 @@ Task 03 Checkpoints 1–3 are complete based on the learner's reported Excel res
 2. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Inspect the `AccountSales` worksheet: range `A1:M41`, 40 account records.
 3. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Create the Excel Table named `AccountSales`.
 4. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Create and validate PivotTables for 2021 sales by account type and the top 10 accounts.
-5. Prepare and validate annual sales totals for 2016–2021, then create the required charts.
+5. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Prepare the 2016–2021 annual sales summary; create the required charts.
 6. Build a `Dashboard` worksheet containing all three charts:
    - Unit Sales by Year — line chart.
    - Top 10 Accounts by 2021 Unit Sales — bar chart.
    - 2021 Unit Sales by Account Type — column chart.
 7. Format, reconcile, and review the dashboard before submission.
 
-Checkpoints 1–3 are complete based on the learner's reported results. The PivotTable summaries reconcile: 2021 sales by account type total 17,278 units, and the Top 10 accounts total 8,221 units. Annual totals, charts, and dashboard assembly remain in progress.
+Checkpoints 1–4 are complete based on the learner's reported results. The PivotTable summaries reconcile to their displayed totals: 17,278 units by account type and 8,221 units for the Top 10 accounts. Annual sales rise from 9,773 units in 2016 to 17,278 in 2021 (+76.8%); charts and dashboard assembly remain in progress.
 
 </details>
 
