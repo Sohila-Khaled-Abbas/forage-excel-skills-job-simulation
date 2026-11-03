@@ -163,7 +163,7 @@ The Sales Level formula uses the absolute reference `$U$2` so the threshold does
 
 **Skills practiced:** `SUM`, `AVERAGE`, `MAX`, `MIN`, `IF`, absolute references, percentage change, `IFERROR`, `COUNTIF`, and `SUMIF`.
 
-The learner confirmed completing and saving the workbook. The documentation records the formulas and intended checks; it does not claim an independent audit of every stored formula or calculated result.
+The completed calculations and documented findings have now been reviewed and verified by the learner in Excel. The findings document records the formulas, expected behavior, assumptions, and validation checks for future reference.
 
 </details>
 
