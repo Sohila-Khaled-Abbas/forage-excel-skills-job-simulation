@@ -174,9 +174,9 @@ The completed calculations and documented findings have now been reviewed and ve
 <details open>
 <summary><strong>Task 03 — Prepare Your Data for Visualization</strong> · <code>In progress</code></summary>
 
-Task 03 Checkpoints 1–5 are complete based on the learner's reported Excel results: the `AccountSales` worksheet contains `A1:M41` (40 account records), the source data is an Excel Table named `AccountSales`, both required 2021 sales PivotTables have been created, the 2016–2021 annual sales summary has been prepared, and the **Unit Sales by Year line chart** has been added to the updated workbook. The two comparison charts and dashboard assembly remain.
+Task 03 Checkpoints 1–6 are complete based on the learner's reported Excel results. The `AccountSales` worksheet contains `A1:M41` (40 account records), the source data is an Excel Table named `AccountSales`, both required 2021 sales PivotTables and the 2016–2021 annual sales summary have been prepared, and all three required charts have been created: **Unit Sales by Year** (line), **Top 10 Accounts by 2021 Unit Sales** (bar), and **2021 Unit Sales by Account Type** (column). The updated working workbook is saved in the repository. Dashboard assembly and final review remain.
 
-**Source workbook:** [Account Sales Data for Dashboard Practice](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
+**Updated working workbook:** [Account Sales Data for Dashboard Practice — Working](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice_Working.xlsx) · [Original practice workbook](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
 
 **Preparation guide:** [Task 03 — Charts and Dashboard Preparation](docs/03-chart-and-dashboard-preparation.md)
 
@@ -187,13 +187,13 @@ Task 03 Checkpoints 1–5 are complete based on the learner's reported Excel res
 3. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Create the Excel Table named `AccountSales`.
 4. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Create and validate PivotTables for 2021 sales by account type and the top 10 accounts.
 5. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Prepare the 2016–2021 annual sales summary and create the **Unit Sales by Year** line chart.
-6. Build a `Dashboard` worksheet containing all three charts:
+6. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Create and format all three required charts:
    - Unit Sales by Year — line chart.
    - Top 10 Accounts by 2021 Unit Sales — bar chart.
    - 2021 Unit Sales by Account Type — column chart.
-7. Format, reconcile, and review the dashboard before submission.
+7. Build the `Dashboard` worksheet, arrange all three charts, and complete the final review before submission.
 
-Checkpoints 1–5 are complete based on the learner's reported results. The PivotTable summaries reconcile to their displayed totals: 17,278 units by account type and 8,221 units for the Top 10 accounts. The annual summary reports growth from 9,773 units in 2016 to 17,278 in 2021 (+76.8%), and the learner has added the corresponding **Unit Sales by Year** line chart to the updated workbook. The Top 10 bar chart, account-type column chart, and Dashboard worksheet remain in progress.
+Checkpoints 1–6 are complete based on learner-reported Excel results. The PivotTable summaries add to their displayed totals: 17,278 units by account type and 8,221 units for the Top 10 accounts. The annual summary reports growth from 9,773 units in 2016 to 17,278 in 2021 (+76.8%). The learner confirms that all three charts are complete: the annual trend line chart, the Top 10 account bar chart (Cloudline Commerce at the top), and the account-type column chart (Online highest). The updated working workbook is saved in the repository. The Dashboard worksheet, final validation, and submission remain outstanding.
 
 </details>
 
@@ -229,7 +229,8 @@ forage-excel-skills-job-simulation/
     │   ├── Excel_Formula_Practice.xlsx
     │   └── Excel_Formula_Practice_Completed.xlsx
     └── 03-build-charts-and-dashboards/
-        └── Account_Sales_Data_for_Dashboard_Practice.xlsx
+        ├── Account_Sales_Data_for_Dashboard_Practice.xlsx
+        └── Account_Sales_Data_for_Dashboard_Practice_Working.xlsx
 ~~~
 
 ### Quick navigation
@@ -247,7 +248,8 @@ forage-excel-skills-job-simulation/
 | [Task 01 findings](docs/01-conditional-formatting-findings.md) | Review the dataset findings, exact affected accounts, conditional-formatting logic, and key takeaways. |
 | [Task 02 findings](docs/02-formulas-and-functions-findings.md) | Review the account-level formulas, summary calculations, assumptions, and validation checklist. |
 | [Task 03 preparation guide](docs/03-chart-and-dashboard-preparation.md) | Follow the Excel Table, PivotTable, chart-selection, and dashboard workflow. |
-| [Task 03 source workbook](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx) | Open the account sales dataset supplied for dashboard practice. |
+| [Task 03 updated working workbook](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice_Working.xlsx) | Open the learner's updated workbook containing the three completed charts. |
+| [Task 03 original practice workbook](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx) | Open the original account sales practice workbook. |
 | [Completed Task 02 workbook](material/02-formulas-and-functions/Excel_Formula_Practice_Completed.xlsx) | Open the completed formula-practice workbook. |
 | [Completed Task 01 workbook](material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx.xlsx) | Open the completed conditional-formatting workbook. |
 | [Practice materials](material/) | Browse the Excel workbooks used for the exercises. |
@@ -288,7 +290,7 @@ These are the skills covered by the learning plan; the presence of a badge does 
 
 ## Progress
 
-The overall simulation is **in progress**. Task 01 — Conditional Formatting and Task 02 — Put Formulas Into Practice are completed and documented. Task 03 — Build Charts and Dashboards is now in progress.
+The overall simulation is **in progress**. Task 01 — Conditional Formatting and Task 02 — Put Formulas Into Practice are completed and documented. For Task 03, the data preparation, PivotTables, annual summary, and all three required charts are complete; dashboard assembly and final review remain.
 
 For session-by-session updates, see [LEARNING_LOG.md](LEARNING_LOG.md).
 
