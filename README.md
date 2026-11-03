@@ -182,7 +182,7 @@ forage-excel-skills-job-simulation/
 │   ├── Excel Keyboard Shortcuts.docx
 │   ├── Excel Formula Quick Reference Guide.docx
 │   ├── 01-conditional-formatting-findings.md
-│   └── (Task 02 formula findings to be added after validation)
+│   └── 02-formulas-and-functions-findings.md
 │
 ├── learning-notes/
 │   ├── data-preparation.md
