@@ -126,36 +126,57 @@ The green CAGR condition uses a numeric check so text values such as `Formula Er
 </details>
 
 
-## Current exercise: Formulas and Functions
+## Calculate and Analyze With Excel
 
 <details open>
 <summary><strong>Task 02 — Put Formulas Into Practice</strong> · <code>In progress</code></summary>
 
-This exercise applies Excel functions to account-level sales data and a summary section. The workbook is being completed locally; its results and supporting notes will be added here after the formulas have been checked.
+This exercise applies Excel formulas and functions to account-level sales data, then uses conditional calculations to summarize the dataset. The working workbook is being completed locally; the formulas and results will be documented here after validation.
 
-**Formula confirmed for Sales Level**
+### Account-level calculations
 
-The workbook provides a threshold of **500** in cell `U2`. The Sales Level calculation compares each account's 2021 Unit Sales in column `L` against that fixed threshold:
+Create each formula in the first account row, then fill it down for every account.
+
+| Calculation | Required function | Purpose |
+|---|---|---|
+| **Total Unit Sales** | `SUM` | Add the annual unit-sales values for each account. |
+| **Average Annual Unit Sales** | `AVERAGE` | Calculate the account's average annual unit sales. |
+| **Highest Annual Unit Sales** | `MAX` | Return the highest annual unit-sales value. |
+| **Lowest Annual Unit Sales** | `MIN` | Return the lowest annual unit-sales value. |
+| **Sales Level** | `IF` | Classify the account using the workbook's sales threshold. |
+| **Sales Change** | `IFERROR` | Return a controlled fallback instead of displaying a calculation error. |
+
+### Confirmed Sales Level formula
+
+The workbook provides a Sales Level threshold of **500** in cell `U2`. The formula compares each account's 2021 Unit Sales in column `L` with that fixed threshold:
 
 ```excel
 =IF(L2>=$U$2,"High","Standard")
 ```
 
-The absolute reference `$U$2` keeps the threshold fixed when the formula is filled down. The relative reference `L2` updates for each account. Values of 500 or more return `High`; values below 500 return `Standard`.
+- `L2` is the 2021 Unit Sales value for the current account.
+- `$U$2` is an absolute reference, so the threshold remains fixed when the formula is copied down.
+- Sales of **500 or more** return `High`; sales below 500 return `Standard`.
 
-**Remaining calculations**
+### Summary calculations
 
-- Total Unit Sales — `SUM`
-- Average Annual Unit Sales — `AVERAGE`
-- Highest Annual Unit Sales — `MAX`
-- Lowest Annual Unit Sales — `MIN`
-- Sales Change — `IFERROR`
-- Product 2 account count — `COUNTIF`
-- 2021 Unit Sales total for Retail accounts — `SUMIF`
+| Summary requirement | Required function | Purpose |
+|---|---|---|
+| Accounts with Product 2 | `COUNTIF` | Count records matching the Product 2 criterion. |
+| 2021 Unit Sales for Retail accounts | `SUMIF` | Sum 2021 sales only for accounts classified as Retail. |
 
-The exact formulas and ranges for these calculations will be documented after confirming the workbook's column layout and validating the completed results.
+### Validation checklist
+
+- [ ] Confirm each account-level formula references the correct annual sales columns.
+- [ ] Fill all six formulas down through the full account list.
+- [ ] Confirm the Sales Level formula keeps `$U$2` fixed and returns `High` or `Standard` as expected.
+- [ ] Check the `IFERROR` fallback behavior for any invalid or unavailable Sales Change calculation.
+- [ ] Verify the `COUNTIF` and `SUMIF` criteria ranges align with their corresponding data ranges.
+- [ ] Review the summary outputs and save the completed workbook.
 
 **Practice material location:** `material/02-formulas-and-functions/`
+
+The exact formulas and result totals for the other calculations will be added after checking the workbook's remaining column positions and validating the completed results.
 
 </details>
 
@@ -184,8 +205,10 @@ forage-excel-skills-job-simulation/
 │   └── reflection.md
 │
 └── material/
-    └── 01-conditional-formatting/
-        └── Account Sales Data for Analysis.xlsx
+    ├── 01-conditional-formatting/
+    │   └── Account Sales Data for Analysis.xlsx
+    └── 02-formulas-and-functions/
+        └── (Task 02 workbook files)
 ~~~
 
 ### Quick navigation
@@ -201,6 +224,7 @@ forage-excel-skills-job-simulation/
 | [Automation and VBA](learning-notes/automation-and-vba.md) | Document original automation logic and tests. |
 | [Reflection](learning-notes/reflection.md) | Summarize learning outcomes and improvement opportunities. |
 | [Task 01 findings](docs/01-conditional-formatting-findings.md) | Review the dataset findings, exact affected accounts, conditional-formatting logic, and key takeaways. |
+| [Task 02 practice folder](material/02-formulas-and-functions/) | Access the formula-practice workbook files when added. |
 | [Completed Task 01 workbook](material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx.xlsx) | Open the completed conditional-formatting workbook. |
 | [Practice materials](material/) | Browse the Excel workbooks used for the exercises. |
 
