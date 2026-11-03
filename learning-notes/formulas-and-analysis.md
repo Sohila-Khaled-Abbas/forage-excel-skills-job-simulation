@@ -44,6 +44,6 @@ Using the worksheet layout from the exercise walkthrough (annual sales in column
 - Confirm the COUNTIF criterion is exactly `Yes`.
 - Ensure the SUMIF criteria and sum ranges align row by row.
 
-**Evidence:** [Task 02 workbook](../material/02-formulas-and-functions/Excel_Formula_Practice.xlsx) · [Task 02 findings](../docs/02-formulas-and-functions-findings.md)
+**Evidence:** [Original workbook](../material/02-formulas-and-functions/Excel_Formula_Practice.xlsx) · [Completed workbook](../material/02-formulas-and-functions/Excel_Formula_Practice_Completed.xlsx) · [Task 02 findings](../docs/02-formulas-and-functions-findings.md)
 
 **Verification note:** Completion is recorded from the learner's confirmation and the workbook uploaded to the repository. The formulas and expected behavior are documented from the task guidance and walkthrough; the workbook's stored formulas and calculated totals have not been independently audited.
