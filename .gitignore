@@ -1,0 +1,18 @@
+# Excel temporary and lock files
+~$*.xlsx
+~$*.xlsm
+*.tmp
+
+# Office recovery / backup files
+*.asd
+*.wbk
+
+# Local exports and scratch files
+*.bak
+.DS_Store
+Thumbs.db
+
+# Keep credential and environment files out of the repository
+.env
+.env.*
+!.env.example
