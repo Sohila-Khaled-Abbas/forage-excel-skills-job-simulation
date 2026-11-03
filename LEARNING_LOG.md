@@ -1,10 +1,10 @@
 # Learning Log
 
-Use one entry per focused study session. Keep entries factual and link to evidence committed in this repository.
+Record each focused study session. Keep entries factual and link to the workbooks and documentation stored in this repository.
 
 | Date | Learning area | Work completed | Key takeaway | Evidence | Next step |
 |---|---|---|---|---|---|
-| YYYY-MM-DD | Example: Data preparation | Replace this row with your own progress | What changed in your understanding? | `evidence/...` | What will you practice next? |
+| 2026-11-03 | Excel · Conditional Formatting | Completed Task 01 using the Account Sales Data workbook; applied six conditional-formatting rules for formula-error markers, blanks, Product 2 cross-sell status, CAGR thresholds, and top-decile 2021 unit sales. | Distinguished missing values from explicit non-purchase values; used formula-based rules and numeric checks to prevent text error markers from being classified as high CAGR; reviewed rule ranges and priorities. | [Completed workbook](material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx.xlsx) · [Findings](docs/01-conditional-formatting-findings.md) | Continue to the next Forage Excel Skills exercise. |
 
 ## Reflection prompts
 
