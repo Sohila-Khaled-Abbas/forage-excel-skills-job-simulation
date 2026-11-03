@@ -137,6 +137,7 @@ forage-excel-skills-job-simulation/
 │
 ├── docs/
 │   ├── Excel Keyboard Shortcuts.docx
+│   ├── Excel Formula Quick Reference Guide.docx
 │   └── 01-conditional-formatting-findings.md
 │
 ├── learning-notes/
@@ -157,6 +158,7 @@ forage-excel-skills-job-simulation/
 |---|---|
 | [Learning log](LEARNING_LOG.md) | Record study sessions, takeaways, and next steps. |
 | [Excel keyboard shortcuts](docs/Excel%20Keyboard%20Shortcuts.docx) | Quick reference for navigating and working efficiently in Excel. |
+| [Excel formula quick reference](docs/Excel%20Formula%20Quick%20Reference%20Guide.docx) | Formula syntax and examples to support spreadsheet analysis. |
 | [Data preparation](learning-notes/data-preparation.md) | Document workbook exploration, data-quality findings, and cleanup decisions. |
 | [Formulas and analysis](learning-notes/formulas-and-analysis.md) | Record formulas, assumptions, and validation checks. |
 | [Charts and dashboards](learning-notes/charts-and-dashboards.md) | Capture KPI definitions, visualization choices, and insights. |
