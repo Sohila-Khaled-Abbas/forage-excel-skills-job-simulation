@@ -21,7 +21,7 @@ The learner reported the following results after preparing the workbook in Excel
 | Account records | 40 |
 | Excel Table | `AccountSales` — created |
 
-Checkpoint 1 is complete. PivotTables, charts, and dashboard assembly remain in progress.
+Checkpoints 1–3 are complete based on learner-reported Excel results. Both 2021 sales PivotTables have been created, with their displayed totals adding up correctly. Annual sales totals, charts, and dashboard assembly remain in progress.
 
 ## PivotTable plan
 
@@ -36,6 +36,19 @@ Purpose: compare 2021 sales across account types and provide the source for the 
 
 Suggested worksheet: `PT_Sales_by_Type`.
 
+**Learner-reported results:**
+
+| Account Type | 2021 Unit Sales |
+|---|---:|
+| Distributor | 3,861 |
+| Enterprise | 4,051 |
+| Online | 5,140 |
+| Retail | 3,299 |
+| Small Business | 927 |
+| **Grand Total** | **17,278** |
+
+The category totals sum to the displayed Grand Total.
+
 ### 2. Top 10 Accounts by 2021 Unit Sales
 
 | Area | Field |
@@ -46,6 +59,24 @@ Suggested worksheet: `PT_Sales_by_Type`.
 Sort descending and apply a Top 10 value filter based on Sum of 2021 Unit Sales.
 
 Suggested worksheet: `PT_Top10_2021`.
+
+**Learner-reported results:**
+
+| Account Name | 2021 Unit Sales |
+|---|---:|
+| Cloudline Commerce | 1,450 |
+| Juniper Digital | 1,180 |
+| Orbit Commerce | 980 |
+| MetroWorks Supply | 820 |
+| Keystone Business Group | 748 |
+| Ironwood Distribution | 705 |
+| Silverline Distribution | 640 |
+| Westbrook Distribution | 590 |
+| Peakline Commerce | 560 |
+| Granite Bay Wholesale | 548 |
+| **Grand Total** | **8,221** |
+
+The ten selected account values add to the filtered Grand Total of 8,221. This Top 10 subtotal should not be confused with the full-dataset 2021 total.
 
 ### 3. Annual sales summary
 
@@ -104,8 +135,8 @@ Record only insights supported by the finished PivotTables and charts. Explain w
 
 - [x] Inspect the `AccountSales` worksheet and identify range `A1:M41` (40 account records; learner-reported).
 - [x] Convert the dataset into an Excel Table named `AccountSales` (learner-reported).
-- [ ] Create and validate the account-type PivotTable.
-- [ ] Create and validate the top-10 accounts PivotTable.
+- [x] Create the account-type PivotTable and check that the displayed category values add to its Grand Total (learner-reported).
+- [x] Create the descending Top 10 accounts PivotTable and check that the ten displayed values add to its Grand Total (learner-reported).
 - [ ] Prepare and validate annual sales totals for 2016–2021.
 - [ ] Complete the chart-type activity.
 - [ ] Create the required line, bar, and column charts.
@@ -113,4 +144,4 @@ Record only insights supported by the finished PivotTables and charts. Explain w
 - [ ] Validate chart values, labels, layout, and totals.
 - [ ] Save and submit the completed workbook.
 
-**Documentation rule:** Do not mark PivotTables, charts, or the dashboard complete until they have been created and checked in Excel.
+**Documentation rule:** PivotTable completion and totals above are learner-reported. Do not mark annual summaries, charts, or the dashboard complete until they have been created and checked in Excel.
