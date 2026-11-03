@@ -6,7 +6,7 @@
 
 ### Source workbook
 
-[Account Sales Data for Dashboard Practice](../material/03-dashboard/Account_Sales_Data_for_Dashboard_Practice.xlsx)
+[Account Sales Data for Dashboard Practice](../material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
 
 [Task 03 preparation guide](../docs/03-chart-and-dashboard-preparation.md)
 
