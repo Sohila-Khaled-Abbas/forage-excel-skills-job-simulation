@@ -8,9 +8,12 @@
 
 This exercise applies Excel aggregation, conditional logic, error handling, and summary functions to account-level sales data. The calculations cover annual sales performance from 2016 through 2021, sales classification against a workbook-provided threshold, percentage change over the period, and two summary metrics.
 
-### Workbook artifact
+### Workbook artifacts
 
-[Excel Formula Practice workbook](../material/02-formulas-and-functions/Excel_Formula_Practice.xlsx)
+| Artifact | Repository file |
+|---|---|
+| Original practice workbook | [Excel_Formula_Practice.xlsx](../material/02-formulas-and-functions/Excel_Formula_Practice.xlsx) |
+| Completed workbook | [Excel_Formula_Practice_Completed.xlsx](../material/02-formulas-and-functions/Excel_Formula_Practice_Completed.xlsx) |
 
 The Task 02 folder contains both the original practice workbook and the separately named completed workbook. The completed copy was uploaded after the learner confirmed completion. The workbook has not been independently recalculated or audited in this documentation pass, so the formulas below document the task logic and the confirmed Sales Level expression rather than claiming an independent formula-by-formula verification.
 
