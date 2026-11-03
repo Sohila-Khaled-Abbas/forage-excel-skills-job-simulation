@@ -84,35 +84,43 @@ flowchart LR
 | **Automation** | Explore repeatable spreadsheet tasks and macro/VBA concepts where required. | [Automation and VBA](learning-notes/automation-and-vba.md) |
 | **Reflection and communication** | Summarize what worked, what needs improvement, and what the findings mean. | [Reflection notes](learning-notes/reflection.md) |
 
-## Current exercise: Conditional Formatting
+## Completed exercise: Conditional Formatting
 
 <details open>
-<summary><strong>Task 01 — Put Conditional Formatting Into Practice</strong> · <code>In progress</code></summary>
+<summary><strong>Task 01 — Put Conditional Formatting Into Practice</strong> · <code>Completed</code></summary>
 
-The first exercise uses the **Account Sales Data for Analysis** workbook to identify data-quality issues and highlight commercially important values through conditional formatting.
+The first exercise applied six conditional-formatting rules to the **Account Sales Data for Analysis** workbook. The completed workbook is available under `material/`, and the findings document records the data-quality observations and analytical takeaways.
 
-**Workbook:** [<code>Account Sales Data for Analysis.xlsx</code>](material/01-conditional-formatting/Account%20Sales%20Data%20for%20Analysis.xlsx)
+**Workbooks**
+- [Original practice workbook](material/01-conditional-formatting/Account%20Sales%20Data%20for%20Analysis.xlsx)
+- [Completed workbook](material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx.xlsx)
 
-### Required formatting rules
+**Findings:** [Task 01 — Conditional Formatting Findings](docs/01-conditional-formatting-findings.md)
 
-| # | What to identify | Required formatting |
-|---:|---|---|
-| 1 | Formula errors | Purple fill with white text |
-| 2 | Missing values | Yellow fill |
-| 3 | Accounts not cross-sold with Product 2 | Orange fill on the Product 2 cells |
-| 4 | 5-year CAGR values of 100% or higher | Green fill |
-| 5 | Negative 5-year CAGR values | Red fill with white text |
-| 6 | Top 10% of 2021 unit sales | Blue fill |
+### Key findings
 
-### What this exercise is intended to demonstrate
+| Finding | Result |
+|---|---:|
+| Account records | 40 |
+| Missing cells | 5 |
+| Text-based `Formula Error` markers | 2 |
+| Product 2 marked `No` | 16 accounts |
+| Numeric 5 YR CAGR ≥ 100% | 3 accounts |
+| Negative 5 YR CAGR | 7 accounts |
+| Top 10% of 2021 Unit Sales | 4 accounts |
 
-- Inspect a workbook before changing its formatting.
-- Distinguish a genuinely missing value from a valid zero or a business status such as “not purchased”.
-- Apply built-in conditional formatting and formula-based rules where needed.
-- Scope each rule to the correct column or data range.
-- Review the rules manager and validate the final workbook without changing source values.
+### Formatting rules
 
-**Progress note:** The source practice workbook is stored in <code>material/</code>. The formatting work should only be marked complete after the rules have been applied and checked in the working workbook.
+| Requirement | Range | Format |
+|---|---|---|
+| Formula errors and text error markers | `A2:M41` | Purple fill, white font |
+| Missing cells | `A2:M41` | Yellow fill |
+| Product 2 not cross-sold | `F2:F41` | Orange fill |
+| Numeric CAGR ≥ 100% | `M2:M41` | Green fill |
+| Negative CAGR | `M2:M41` | Red fill, white font |
+| Top 10% of 2021 unit sales | `L2:L41` | Blue fill |
+
+The green CAGR condition uses a numeric check so text values such as `Formula Error` are not mistakenly classified as high-growth percentages. See the [findings document](docs/01-conditional-formatting-findings.md) for the exact account-level details and formula logic.
 
 </details>
 
@@ -128,7 +136,8 @@ forage-excel-skills-job-simulation/
 ├── .gitignore
 │
 ├── docs/
-│   └── Excel Keyboard Shortcuts.docx
+│   ├── Excel Keyboard Shortcuts.docx
+│   └── 01-conditional-formatting-findings.md
 │
 ├── learning-notes/
 │   ├── data-preparation.md
@@ -153,6 +162,8 @@ forage-excel-skills-job-simulation/
 | [Charts and dashboards](learning-notes/charts-and-dashboards.md) | Capture KPI definitions, visualization choices, and insights. |
 | [Automation and VBA](learning-notes/automation-and-vba.md) | Document original automation logic and tests. |
 | [Reflection](learning-notes/reflection.md) | Summarize learning outcomes and improvement opportunities. |
+| [Task 01 findings](docs/01-conditional-formatting-findings.md) | Review the dataset findings, exact affected accounts, conditional-formatting logic, and key takeaways. |
+| [Completed Task 01 workbook](material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx.xlsx) | Open the completed conditional-formatting workbook. |
 | [Practice materials](material/) | Browse the Excel workbooks used for the exercises. |
 
 ## How I work through each exercise
@@ -191,7 +202,7 @@ These are the skills covered by the learning plan; the presence of a badge does 
 
 ## Progress
 
-The project is **in progress**. The first exercise's source workbook and the Excel shortcut reference are available in the repository. The task notes and completed workbook outputs will be updated as the work is performed and verified.
+The overall simulation is **in progress**. Task 01 — Conditional Formatting is completed, with the source workbook, completed workbook, and findings document published in the repository. Future exercises will be documented as they are completed.
 
 For session-by-session updates, see [LEARNING_LOG.md](LEARNING_LOG.md).
 
