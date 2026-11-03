@@ -10,6 +10,19 @@
 
 [Task 03 preparation guide](../docs/03-chart-and-dashboard-preparation.md)
 
+### Checkpoint 1 — Data preparation results
+
+The learner reported the following results after preparing the workbook in Excel:
+
+| Item | Result |
+|---|---|
+| Worksheet | `AccountSales` |
+| Dataset range | `A1:M41` |
+| Account records | 40 |
+| Excel Table | `AccountSales` — created |
+
+The source inspection and Table creation are complete. PivotTables and chart work are still pending.
+
 ### Preparation workflow
 
 1. Save a working copy and preserve the supplied source workbook.
@@ -55,8 +68,8 @@
 ## Progress checklist
 
 - [ ] Save a separate working copy.
-- [ ] Inspect the source data and identify its full range.
-- [ ] Convert the dataset into an Excel Table named `AccountSales`.
+- [x] Inspect the `AccountSales` worksheet and identify range `A1:M41` (40 account records; learner-reported).
+- [x] Convert the dataset into an Excel Table named `AccountSales` (learner-reported).
 - [ ] Create and validate PivotTables on separate worksheets.
 - [ ] Complete the chart-type exercise.
 - [ ] Build and format the dashboard.
