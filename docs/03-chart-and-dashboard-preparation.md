@@ -57,6 +57,19 @@ This summary will feed the required column chart.
 - Format values as Number with a thousands separator and zero decimal places.
 - Rename the worksheet `PT_Sales_by_Type`.
 
+**Learner-reported PivotTable results:**
+
+| Account Type | Sum of 2021 Unit Sales |
+|---|---:|
+| Distributor | 3,861 |
+| Enterprise | 4,051 |
+| Online | 5,140 |
+| Retail | 3,299 |
+| Small Business | 927 |
+| **Grand Total** | **17,278** |
+
+The five category totals add to 17,278, matching the PivotTable Grand Total.
+
 ### PivotTable 2 — Top 10 Accounts by 2021 Unit Sales
 
 | PivotTable area | Field |
@@ -69,6 +82,24 @@ This summary will feed the required column chart.
 - Apply **Value Filters → Top 10** to Account Name, using the Sum of 2021 Unit Sales field.
 - Keep the top 10 accounts only.
 - Rename the worksheet `PT_Top10_2021`.
+
+**Learner-reported PivotTable results:**
+
+| Account Name | Sum of 2021 Unit Sales |
+|---|---:|
+| Cloudline Commerce | 1,450 |
+| Juniper Digital | 1,180 |
+| Orbit Commerce | 980 |
+| MetroWorks Supply | 820 |
+| Keystone Business Group | 748 |
+| Ironwood Distribution | 705 |
+| Silverline Distribution | 640 |
+| Westbrook Distribution | 590 |
+| Peakline Commerce | 560 |
+| Granite Bay Wholesale | 548 |
+| **Grand Total** | **8,221** |
+
+The ten displayed values add to 8,221, matching the filtered PivotTable Grand Total. This is the combined sales of the Top 10 accounts, not the full-dataset total.
 
 ### Annual sales summary — 2016 through 2021
 
@@ -87,10 +118,10 @@ Create this summary on a separate worksheet named `Annual_Sales_Summary`. Use th
 
 ### PivotTable validation
 
-- [ ] Both PivotTables use `AccountSales` as their source.
-- [ ] Sales measures use **Sum**, not Count.
-- [ ] The account-type totals reconcile to the source 2021 Unit Sales total.
-- [ ] The top 10 PivotTable contains exactly 10 accounts, sorted descending.
+- [x] Both PivotTables have been created; the learner confirmed Sum aggregation and the reported results.
+- [x] The account-type totals add to the reported Grand Total of 17,278.
+- [x] The Top 10 PivotTable contains 10 accounts in descending order; its values add to the reported Grand Total of 8,221.
+- [ ] Independently reconcile both PivotTables against the working workbook and source data.
 - [ ] Annual totals recalculate correctly and match the source columns.
 
 ## 4. Choose the right chart
@@ -156,7 +187,8 @@ For the top 10 bar chart, keep the categories in descending sales order. Make ac
 |---|---|
 | Inspect worksheet and confirm range / record count | Complete — learner-reported |
 | Create Excel Table `AccountSales` | Complete — learner-reported |
-| Create and validate PivotTables | In progress |
+| Create and validate the two 2021 sales PivotTables | Complete — learner-reported results and totals checked |
+| Prepare and validate annual sales summary | Pending |
 | Complete chart-type activity | Pending |
 | Create and format three charts | Pending |
 | Assemble Dashboard worksheet | Pending |
