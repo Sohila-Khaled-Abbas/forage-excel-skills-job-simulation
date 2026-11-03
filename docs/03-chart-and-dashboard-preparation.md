@@ -2,7 +2,7 @@
 
 **Status:** In progress.
 
-Workbook: [Account Sales Data for Dashboard Practice](../material/03-dashboard/Account_Sales_Data_for_Dashboard_Practice.xlsx)
+Workbook: [Account Sales Data for Dashboard Practice](../material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
 
 ## Objective
 
