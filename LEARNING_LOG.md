@@ -5,6 +5,7 @@ Record each focused study session. Keep entries factual and link to the workbook
 | Date | Learning area | Work completed | Key takeaway | Evidence | Next step |
 |---|---|---|---|---|---|
 | 2026-11-03 | Excel · Conditional Formatting | Completed Task 01 using the Account Sales Data workbook; applied six conditional-formatting rules for formula-error markers, blanks, Product 2 cross-sell status, CAGR thresholds, and top-decile 2021 unit sales. | Distinguished missing values from explicit non-purchase values; used formula-based rules and numeric checks to prevent text error markers from being classified as high CAGR; reviewed rule ranges and priorities. | [Completed workbook](material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx.xlsx) · [Findings](docs/01-conditional-formatting-findings.md) | Continue to the next Forage Excel Skills exercise. |
+| 2026-11-03 | Excel · Formulas and Functions | Completed Task 02 using the Excel Formula Practice workbook; documented six account-level calculations (SUM, AVERAGE, MAX, MIN, IF, IFERROR) and two summary calculations (COUNTIF, SUMIF). | Used an absolute threshold reference (`$U$2`) for Sales Level; calculated 2016–2021 percentage change with IFERROR fallback handling; used criteria-based counting and summation for summary metrics. | [Workbook](material/02-formulas-and-functions/Excel_Formula_Practice.xlsx) · [Findings](docs/02-formulas-and-functions-findings.md) | Continue to the next Forage Excel Skills exercise. |
 
 ## Reflection prompts
 
