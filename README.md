@@ -38,7 +38,7 @@
 - [Program overview](#program-overview)
 - [Learning roadmap](#learning-roadmap)
 - [Completed exercise: Conditional Formatting](#completed-exercise-conditional-formatting)
-- [Current exercise: Formulas and Functions](#current-exercise-formulas-and-functions)
+- [Completed exercise: Formulas and Functions](#completed-exercise-formulas-and-functions)
 - [Repository guide](#repository-guide)
 - [How I work through each exercise](#how-i-work-through-each-exercise)
 - [Skills in scope](#skills-in-scope)
@@ -126,57 +126,42 @@ The green CAGR condition uses a numeric check so text values such as `Formula Er
 </details>
 
 
-## Calculate and Analyze With Excel
+## Completed exercise: Formulas and Functions
 
 <details open>
-<summary><strong>Task 02 — Put Formulas Into Practice</strong> · <code>In progress</code></summary>
+<summary><strong>Task 02 — Put Formulas Into Practice</strong> · <code>Completed</code></summary>
 
-This exercise applies Excel formulas and functions to account-level sales data, then uses conditional calculations to summarize the dataset. The working workbook is being completed locally; the formulas and results will be documented here after validation.
+This exercise applied six account-level calculations and two summary functions to the **Excel Formula Practice** workbook. The completed workbook is stored under `material/02-formulas-and-functions/`, with the formula logic and learning outcomes documented below.
+
+**Workbook:** [Excel Formula Practice.xlsx](material/02-formulas-and-functions/Excel_Formula_Practice.xlsx)
+
+**Findings:** [Task 02 — Formulas and Functions Findings](docs/02-formulas-and-functions-findings.md)
 
 ### Account-level calculations
 
-Create each formula in the first account row, then fill it down for every account.
+The formulas below use the worksheet layout documented during the exercise: annual unit sales from 2016–2021 in columns G:L, with the first account on row 2.
 
-| Calculation | Required function | Purpose |
+| Calculation | Formula | Purpose |
 |---|---|---|
-| **Total Unit Sales** | `SUM` | Add the annual unit-sales values for each account. |
-| **Average Annual Unit Sales** | `AVERAGE` | Calculate the account's average annual unit sales. |
-| **Highest Annual Unit Sales** | `MAX` | Return the highest annual unit-sales value. |
-| **Lowest Annual Unit Sales** | `MIN` | Return the lowest annual unit-sales value. |
-| **Sales Level** | `IF` | Classify the account using the workbook's sales threshold. |
-| **Sales Change** | `IFERROR` | Return a controlled fallback instead of displaying a calculation error. |
+| Total Unit Sales | `=SUM(G2:L2)` | Adds annual unit sales from 2016 through 2021. |
+| Average Annual Unit Sales | `=AVERAGE(G2:L2)` | Calculates average annual unit sales. |
+| Highest Annual Unit Sales | `=MAX(G2:L2)` | Returns the highest annual unit-sales value. |
+| Lowest Annual Unit Sales | `=MIN(G2:L2)` | Returns the lowest annual unit-sales value. |
+| Sales Level | `=IF(L2>=$U$2,"High","Standard")` | Compares 2021 sales with the fixed threshold of 500 in U2. |
+| Sales Change | `=IFERROR((L2-G2)/G2,"Check data")` | Calculates percentage change from 2016 to 2021 and handles errors. |
 
-### Confirmed Sales Level formula
-
-The workbook provides a Sales Level threshold of **500** in cell `U2`. The formula compares each account's 2021 Unit Sales in column `L` with that fixed threshold:
-
-```excel
-=IF(L2>=$U$2,"High","Standard")
-```
-
-- `L2` is the 2021 Unit Sales value for the current account.
-- `$U$2` is an absolute reference, so the threshold remains fixed when the formula is copied down.
-- Sales of **500 or more** return `High`; sales below 500 return `Standard`.
+The Sales Level formula uses the absolute reference `$U$2` so the threshold does not shift when the formula is filled down. The Sales Change result is formatted as a percentage; a calculation error, including a zero 2016 baseline, returns `Check data`.
 
 ### Summary calculations
 
-| Summary requirement | Required function | Purpose |
+| Summary metric | Formula | Purpose |
 |---|---|---|
-| Accounts with Product 2 | `COUNTIF` | Count records matching the Product 2 criterion. |
-| 2021 Unit Sales for Retail accounts | `SUMIF` | Sum 2021 sales only for accounts classified as Retail. |
+| Accounts with Product 2 | `=COUNTIF(F2:F41,"Yes")` | Counts Product 2 cells containing `Yes`. |
+| Retail 2021 Unit Sales | `=SUMIF(C2:C41,"Retail",L2:L41)` | Totals 2021 Unit Sales for Retail accounts. |
 
-### Validation checklist
+**Skills practiced:** `SUM`, `AVERAGE`, `MAX`, `MIN`, `IF`, absolute references, percentage change, `IFERROR`, `COUNTIF`, and `SUMIF`.
 
-- [ ] Confirm each account-level formula references the correct annual sales columns.
-- [ ] Fill all six formulas down through the full account list.
-- [ ] Confirm the Sales Level formula keeps `$U$2` fixed and returns `High` or `Standard` as expected.
-- [ ] Check the `IFERROR` fallback behavior for any invalid or unavailable Sales Change calculation.
-- [ ] Verify the `COUNTIF` and `SUMIF` criteria ranges align with their corresponding data ranges.
-- [ ] Review the summary outputs and save the completed workbook.
-
-**Practice material location:** `material/02-formulas-and-functions/`
-
-The exact formulas and result totals for the other calculations will be added after checking the workbook's remaining column positions and validating the completed results.
+The learner confirmed completing and saving the workbook. The documentation records the formulas and intended checks; it does not claim an independent audit of every stored formula or calculated result.
 
 </details>
 
@@ -208,7 +193,7 @@ forage-excel-skills-job-simulation/
     ├── 01-conditional-formatting/
     │   └── Account Sales Data for Analysis.xlsx
     └── 02-formulas-and-functions/
-        └── (Task 02 workbook files)
+        └── Excel_Formula_Practice.xlsx
 ~~~
 
 ### Quick navigation
@@ -224,7 +209,8 @@ forage-excel-skills-job-simulation/
 | [Automation and VBA](learning-notes/automation-and-vba.md) | Document original automation logic and tests. |
 | [Reflection](learning-notes/reflection.md) | Summarize learning outcomes and improvement opportunities. |
 | [Task 01 findings](docs/01-conditional-formatting-findings.md) | Review the dataset findings, exact affected accounts, conditional-formatting logic, and key takeaways. |
-| [Task 02 practice folder](material/02-formulas-and-functions/) | Access the formula-practice workbook files when added. |
+| [Task 02 findings](docs/02-formulas-and-functions-findings.md) | Review the account-level formulas, summary calculations, assumptions, and validation checklist. |
+| [Completed Task 02 workbook](material/02-formulas-and-functions/Excel_Formula_Practice.xlsx) | Open the formula-practice workbook uploaded after completion. |
 | [Completed Task 01 workbook](material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx.xlsx) | Open the completed conditional-formatting workbook. |
 | [Practice materials](material/) | Browse the Excel workbooks used for the exercises. |
 
@@ -264,7 +250,7 @@ These are the skills covered by the learning plan; the presence of a badge does 
 
 ## Progress
 
-The overall simulation is **in progress**. Task 01 — Conditional Formatting is completed and documented. Task 02 — Put Formulas Into Practice is currently in progress; the Sales Level formula and threshold reference have been recorded, and the remaining calculations will be documented after validation.
+The overall simulation is **in progress**. Task 01 — Conditional Formatting and Task 02 — Put Formulas Into Practice are completed and documented. The next Forage Excel Skills exercise remains to be completed.
 
 For session-by-session updates, see [LEARNING_LOG.md](LEARNING_LOG.md).
 
