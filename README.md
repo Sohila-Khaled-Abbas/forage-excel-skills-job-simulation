@@ -133,7 +133,9 @@ The green CAGR condition uses a numeric check so text values such as `Formula Er
 
 This exercise applied six account-level calculations and two summary functions to the **Excel Formula Practice** workbook. The completed workbook is stored under `material/02-formulas-and-functions/`, with the formula logic and learning outcomes documented below.
 
-**Workbook:** [Excel Formula Practice.xlsx](material/02-formulas-and-functions/Excel_Formula_Practice.xlsx)
+**Workbooks:**
+- [Original practice workbook](material/02-formulas-and-functions/Excel_Formula_Practice.xlsx)
+- [Completed workbook](material/02-formulas-and-functions/Excel_Formula_Practice_Completed.xlsx)
 
 **Findings:** [Task 02 — Formulas and Functions Findings](docs/02-formulas-and-functions-findings.md)
 
@@ -193,7 +195,8 @@ forage-excel-skills-job-simulation/
     ├── 01-conditional-formatting/
     │   └── Account Sales Data for Analysis.xlsx
     └── 02-formulas-and-functions/
-        └── Excel_Formula_Practice.xlsx
+        ├── Excel_Formula_Practice.xlsx
+        └── Excel_Formula_Practice_Completed.xlsx
 ~~~
 
 ### Quick navigation
@@ -210,7 +213,7 @@ forage-excel-skills-job-simulation/
 | [Reflection](learning-notes/reflection.md) | Summarize learning outcomes and improvement opportunities. |
 | [Task 01 findings](docs/01-conditional-formatting-findings.md) | Review the dataset findings, exact affected accounts, conditional-formatting logic, and key takeaways. |
 | [Task 02 findings](docs/02-formulas-and-functions-findings.md) | Review the account-level formulas, summary calculations, assumptions, and validation checklist. |
-| [Completed Task 02 workbook](material/02-formulas-and-functions/Excel_Formula_Practice.xlsx) | Open the formula-practice workbook uploaded after completion. |
+| [Completed Task 02 workbook](material/02-formulas-and-functions/Excel_Formula_Practice_Completed.xlsx) | Open the completed formula-practice workbook. |
 | [Completed Task 01 workbook](material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx.xlsx) | Open the completed conditional-formatting workbook. |
 | [Practice materials](material/) | Browse the Excel workbooks used for the exercises. |
 
