@@ -40,6 +40,7 @@
 - [Completed exercise: Conditional Formatting](#completed-exercise-conditional-formatting)
 - [Completed exercise: Formulas and Functions](#completed-exercise-formulas-and-functions)
 - [Current exercise: Build Charts and Dashboards](#current-exercise-build-charts-and-dashboards)
+- [Advanced dashboard styling and VBA](#advanced-dashboard-styling-and-vba)
 - [Repository guide](#repository-guide)
 - [How I work through each exercise](#how-i-work-through-each-exercise)
 - [Skills in scope](#skills-in-scope)
@@ -174,7 +175,7 @@ The completed calculations and documented findings have now been reviewed and ve
 <details open>
 <summary><strong>Task 03 — Prepare Your Data for Visualization</strong> · <code>In progress</code></summary>
 
-Task 03 Checkpoints 1–6 are complete based on the learner's reported Excel results. The `AccountSales` worksheet contains `A1:M41` (40 account records), the source data is an Excel Table named `AccountSales`, both required 2021 sales PivotTables and the 2016–2021 annual sales summary have been prepared, and all three required charts have been created: **Unit Sales by Year** (line), **Top 10 Accounts by 2021 Unit Sales** (bar), and **2021 Unit Sales by Account Type** (column). The updated working workbook is saved in the repository. Dashboard assembly and KPI formatting are now learner-confirmed: all three cards display the expected values (17,278; Cloudline Commerce; +76.8%), the title and subtitle are aligned, and all three charts are visible and readable. The remaining dashboard layout check is to confirm that no KPI card or chart overlaps another object; final validation and submission are still pending.
+Task 03 Checkpoints 1–6 are complete based on the learner's reported Excel results. The `AccountSales` worksheet contains `A1:M41` (40 account records), the source data is an Excel Table named `AccountSales`, both required 2021 sales PivotTables and the 2016–2021 annual sales summary have been prepared, and all three required charts have been created: **Unit Sales by Year** (line), **Top 10 Accounts by 2021 Unit Sales** (bar), and **2021 Unit Sales by Account Type** (column). The finalized working workbook is saved in the repository. Dashboard assembly and formatting are learner-confirmed: the three KPI cards display Total 2021 Sales (17,278), Top Account (Cloudline Commerce), and Sales Growth (+76.8%); the title and subtitle are aligned; all three charts are visible and readable; and the final layout check has been completed by the learner. Task 03 dashboard production is recorded as complete on a learner-reported basis. Independent reconciliation of all six annual totals and submission through the Forage activity remain separate final-review items.
 
 **Updated working workbook:** [Account Sales Data for Dashboard Practice — Working](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice_Working.xlsx) · [Original practice workbook](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
 
@@ -191,11 +192,21 @@ Task 03 Checkpoints 1–6 are complete based on the learner's reported Excel res
    - Unit Sales by Year — line chart.
    - Top 10 Accounts by 2021 Unit Sales — bar chart.
    - 2021 Unit Sales by Account Type — column chart.
-7. Build and format the `Dashboard` worksheet, add the three KPI cards (Total 2021 Sales, Top Account, and Sales Growth), arrange all three charts, and complete the final review before submission.
+7. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Build and format the Dashboard worksheet, add the three KPI cards, arrange all three charts, and complete the learner's final layout check.
 
-Checkpoints 1–6 are complete based on learner-reported Excel results. The PivotTable summaries add to their displayed totals: 17,278 units by account type and 8,221 units for the Top 10 accounts. The annual summary reports growth from 9,773 units in 2016 to 17,278 in 2021 (+76.8%). The learner confirms that all three charts are complete: the annual trend line chart, the Top 10 account bar chart (Cloudline Commerce at the top), and the account-type column chart (Online highest). The Dashboard worksheet now contains the three charts and three formatted KPI cards. The KPI values and title/subtitle alignment are learner-confirmed, and all charts are visible and readable. A final no-overlap check, final validation, and submission remain.
+Checkpoints 1–6 are complete based on learner-reported Excel results. The PivotTable summaries add to their displayed totals: 17,278 units by account type and 8,221 units for the Top 10 accounts. The annual summary reports growth from 9,773 units in 2016 to 17,278 in 2021 (+76.8%). The learner confirms that all three charts are complete: the annual trend line chart, the Top 10 account bar chart (Cloudline Commerce at the top), and the account-type column chart (Online highest). The Dashboard worksheet contains the three charts and three consistently formatted KPI cards. The learner confirms the expected KPI values, aligned title/subtitle, readable charts, and completed no-overlap check. The dashboard is documented as complete based on the learner's finalized workbook update; independent reconciliation of the six annual source totals and submission through Forage remain pending.
 
 </details>
+
+## Advanced dashboard styling and VBA
+
+The completed Task 03 dashboard can be given an optional app-inspired presentation layer in desktop Excel. The repository includes a reusable VBA module that styles the title, KPI cards, chart panels, and adds worksheet-navigation buttons. The module is provided separately and has not been embedded in or executed against the finalized XLSX; import it into a duplicate and save that copy as XLSM only after reviewing the code.
+
+- [Dashboard design and VBA setup guide](docs/04-dashboard-advanced-formatting-and-vba.md)
+- [DashboardAppStyle.bas — importable VBA module](material/03-build-charts-and-dashboards/DashboardAppStyle.bas)
+- [Automation and VBA learning notes](learning-notes/automation-and-vba.md)
+
+VBA runs in desktop Excel, not in Excel for the web. For browser-based automation, use Office Scripts where available; see the [Microsoft Office Scripts introduction](https://support.microsoft.com/en-us/office/introduction-to-office-scripts-in-excel-9fbe283d-adb8-4f13-a75b-a81c6baf163a).
 
 ## Repository guide
 
@@ -213,7 +224,8 @@ forage-excel-skills-job-simulation/
 │   ├── Excel Formula Quick Reference Guide.docx
 │   ├── 01-conditional-formatting-findings.md
 │   ├── 02-formulas-and-functions-findings.md
-│   └── 03-chart-and-dashboard-preparation.md
+│   ├── 03-chart-and-dashboard-preparation.md
+│   └── 04-dashboard-advanced-formatting-and-vba.md
 │
 ├── learning-notes/
 │   ├── data-preparation.md
@@ -230,7 +242,8 @@ forage-excel-skills-job-simulation/
     │   └── Excel_Formula_Practice_Completed.xlsx
     └── 03-build-charts-and-dashboards/
         ├── Account_Sales_Data_for_Dashboard_Practice.xlsx
-        └── Account_Sales_Data_for_Dashboard_Practice_Working.xlsx
+        ├── Account_Sales_Data_for_Dashboard_Practice_Working.xlsx
+        └── DashboardAppStyle.bas
 ~~~
 
 ### Quick navigation
@@ -248,6 +261,8 @@ forage-excel-skills-job-simulation/
 | [Task 01 findings](docs/01-conditional-formatting-findings.md) | Review the dataset findings, exact affected accounts, conditional-formatting logic, and key takeaways. |
 | [Task 02 findings](docs/02-formulas-and-functions-findings.md) | Review the account-level formulas, summary calculations, assumptions, and validation checklist. |
 | [Task 03 preparation guide](docs/03-chart-and-dashboard-preparation.md) | Follow the Excel Table, PivotTable, chart-selection, and dashboard workflow. |
+| [Advanced dashboard and VBA guide](docs/04-dashboard-advanced-formatting-and-vba.md) | Apply an app-inspired Excel layout and import optional desktop VBA enhancements. |
+| [Dashboard VBA module](material/03-build-charts-and-dashboards/DashboardAppStyle.bas) | Importable module for visual styling and worksheet-navigation buttons. |
 | [Task 03 updated working workbook](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice_Working.xlsx) | Open the learner's updated workbook containing the three completed charts. |
 | [Task 03 original practice workbook](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx) | Open the original account sales practice workbook. |
 | [Completed Task 02 workbook](material/02-formulas-and-functions/Excel_Formula_Practice_Completed.xlsx) | Open the completed formula-practice workbook. |
@@ -290,7 +305,7 @@ These are the skills covered by the learning plan; the presence of a badge does 
 
 ## Progress
 
-The overall simulation is **in progress**. Task 01 — Conditional Formatting and Task 02 — Put Formulas Into Practice are completed and documented. For Task 03, the data preparation, PivotTables, annual summary, three required charts, and dashboard KPI-card formatting are complete based on learner confirmation. The only reported dashboard layout check still outstanding is confirming that no charts or KPI cards overlap; final validation and Forage submission remain.
+The overall simulation is **in progress**. Task 01 — Conditional Formatting and Task 02 — Put Formulas Into Practice are completed and documented. Task 03's data preparation, PivotTables, annual summary, three required charts, KPI cards, dashboard formatting, and final no-overlap layout check are complete based on learner confirmation. Independent reconciliation of all six annual totals and submission through Forage remain outstanding.
 
 For session-by-session updates, see [LEARNING_LOG.md](LEARNING_LOG.md).
 
