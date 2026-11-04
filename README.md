@@ -41,6 +41,7 @@
 - [Completed exercise: Formulas and Functions](#completed-exercise-formulas-and-functions)
 - [Current exercise: Build Charts and Dashboards](#current-exercise-build-charts-and-dashboards)
 - [Advanced dashboard styling and VBA](#advanced-dashboard-styling-and-vba)
+- [VBA and Office Scripts implementation](#vba-and-office-scripts-implementation)
 - [Repository guide](#repository-guide)
 - [How I work through each exercise](#how-i-work-through-each-exercise)
 - [Skills in scope](#skills-in-scope)
@@ -204,9 +205,22 @@ The completed Task 03 dashboard can be given an optional app-inspired presentati
 
 - [Dashboard design and VBA setup guide](docs/04-dashboard-advanced-formatting-and-vba.md)
 - [DashboardAppStyle.bas — importable VBA module](material/03-build-charts-and-dashboards/DashboardAppStyle.bas)
+- [DashboardAppStyle_Web.ts — Office Scripts styling](material/03-build-charts-and-dashboards/DashboardAppStyle_Web.ts)
+- [RestoreDashboardEditView_Web.ts — Office Scripts reset](material/03-build-charts-and-dashboards/RestoreDashboardEditView_Web.ts)
 - [Automation and VBA learning notes](learning-notes/automation-and-vba.md)
 
-VBA runs in desktop Excel, not in Excel for the web. For browser-based automation, use Office Scripts where available; see the [Microsoft Office Scripts introduction](https://support.microsoft.com/en-us/office/introduction-to-office-scripts-in-excel-9fbe283d-adb8-4f13-a75b-a81c6baf163a).
+VBA runs in desktop Excel, not in Excel for the web. The VBA module has been imported by the learner, but compilation and execution are still pending. For browser-based automation, use the Office Scripts sources below; see the [Microsoft Office Scripts introduction](https://support.microsoft.com/en-us/office/introduction-to-office-scripts-in-excel-9fbe283d-adb8-4f13-a75b-a81c6baf163a).
+
+## VBA and Office Scripts implementation
+
+The VBA module has been **imported into Excel by the learner**. Compilation and execution have not yet been confirmed. The Office Scripts source files are committed as TypeScript; they still need to be pasted into the Office Scripts editor and run in a supported Excel environment.
+
+- [VBA source](material/03-build-charts-and-dashboards/DashboardAppStyle.bas)
+- [Office Scripts styling source](material/03-build-charts-and-dashboards/DashboardAppStyle_Web.ts)
+- [Office Scripts edit-view reset](material/03-build-charts-and-dashboards/RestoreDashboardEditView_Web.ts)
+- [Implementation guide](docs/04-dashboard-advanced-formatting-and-vba.md)
+
+To create a run button for an Office Script, open the saved script from **Automate**, enable **Associate with workbook**, then select **Add button to worksheet**. This is separate from the workbook navigation hyperlinks created by the script. See Microsoft's [script-button instructions](https://support.microsoft.com/en-us/excel/office-scripts/create-a-button-to-run-an-office-script).
 
 ## Repository guide
 
@@ -243,7 +257,9 @@ forage-excel-skills-job-simulation/
     └── 03-build-charts-and-dashboards/
         ├── Account_Sales_Data_for_Dashboard_Practice.xlsx
         ├── Account_Sales_Data_for_Dashboard_Practice_Working.xlsx
-        └── DashboardAppStyle.bas
+        ├── DashboardAppStyle.bas
+        ├── DashboardAppStyle_Web.ts
+        └── RestoreDashboardEditView_Web.ts
 ~~~
 
 ### Quick navigation
@@ -262,7 +278,9 @@ forage-excel-skills-job-simulation/
 | [Task 02 findings](docs/02-formulas-and-functions-findings.md) | Review the account-level formulas, summary calculations, assumptions, and validation checklist. |
 | [Task 03 preparation guide](docs/03-chart-and-dashboard-preparation.md) | Follow the Excel Table, PivotTable, chart-selection, and dashboard workflow. |
 | [Advanced dashboard and VBA guide](docs/04-dashboard-advanced-formatting-and-vba.md) | Apply an app-inspired Excel layout and import optional desktop VBA enhancements. |
-| [Dashboard VBA module](material/03-build-charts-and-dashboards/DashboardAppStyle.bas) | Importable module for visual styling and worksheet-navigation buttons. |
+| [Dashboard VBA module](material/03-build-charts-and-dashboards/DashboardAppStyle.bas) | Importable desktop-Excel module for visual styling and worksheet-navigation buttons. |
+| [Dashboard Office Script](material/03-build-charts-and-dashboards/DashboardAppStyle_Web.ts) | TypeScript source for web-compatible dashboard formatting and worksheet hyperlinks. |
+| [Dashboard edit-view reset](material/03-build-charts-and-dashboards/RestoreDashboardEditView_Web.ts) | Restores gridlines and headings after the presentation-style script. |
 | [Task 03 updated working workbook](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice_Working.xlsx) | Open the learner's updated workbook containing the three completed charts. |
 | [Task 03 original practice workbook](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx) | Open the original account sales practice workbook. |
 | [Completed Task 02 workbook](material/02-formulas-and-functions/Excel_Formula_Practice_Completed.xlsx) | Open the completed formula-practice workbook. |

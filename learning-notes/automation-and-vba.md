@@ -1,6 +1,6 @@
 # Automation and VBA
 
-**Status:** A reusable optional VBA enhancement has been prepared for the Task 03 dashboard. The module is committed as source code; it has not yet been imported into Excel or executed against the finalized workbook.
+**Status:** The learner has imported the VBA module into Excel. Compilation and macro execution are pending. The Office Scripts source files are committed to GitHub but have not yet been pasted into the Excel Scripts editor or run.
 
 ## Selected process
 
@@ -15,6 +15,8 @@ The dashboard already contains its KPI cards and three charts. The optional macr
 ## Source code
 
 - [DashboardAppStyle.bas](../material/03-build-charts-and-dashboards/DashboardAppStyle.bas)
+- [DashboardAppStyle_Web.ts](../material/03-build-charts-and-dashboards/DashboardAppStyle_Web.ts)
+- [RestoreDashboardEditView_Web.ts](../material/03-build-charts-and-dashboards/RestoreDashboardEditView_Web.ts)
 - [Dashboard design and VBA setup guide](../docs/04-dashboard-advanced-formatting-and-vba.md)
 
 The module is written from scratch for this learning project. It uses Excel's worksheet, range, chart, and shape object models. The code is intentionally limited to formatting and navigation; it does not alter source data, KPI formulas, PivotTable definitions, chart ranges, or workbook connections.
@@ -50,14 +52,35 @@ Official references:
 - [Excel macro security settings](https://support.microsoft.com/en-us/excel/change-macro-security-settings-in-excel)
 - [Introduction to Office Scripts](https://support.microsoft.com/en-us/office/introduction-to-office-scripts-in-excel-9fbe283d-adb8-4f13-a75b-a81c6baf163a)
 
+## Office Scripts alternative
+
+The web-compatible implementation is authored in TypeScript:
+
+- `DashboardAppStyle_Web.ts` formats existing dashboard cells and charts, and adds internal worksheet hyperlinks only when the designated navigation ranges are empty.
+- `RestoreDashboardEditView_Web.ts` restores gridlines and headings.
+
+Paste each file into **Automate → New Script** in Excel for the web. Save and run it. To expose a script as a worksheet button, open the saved script, enable **Associate with workbook**, and select **Add button to worksheet**. The worksheet hyperlinks are independent of the script-run button.
+
+Office Scripts do not run VBA `OnAction` macros; these are separate automation paths for similar presentation/navigation goals.
+
+Official references:
+- [ExcelScript Range API — hyperlinks](https://learn.microsoft.com/en-us/javascript/api/office-scripts/excelscript/excelscript.range?view=office-scripts)
+- [ExcelScript Chart API — formatting](https://learn.microsoft.com/en-us/javascript/api/office-scripts/excelscript/excelscript.chart?view=office-scripts)
+- [Create a button to run an Office Script](https://support.microsoft.com/en-us/excel/office-scripts/create-a-button-to-run-an-office-script)
+
 ## Test plan
 
 | Test | Expected result | Status |
 |---|---|---|
-| Import module in a duplicate workbook | Module appears in the VBA project without replacing source sheets | Not run |
+| Import module in a duplicate workbook | Module appears in the VBA project without replacing source sheets | Complete — learner-confirmed |
+| Compile VBAProject | VBA editor reports no compile errors | Pending |
 | Run ApplyDashboardAppStyle | Title, KPI cards, and chart panels receive the app-style formatting | Not run |
 | Inspect navigation buttons | Each button opens its intended worksheets | Not run |
 | Reopen the XLSM copy | Workbook opens with macros disabled until explicitly trusted; visual formatting remains | Not run |
 | Reopen original XLSX | Original macro-free workbook and its data remain unchanged | Not run |
 
 Do not mark the VBA enhancement complete until it has been run and the tests above have been recorded.
+
+| Run DashboardAppStyle_Web | Dashboard styling and blank-area navigation hyperlinks are applied | Not run |
+| Run RestoreDashboardEditView_Web | Worksheet headings and gridlines return | Not run |
+| Add Office Script run button | Workbook-associated script button appears and runs the selected script | Not run |
