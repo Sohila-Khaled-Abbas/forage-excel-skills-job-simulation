@@ -307,3 +307,19 @@ End Sub
 Public Sub ReturnToDashboard()
     ActivateDashboardWorksheet DASHBOARD_SHEET
 End Sub
+
+' Restore worksheet headings, gridlines, and a normal working zoom after presentation mode.
+Public Sub RestoreDashboardEditView()
+    On Error GoTo HandleError
+
+    ThisWorkbook.Worksheets(DASHBOARD_SHEET).Activate
+    ActiveWindow.DisplayHeadings = True
+    ActiveWindow.DisplayGridlines = True
+    ActiveWindow.Zoom = 100
+    ThisWorkbook.Worksheets(DASHBOARD_SHEET).Range("A1").Select
+    Exit Sub
+
+HandleError:
+    MsgBox "The Dashboard edit view could not be restored: " & Err.Description, _
+        vbExclamation, "Dashboard Edit View"
+End Sub
