@@ -1,10 +1,10 @@
 # Automation and VBA
 
-**Status:** The original Task 03 VBA module was imported by the learner. A compatibility-hardened revision has now been committed; it must be re-imported into the local dashboard XLSM before compile/run verification. Task 04's initial macro-recording exercise is complete based on learner confirmation: recording, test execution, and generated-code inspection succeeded. The exact first macro name/action is not captured. The two sorting macros, Form Control buttons, final tests, and PDF evidence remain in progress. Office Scripts source files remain committed but untested in Excel.
+**Status:** Task 04's macro-recording and sorting/button exercises are complete based on learner confirmation. The initial macro was recorded, tested, and inspected; a Form Control button was added for it; `SortBy5YrCAGR` and `SortBy2021UnitSales` were recorded and assigned to separate buttons; both sorting buttons passed their tests; and the requested screenshots were assembled into a readable PDF. The macro-enabled workbook and PDF are present in the repository. The exact name/action of the first recorded macro remains undocumented, and Forage upload/submission is pending. Separately, the optional Task 03 dashboard VBA module still needs local compile/run verification after the compatibility-hardened version is re-imported. Office Scripts sources remain untested in Excel.
 
 ## Current Forage exercise — Task 04: Record and Run a Macro
 
-The learner reports successfully completing the first macro-recording exercise: a macro was recorded, tested, and its generated VBA inspected. The exact macro name and action were not provided. The next milestone is the Form Control button and two recorded sort macros. See the [initial Task 04 guide](../docs/05-record-and-run-a-macro.md) and [sorting macros and buttons guide](../docs/06-sort-macros-and-buttons.md). The automation workbook remains separate from the Task 03 dashboard workbook.
+The learner reports completing the initial macro recording, test, and VBA inspection, adding a Form Control button for that first macro, recording the two descending-sort macros, assigning each to its own button, testing both sorting buttons successfully, and creating/reopening a readable evidence PDF. The exact first macro name/action was not provided. The [initial Task 04 guide](../docs/05-record-and-run-a-macro.md) and [sorting macros and buttons guide](../docs/06-sort-macros-and-buttons.md) now record the completed work. The Task 04 automation workbook remains separate from the Task 03 dashboard workbook. Only upload and submission on Forage remain.
 
 ## Selected process
 
@@ -97,23 +97,29 @@ Do not mark the VBA enhancement complete until it has been run and the tests abo
 | Automation workbook downloaded | Complete — learner-confirmed |
 | Macro-enabled local working copy saved | Pending confirmation |
 | Developer tab enabled | Pending confirmation |
-| First macro recorded in This Workbook | Pending |
-| Macro tested from Developer → Macros | Pending |
-| Generated VBA reviewed | Pending |
+| First macro recorded in This Workbook | Complete — learner-confirmed |
+| Macro tested from Developer → Macros | Complete — learner-confirmed |
+| Generated VBA reviewed | Complete — learner-confirmed |
+| Form Control button added for the first recorded macro | Complete — learner-confirmed |
+| `SortBy5YrCAGR` recorded and assigned its own button | Complete — learner-confirmed |
+| `SortBy2021UnitSales` recorded and assigned its own button | Complete — learner-confirmed |
+| Both sorting buttons tested successfully | Complete — learner-confirmed |
+| Workbook and VBA screenshots captured; PDF reopened and checked | Complete — learner-confirmed |
+| XLSM and PDF uploaded to Forage; task submitted | Pending confirmation |
 
 See [Task 04 — Record and Run a Macro](../docs/05-record-and-run-a-macro.md) for the step-by-step workflow.
 
 
 ## Task 04 — Sorting macro implementation
 
-The active requirement is to create and test two recorded macros in the same Task 04 XLSM workbook:
+The learner confirms that the two recorded macros were created and tested in the same Task 04 XLSM workbook:
 
 | Macro | Sort key | Direction | Button label |
 |---|---|---|---|
 | `SortBy5YrCAGR` | `5 YR CAGR` | Largest to Smallest | Sort by 5 YR CAGR |
 | `SortBy2021UnitSales` | `2021 Unit Sales` | Largest to Smallest | Sort by 2021 Unit Sales |
 
-The entire contiguous data range must be included in each sort and the header row must remain fixed. The macros should be recorded through **Developer → Record Macro** and **Data → Sort**, not manually typed, because the exercise is teaching the Macro Recorder. Each macro gets its own **Form Control → Button**, assigned through the Assign Macro dialog. The learner should test both buttons after recording and capture a screenshot of both buttons plus a screenshot of one macro procedure in the Visual Basic Editor.
+The entire contiguous data range must be included in each sort and the header row must remain fixed. The macros should be recorded through **Developer → Record Macro** and **Data → Sort**, not manually typed, because the exercise is teaching the Macro Recorder. Each macro gets its own **Form Control → Button**, assigned through the Assign Macro dialog. The learner confirms both buttons passed their tests and captured a screenshot of both buttons plus a screenshot of one macro procedure in the Visual Basic Editor. The screenshots were assembled into `Task_04_Macro_Buttons_Evidence.pdf`, which was reopened and checked for readability.
 
 The earlier account-data workbook used range `A1:M41`, with `2021 Unit Sales` in column L and `5 YR CAGR` in column M. The Task 04 copy should be checked before recording; use its actual header labels and actual last row/column. If CAGR contains text placeholders or non-numeric entries, inspect the resulting descending order rather than changing the source markers. Microsoft documents that mixed text and numeric values have distinct sort order and blanks remain last: [Sort data in a range or table in Excel](https://support.microsoft.com/en-us/excel/sort-data-in-a-range-or-table-in-excel).
 
