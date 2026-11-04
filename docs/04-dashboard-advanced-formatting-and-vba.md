@@ -80,6 +80,7 @@ The module provides:
 - GoToTopAccounts — opens the Top 10 PivotTable.
 - GoToAccountTypes — opens the account-type PivotTable.
 - ReturnToDashboard — returns to the Dashboard worksheet.
+- RestoreDashboardEditView — restores row/column headings, gridlines, and 100% zoom for editing.
 
 The main macro adds or updates four named navigation buttons beneath the lowest chart. It finds a suitable row below the existing charts rather than moving or resizing them.
 
@@ -92,7 +93,7 @@ The main macro adds or updates four named navigation buttons beneath the lowest 
 5. Select DashboardAppStyle.bas from the repository.
 6. Review the module and confirm the worksheet names and KPI card ranges match your workbook.
 7. Press Alt + F8, select ApplyDashboardAppStyle, then select Run.
-8. Confirm the colors, text, chart panels, and navigation buttons.
+8. Confirm the colors, text, chart panels, and navigation buttons. Use RestoreDashboardEditView from Alt + F8 when you want to return to normal worksheet editing view.
 9. Save the duplicate as Excel Macro-Enabled Workbook (*.xlsm).
 
 If the card or title cell ranges differ from the target layout above, edit the corresponding range strings inside ApplyDashboardAppStyle and FormatKpiCard before running.
