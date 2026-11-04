@@ -2,7 +2,7 @@
 
 **Purpose:** Extend the finalized Task 03 dashboard with an application-inspired visual design and optional desktop-Excel navigation automation.
 
-**Current status:** The finalized XLSX dashboard is learner-reported complete. This guide and the importable VBA module are prepared as an optional enhancement. The VBA has not yet been imported or executed.
+**Current status:** The finalized XLSX dashboard is learner-reported complete. The learner has imported DashboardAppStyle.bas into Excel. VBA compilation and execution are not yet confirmed. Office Scripts source files are committed, but have not yet been pasted into or run from Excel's Scripts editor.
 
 ## 1. Keep the finalized workbook safe
 
@@ -106,22 +106,44 @@ If the card or title cell ranges differ from the target layout above, edit the c
 - It temporarily disables screen updating/events while running and restores their previous state.
 - Keep Excel's notification-based macro security. Do not enable all macros globally; review and run only code you understand in a copy of your workbook.
 
-## 6. Excel for the web: choose Office Scripts, not VBA
+## 6. Office Scripts version for Excel on the web
 
-Excel for the web can display worksheet formatting and charts, but it cannot create, edit, or run VBA macros. The VBA navigation buttons therefore work in desktop Excel only. Microsoft documents that limitation here: [Work with VBA macros in Excel for the web](https://support.microsoft.com/en-us/excel/work-with-vba-macros-in-excel-for-the-web).
+The repository includes two TypeScript scripts:
 
-For browser-based automation, use Office Scripts when it is available in your Microsoft 365 environment. Office Scripts uses TypeScript and supports recording or authoring scripts, replaying them from Automate → View Scripts, and associating a script button with a workbook:
-- [Introduction to Office Scripts](https://support.microsoft.com/en-us/office/introduction-to-office-scripts-in-excel-9fbe283d-adb8-4f13-a75b-a81c6baf163a)
-- [Record actions as Office Scripts](https://support.microsoft.com/en-us/excel/office-scripts/record-your-actions-as-office-scripts)
-- [Create a button to run an Office Script](https://support.microsoft.com/en-us/excel/office-scripts/create-a-button-to-run-an-office-script)
+- [DashboardAppStyle_Web.ts](../material/03-build-charts-and-dashboards/DashboardAppStyle_Web.ts) — formats the title, subtitle, three KPI cards, and existing chart panels. It also adds internal worksheet hyperlinks in four navigation ranges if those ranges are blank.
+- [RestoreDashboardEditView_Web.ts](../material/03-build-charts-and-dashboards/RestoreDashboardEditView_Web.ts) — restores gridlines and row/column headings for normal editing.
 
-Office Scripts availability can depend on the Microsoft 365 license and tenant/admin settings.
+The Office Script navigation uses merged cell hyperlinks rather than VBA shape actions. It does not reposition charts or change their data sources. It also does not set the Excel window zoom.
+
+### Add and run the formatting script
+
+1. Open a copy of the finalized workbook in Excel for the web.
+2. Select **Automate → New Script** (or open **View Scripts** and create a new script).
+3. Paste the full contents of `DashboardAppStyle_Web.ts` into the code editor.
+4. Save the script as **Dashboard App Style — Web**.
+5. Confirm that the navigation ranges `B45:D46`, `E45:G46`, `H45:J46`, and `K45:M46` are available. The script leaves any range containing content unchanged.
+6. Select **Run**, then inspect the dashboard and the script's log output.
+
+Create a second script from `RestoreDashboardEditView_Web.ts`, name it **Restore Dashboard Editing View**, and run it whenever you want headings and gridlines visible again.
+
+### Add a run button to the worksheet
+
+1. Open the saved dashboard script from **Automate**.
+2. In **Share this script**, enable **Associate with workbook**.
+3. Select **Add button to worksheet**.
+4. Place the generated button where it does not cover an existing chart or KPI card.
+
+The run button triggers the script; the four navigation hyperlinks created by the script navigate to source worksheets. Microsoft's instructions are here: [Create a button to run an Office Script](https://support.microsoft.com/en-us/excel/office-scripts/create-a-button-to-run-an-office-script).
+
+Office Scripts availability depends on the signed-in account, platform, license, and tenant settings. See the [Office Scripts introduction](https://support.microsoft.com/en-us/office/introduction-to-office-scripts-in-excel-9fbe283d-adb8-4f13-a75b-a81c6baf163a).
 
 ## 7. Validation checklist
 
 - [ ] Original finalized XLSX remains unchanged.
-- [ ] VBA module imported into a duplicate workbook.
+- [x] VBA module imported into Excel (learner-confirmed).
+- [ ] VBA project compiles without an error.
 - [ ] Main formatting macro completes without an error.
+- [ ] Office Scripts source saved and run in a supported Excel environment.
 - [ ] Title and subtitle remain legible.
 - [ ] All three KPI values and formulas remain unchanged.
 - [ ] All three charts retain their original data and positions.
@@ -130,4 +152,4 @@ Office Scripts availability can depend on the Microsoft 365 license and tenant/a
 - [ ] Enhanced copy saved as XLSM.
 - [ ] Original macro-free XLSX opens normally.
 
-**Evidence rule:** Until the macro has been run and tested, describe it as a prepared enhancement module, not as a feature already embedded in the finalized workbook.
+**Evidence rule:** VBA import is learner-confirmed; compilation and execution are pending. The Office Scripts are committed source code only until saved and run in Excel. Do not describe either automation route as tested until the learner verifies the results.
