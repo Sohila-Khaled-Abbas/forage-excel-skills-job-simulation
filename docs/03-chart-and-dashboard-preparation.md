@@ -1,6 +1,6 @@
 # Task 03 — Build Charts and Dashboards
 
-**Status:** In progress. Checkpoints 1–6 are complete based on learner-reported Excel results, including the annual summary and all three required charts. The learner confirms that all three KPI cards are implemented and consistently formatted: Total 2021 Sales (17,278), Top Account (Cloudline Commerce), and Sales Growth (76.8%). The Dashboard title and subtitle are aligned, and all three charts are visible and readable. The remaining layout check is to verify that no KPI card or chart overlaps another object.
+**Status:** Task 03 dashboard production is complete based on the learner's finalized workbook update. Checkpoints 1–6, all three charts, all three KPI cards, title/subtitle alignment, chart readability, and the final no-overlap layout check are learner-confirmed. Independent reconciliation of all six annual totals and submission through Forage remain final-review items.
 
 Updated working workbook: [Account Sales Data for Dashboard Practice — Working](../material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice_Working.xlsx)  
 Original practice workbook: [Account Sales Data for Dashboard Practice](../material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
@@ -271,7 +271,19 @@ Use consistent fills, borders, font sizes, and alignment across the three KPI ca
 | Implement and format the three KPI cards | Complete — learner-confirmed; values and consistent styling checked |
 | Assemble Dashboard worksheet and place all three charts | Complete — learner-confirmed; charts visible and readable |
 | Align title and subtitle | Complete — learner-confirmed |
-| Verify no overlap between KPI cards and charts | Pending — final layout check |
+| Verify no overlap between KPI cards and charts | Complete — learner-confirmed in finalized workbook |
 | Final validation and submission | Pending |
 
-**Documentation rule:** Dashboard worksheet creation, KPI values and styling, title/subtitle alignment, and chart visibility/readability are learner-confirmed. The workbook's chart objects, plotted ranges, and exact positions have not been independently inspected. The no-overlap check and final data reconciliation remain pending.
+**Documentation rule:** The learner reports that the finalized workbook contains the dashboard, three KPI cards, aligned title/subtitle, readable charts, and a completed no-overlap check. These final visual details are learner-confirmed, not independently audited from the workbook binary in this session. The six annual totals have not been independently reconciled to each source column; keep that item open until verified. Forage submission is also not confirmed.
+
+
+## 8. Optional app-inspired dashboard styling with VBA
+
+For a more application-like experience, use the separate guide and importable module:
+
+- [App-style dashboard design and setup](04-dashboard-advanced-formatting-and-vba.md)
+- [Importable VBA module](../material/03-build-charts-and-dashboards/DashboardAppStyle.bas)
+
+The module is deliberately separate from the finalized XLSX. It styles the existing dashboard, applies a restrained dark-navy/teal/light-surface palette, formats the three KPI card ranges, styles chart panels, and adds worksheet-navigation buttons below the charts. It does not rewrite source values or formulas, refresh PivotTables, or change chart data sources.
+
+**Use a duplicate of the finalized workbook.** Import the BAS file in desktop Excel, review the procedures, run ApplyDashboardAppStyle, and save the duplicate as XLSM. The macro is optional; the existing XLSX remains the clean, macro-free version. Excel for the web cannot create, edit, or run VBA macros. If the workflow must stay in a browser, use Office Scripts instead.
