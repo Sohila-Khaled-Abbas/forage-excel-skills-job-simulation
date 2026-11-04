@@ -1,6 +1,6 @@
 # Automation and VBA
 
-**Status:** Task 04's macro-recording and sorting/button exercises are complete based on learner confirmation. The initial macro was recorded, tested, and inspected; a Form Control button was added for it; `SortBy5YrCAGR` and `SortBy2021UnitSales` were recorded and assigned to separate buttons; both sorting buttons passed their tests; and the requested screenshots were assembled into a readable PDF. The macro-enabled workbook and PDF are present in the repository. The exact name/action of the first recorded macro remains undocumented, and Forage upload/submission is pending. Separately, the optional Task 03 dashboard VBA module still needs local compile/run verification after the compatibility-hardened version is re-imported. Office Scripts sources remain untested in Excel.
+**Status:** Task 04's macro-recording and sorting/button exercises are complete based on learner confirmation. The initial macro was recorded, tested, and inspected; a Form Control button was added for it; `SortBy5YrCAGR` and `SortBy2021UnitSales` were recorded and assigned to separate buttons; both sorting buttons passed their tests; and the requested screenshots were assembled into a readable PDF. The macro-enabled workbook and PDF are present in the repository. The exact name/action of the first recorded macro remains undocumented, and The learner confirms the XLSM and evidence PDF were submitted to Forage; the activity now displays its completion page and certificate dated November 4, 2026. Separately, the optional Task 03 dashboard VBA module still needs local compile/run verification after the compatibility-hardened version is re-imported. Office Scripts sources remain untested in Excel.
 
 ## Current Forage exercise — Task 04: Record and Run a Macro
 
@@ -105,7 +105,7 @@ Do not mark the VBA enhancement complete until it has been run and the tests abo
 | `SortBy2021UnitSales` recorded and assigned its own button | Complete — learner-confirmed |
 | Both sorting buttons tested successfully | Complete — learner-confirmed |
 | Workbook and VBA screenshots captured; PDF reopened and checked | Complete — learner-confirmed |
-| XLSM and PDF uploaded to Forage; task submitted | Pending confirmation |
+| XLSM and PDF uploaded to Forage; task submitted | Complete — learner-confirmed; completion page displayed |
 
 See [Task 04 — Record and Run a Macro](../docs/05-record-and-run-a-macro.md) for the step-by-step workflow.
 
