@@ -1,10 +1,10 @@
 # Automation and VBA
 
-**Status:** The original Task 03 VBA module was imported by the learner. A compatibility-hardened revision has now been committed; it must be re-imported into the local dashboard XLSM before compile/run verification. Task 04's automation workbook has been downloaded by the learner; macro-enabled save, recording, test, and code review are pending. Office Scripts source files remain committed but untested in Excel.
+**Status:** The original Task 03 VBA module was imported by the learner. A compatibility-hardened revision has now been committed; it must be re-imported into the local dashboard XLSM before compile/run verification. Task 04's initial macro-recording exercise is complete based on learner confirmation: recording, test execution, and generated-code inspection succeeded. The exact first macro name/action is not captured. The two sorting macros, Form Control buttons, final tests, and PDF evidence remain in progress. Office Scripts source files remain committed but untested in Excel.
 
 ## Current Forage exercise — Task 04: Record and Run a Macro
 
-The learner reports downloading the supplied [Account Sales Data for Automation workbook](../material/04-vba-and-marcos/Account_Sales_Data_for_Automation.xlsx). The next steps are to save a local `.xlsm` working copy, enable Developer, record a repeatable macro stored in This Workbook, test it from the Macro dialog, and inspect the generated VBA. See the [Task 04 guide](../docs/05-record-and-run-a-macro.md). A safe practice example is `FormatSalesHeaders`, which formats only the verified header cells; this is a suggested practice action, not an extra Forage requirement.
+The learner reports successfully completing the first macro-recording exercise: a macro was recorded, tested, and its generated VBA inspected. The exact macro name and action were not provided. The next milestone is the Form Control button and two recorded sort macros. See the [initial Task 04 guide](../docs/05-record-and-run-a-macro.md) and [sorting macros and buttons guide](../docs/06-sort-macros-and-buttons.md). The automation workbook remains separate from the Task 03 dashboard workbook.
 
 ## Selected process
 
@@ -102,3 +102,19 @@ Do not mark the VBA enhancement complete until it has been run and the tests abo
 | Generated VBA reviewed | Pending |
 
 See [Task 04 — Record and Run a Macro](../docs/05-record-and-run-a-macro.md) for the step-by-step workflow.
+
+
+## Task 04 — Sorting macro implementation
+
+The active requirement is to create and test two recorded macros in the same Task 04 XLSM workbook:
+
+| Macro | Sort key | Direction | Button label |
+|---|---|---|---|
+| `SortBy5YrCAGR` | `5 YR CAGR` | Largest to Smallest | Sort by 5 YR CAGR |
+| `SortBy2021UnitSales` | `2021 Unit Sales` | Largest to Smallest | Sort by 2021 Unit Sales |
+
+The entire contiguous data range must be included in each sort and the header row must remain fixed. The macros should be recorded through **Developer → Record Macro** and **Data → Sort**, not manually typed, because the exercise is teaching the Macro Recorder. Each macro gets its own **Form Control → Button**, assigned through the Assign Macro dialog. The learner should test both buttons after recording and capture a screenshot of both buttons plus a screenshot of one macro procedure in the Visual Basic Editor.
+
+The earlier account-data workbook used range `A1:M41`, with `2021 Unit Sales` in column L and `5 YR CAGR` in column M. The Task 04 copy should be checked before recording; use its actual header labels and actual last row/column. If CAGR contains text placeholders or non-numeric entries, inspect the resulting descending order rather than changing the source markers. Microsoft documents that mixed text and numeric values have distinct sort order and blanks remain last: [Sort data in a range or table in Excel](https://support.microsoft.com/en-us/excel/sort-data-in-a-range-or-table-in-excel).
+
+Official button guidance: [Assign a macro to a Form or a Control button](https://support.microsoft.com/en-us/excel/assign-a-macro-to-a-form-or-a-control-button).
