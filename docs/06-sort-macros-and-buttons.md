@@ -1,6 +1,6 @@
 # Task 04 — Sorting Macros and Buttons
 
-**Status:** Complete — learner-confirmed. The learner reports 8/8 completion: the first recorded macro has a Form Control button; `SortBy5YrCAGR` and `SortBy2021UnitSales` were recorded; each sorting macro has its own button; both buttons passed their tests; and the two required screenshots were assembled into a PDF that was reopened and checked for readability. The macro-enabled working copy and PDF are both present in the repository. Forage upload and submission are still pending confirmation.
+**Status:** Complete — learner-confirmed. The learner reports 8/8 completion: the first recorded macro has a Form Control button; `SortBy5YrCAGR` and `SortBy2021UnitSales` were recorded; each sorting macro has its own button; both buttons passed their tests; and the two required screenshots were assembled into a PDF that was reopened and checked for readability. The macro-enabled working copy and PDF are both present in the repository. The learner confirms that both required files were submitted through Forage; the activity now displays its completion page and certificate dated November 4, 2026.
 
 ## 1. Continue in the same Task 04 workbook
 
@@ -171,9 +171,9 @@ Do not include login information, personal files, or unrelated desktop content i
 - [x] Both screenshots assembled into `Task_04_Macro_Buttons_Evidence.pdf`.
 - [x] PDF reopened and checked for readability.
 - [x] Macro-enabled working copy and evidence PDF present in the repository; original XLSX retained.
-- [ ] Upload the macro-enabled XLSM and PDF to the Forage task page and select **Submit file**.
+- [x] Upload the macro-enabled XLSM and PDF to the Forage task page and select **Submit file** — learner-confirmed.
 
-**Completion boundary:** The Excel implementation and evidence preparation are complete on a learner-confirmed basis. Do not mark the Forage activity submitted until the upload is accepted and the platform confirms the submission.
+**Completion boundary:** The Excel implementation, evidence preparation, upload, and Forage submission are complete. The Forage completion page confirms **Excel Skills — Completed November 4, 2026**. The certificate is available from the [Forage completion page](https://www.theforage.com/simulations/forage/sponsored-content-excel-skills-jf8r/completed).
 
 ## 10. Safety and reproducibility
 
