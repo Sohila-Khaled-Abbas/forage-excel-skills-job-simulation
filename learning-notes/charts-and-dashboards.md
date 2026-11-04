@@ -1,6 +1,6 @@
 # Charts and Dashboards
 
-**Status:** Task 03 — Build Charts and Dashboards is in progress. The annual sales summary and all three required charts are complete based on learner-reported workbook updates. The updated working workbook is saved in the repository; dashboard assembly and final review remain.
+**Status:** Task 03 — Build Charts and Dashboards is in progress. The annual sales summary and all three required charts are complete based on learner-reported workbook updates. Dashboard KPI planning has started, including a documented Sales Growth calculation of 76.8% from 2016 to 2021. KPI-card implementation, chart placement, dashboard formatting, and final review remain unconfirmed.
 
 ## Task 03 — Prepare Your Data for Visualization
 
@@ -138,6 +138,42 @@ The learner confirms that all three required charts have been created and saved 
 
 These chart details and visual checks are learner-reported. The workbook's chart objects and plotted ranges have not been independently inspected.
 
+
+## Dashboard KPI cards and layout
+
+The learner-provided annual summary is:
+
+| Year | Total Unit Sales |
+|---|---:|
+| 2016 | 9,773 |
+| 2017 | 10,380 |
+| 2018 | 11,115 |
+| 2019 | 12,283 |
+| 2020 | 14,193 |
+| 2021 | 17,278 |
+
+Assuming `Annual_Sales_Summary` has headers in row 1, the 2016 value in `B2`, and the 2021 value in `B7`, the Dashboard's Sales Growth KPI formula is:
+
+```excel
+=('Annual_Sales_Summary'!$B$7-'Annual_Sales_Summary'!$B$2)/'Annual_Sales_Summary'!$B$2
+```
+
+Format the result as a percentage with one decimal place. The expected result is **76.8%**: sales increased by **7,505 units** between 2016 and 2021.
+
+Recommended KPI cards:
+
+| KPI | Expected display | Source |
+|---|---:|---|
+| Total 2021 Sales | 17,278 units | Link to the Grand Total cell in `PT_Sales_by_Type`. |
+| Top Account | Cloudline Commerce | Link to the first account name in `PT_Top10_2021`. |
+| Sales Growth (2016–2021) | 76.8% | Formula above. |
+
+Suggested dashboard placement: title in `B2:N3`, subtitle in `B4:N4`, KPI cards in `B6:D8`, `F6:H8`, and `J6:L8`, the annual trend chart in `B10:N23`, and the two comparison charts side by side in `B25:H42` and `J25:N42`.
+
+Style all cards consistently, use a restrained color palette, hide worksheet gridlines, and keep chart titles and labels readable. The PivotTables and annual summary should remain on their source worksheets; the dashboard should reference them.
+
+**Progress note:** The annual values and resulting KPI calculation are learner-provided/documented. The cell references assume the stated two-column table layout. The Sales Growth formula has been prepared in the documentation but has not been confirmed as entered in Excel; the other KPI cards and dashboard formatting also remain unconfirmed.
+
 ## Dashboard layout
 
 Create a worksheet named `Dashboard` and place all three charts on it. A practical layout is the annual trend across the top, with the top-10 ranking and account-type comparison side by side below. Keep charts aligned, readable, and non-overlapping.
@@ -168,8 +204,10 @@ Record only insights supported by the finished PivotTables and charts. Explain w
 - [x] Create the Top 10 bar chart; Cloudline Commerce is at the top (learner-reported).
 - [x] Create the account-type column chart; Online is the highest category (learner-reported).
 - [x] Save the updated working workbook in the repository.
-- [ ] Assemble all three charts on the `Dashboard` worksheet.
+- [x] Document the Sales Growth KPI formula and expected result (76.8%) from the learner-reported annual summary; workbook entry not yet confirmed.
+- [ ] Implement the three linked KPI cards in Excel.
+- [ ] Assemble all three charts on the `Dashboard` worksheet and apply consistent dashboard formatting.
 - [ ] Validate chart values, labels, layout, and totals.
 - [ ] Save and submit the completed workbook.
 
-**Documentation rule:** PivotTable, annual-summary, and chart details above are learner-reported. The annual summary's 2021 value matches the PivotTable total; all six source-column totals have not been independently audited. The three charts are marked complete based on the learner's confirmation, but their objects and plotted ranges have not been independently inspected. Do not mark the dashboard complete until it has been assembled and checked in Excel.
+**Documentation rule:** PivotTable, annual-summary, and chart details above are learner-reported. The annual summary's 2021 value matches the PivotTable total; all six source-column totals have not been independently audited. The three charts are marked complete based on the learner's confirmation, but their objects and plotted ranges have not been independently inspected. The Sales Growth KPI calculation assumes the annual summary occupies A1:B7; it is documented but not confirmed as entered in Excel. Do not mark KPI-card implementation or the dashboard complete until the learner confirms the changes in Excel.
