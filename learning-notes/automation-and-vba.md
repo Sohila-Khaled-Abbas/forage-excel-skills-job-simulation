@@ -1,6 +1,10 @@
 # Automation and VBA
 
-**Status:** The learner has imported the VBA module into Excel. Compilation and macro execution are pending. The Office Scripts source files are committed to GitHub but have not yet been pasted into the Excel Scripts editor or run.
+**Status:** The original Task 03 VBA module was imported by the learner. A compatibility-hardened revision has now been committed; it must be re-imported into the local dashboard XLSM before compile/run verification. Task 04's automation workbook has been downloaded by the learner; macro-enabled save, recording, test, and code review are pending. Office Scripts source files remain committed but untested in Excel.
+
+## Current Forage exercise — Task 04: Record and Run a Macro
+
+The learner reports downloading the supplied [Account Sales Data for Automation workbook](../material/04-vba-and-marcos/Account_Sales_Data_for_Automation.xlsx). The next steps are to save a local `.xlsm` working copy, enable Developer, record a repeatable macro stored in This Workbook, test it from the Macro dialog, and inspect the generated VBA. See the [Task 04 guide](../docs/05-record-and-run-a-macro.md). A safe practice example is `FormatSalesHeaders`, which formats only the verified header cells; this is a suggested practice action, not an extra Forage requirement.
 
 ## Selected process
 
@@ -19,7 +23,7 @@ The dashboard already contains its KPI cards and three charts. The optional macr
 - [RestoreDashboardEditView_Web.ts](../material/03-build-charts-and-dashboards/RestoreDashboardEditView_Web.ts)
 - [Dashboard design and VBA setup guide](../docs/04-dashboard-advanced-formatting-and-vba.md)
 
-The module is written from scratch for this learning project. It uses Excel's worksheet, range, chart, and shape object models. The code is intentionally limited to formatting and navigation; it does not alter source data, KPI formulas, PivotTable definitions, chart ranges, or workbook connections.
+The module is written from scratch for this learning project. The latest repository revision replaces the used `mso...` drawing constants with local numeric constants to reduce Office object-library reference sensitivity, initializes the navigation shape reference before lookup, and reports the execution stage and error number/description. This is defensive compatibility hardening, not a confirmed root-cause fix: the exact Excel error and highlighted line were not supplied, and the revised module has not yet been compiled or run in the learner's local workbook. It uses Excel's worksheet, range, chart, and shape object models. The code is intentionally limited to formatting and navigation; it does not alter source data, KPI formulas, PivotTable definitions, chart ranges, or workbook connections.
 
 ## Import and run
 
@@ -27,9 +31,9 @@ The module is written from scratch for this learning project. It uses Excel's wo
 2. Open the duplicate in desktop Excel.
 3. Press Alt + F11 to open the Visual Basic Editor.
 4. Choose File → Import File... and select DashboardAppStyle.bas.
-5. Review the module procedures and workbook/sheet/range names.
-6. Return to Excel, press Alt + F8, select ApplyDashboardAppStyle, and choose Run.
-7. Check the KPI cards, charts, and newly added navigation buttons. Run RestoreDashboardEditView from Alt + F8 when you need normal row/column headings and gridlines again.
+5. Back up the current local XLSM. In Project Explorer, right-click the older `DashboardAppStyle` module and choose **Remove** (export it first if you want a backup). Then import the updated repository version so that the VBA project does not contain two modules with the same public macro names.
+6. In the Visual Basic Editor, select **Debug → Compile VBAProject**. If compilation succeeds, return to Excel, press Alt + F8, select ApplyDashboardAppStyle, and choose Run.
+7. Check the KPI cards, charts, and newly added navigation buttons. If the macro fails at runtime, note the exact error number, full message, and highlighted VBA line. The updated module now identifies the stage where it stopped. Run RestoreDashboardEditView from Alt + F8 when you need normal row/column headings and gridlines again.
 8. Save the enhanced copy as Excel Macro-Enabled Workbook (.xlsm). Keep the original XLSX unchanged.
 
 ## Macro behavior and safety
@@ -84,3 +88,17 @@ Do not mark the VBA enhancement complete until it has been run and the tests abo
 | Run DashboardAppStyle_Web | Dashboard styling and blank-area navigation hyperlinks are applied | Not run |
 | Run RestoreDashboardEditView_Web | Worksheet headings and gridlines return | Not run |
 | Add Office Script run button | Workbook-associated script button appears and runs the selected script | Not run |
+
+
+## Task 04 progress record
+
+| Milestone | Status |
+|---|---|
+| Automation workbook downloaded | Complete — learner-confirmed |
+| Macro-enabled local working copy saved | Pending confirmation |
+| Developer tab enabled | Pending confirmation |
+| First macro recorded in This Workbook | Pending |
+| Macro tested from Developer → Macros | Pending |
+| Generated VBA reviewed | Pending |
+
+See [Task 04 — Record and Run a Macro](../docs/05-record-and-run-a-macro.md) for the step-by-step workflow.
