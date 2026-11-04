@@ -174,7 +174,7 @@ The completed calculations and documented findings have now been reviewed and ve
 <details open>
 <summary><strong>Task 03 — Prepare Your Data for Visualization</strong> · <code>In progress</code></summary>
 
-Task 03 Checkpoints 1–6 are complete based on the learner's reported Excel results. The `AccountSales` worksheet contains `A1:M41` (40 account records), the source data is an Excel Table named `AccountSales`, both required 2021 sales PivotTables and the 2016–2021 annual sales summary have been prepared, and all three required charts have been created: **Unit Sales by Year** (line), **Top 10 Accounts by 2021 Unit Sales** (bar), and **2021 Unit Sales by Account Type** (column). The updated working workbook is saved in the repository. Dashboard assembly and final review remain.
+Task 03 Checkpoints 1–6 are complete based on the learner's reported Excel results. The `AccountSales` worksheet contains `A1:M41` (40 account records), the source data is an Excel Table named `AccountSales`, both required 2021 sales PivotTables and the 2016–2021 annual sales summary have been prepared, and all three required charts have been created: **Unit Sales by Year** (line), **Top 10 Accounts by 2021 Unit Sales** (bar), and **2021 Unit Sales by Account Type** (column). The updated working workbook is saved in the repository. Dashboard KPI planning has started: the learner supplied the six annual totals, and the Sales Growth KPI is calculated at **76.8%** from 2016 to 2021. The actual KPI-card implementation, chart placement, dashboard formatting, and final review have not yet been confirmed.
 
 **Updated working workbook:** [Account Sales Data for Dashboard Practice — Working](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice_Working.xlsx) · [Original practice workbook](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
 
@@ -191,7 +191,7 @@ Task 03 Checkpoints 1–6 are complete based on the learner's reported Excel res
    - Unit Sales by Year — line chart.
    - Top 10 Accounts by 2021 Unit Sales — bar chart.
    - 2021 Unit Sales by Account Type — column chart.
-7. Build the `Dashboard` worksheet, arrange all three charts, and complete the final review before submission.
+7. Build and format the `Dashboard` worksheet, add the three KPI cards (Total 2021 Sales, Top Account, and Sales Growth), arrange all three charts, and complete the final review before submission.
 
 Checkpoints 1–6 are complete based on learner-reported Excel results. The PivotTable summaries add to their displayed totals: 17,278 units by account type and 8,221 units for the Top 10 accounts. The annual summary reports growth from 9,773 units in 2016 to 17,278 in 2021 (+76.8%). The learner confirms that all three charts are complete: the annual trend line chart, the Top 10 account bar chart (Cloudline Commerce at the top), and the account-type column chart (Online highest). The updated working workbook is saved in the repository. The Dashboard worksheet, final validation, and submission remain outstanding.
 
@@ -290,7 +290,7 @@ These are the skills covered by the learning plan; the presence of a badge does 
 
 ## Progress
 
-The overall simulation is **in progress**. Task 01 — Conditional Formatting and Task 02 — Put Formulas Into Practice are completed and documented. For Task 03, the data preparation, PivotTables, annual summary, and all three required charts are complete; dashboard assembly and final review remain.
+The overall simulation is **in progress**. Task 01 — Conditional Formatting and Task 02 — Put Formulas Into Practice are completed and documented. For Task 03, the data preparation, PivotTables, annual summary, and all three required charts are complete. Dashboard KPI planning is documented, including the 76.8% Sales Growth calculation; KPI-card implementation, chart arrangement, dashboard formatting, and final review remain unconfirmed.
 
 For session-by-session updates, see [LEARNING_LOG.md](LEARNING_LOG.md).
 
