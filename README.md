@@ -6,7 +6,7 @@
   <a href="https://www.theforage.com/simulations/forage/sponsored-content-excel-skills-jf8r">
     <img src="https://img.shields.io/badge/FORAGE-Excel%20Skills-176B58?style=for-the-badge&logo=target&logoColor=white" alt="Forage Excel Skills" />
   </a>
-  <img src="https://img.shields.io/badge/STATUS-IN%20PROGRESS-E69A2D?style=for-the-badge" alt="Project status: in progress" />
+  <img src="https://img.shields.io/badge/STATUS-COMPLETED-2E8B57?style=for-the-badge" alt="Project status: completed" />
   <img src="https://img.shields.io/badge/TOOL-Microsoft%20Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="Microsoft Excel" />
 </p>
 
@@ -51,6 +51,8 @@
 
 ## Program overview
 
+
+
 | Detail | Description |
 |---|---|
 | **Provider** | Forage Academy |
@@ -60,7 +62,7 @@
 | **Portfolio status** | <img src="https://img.shields.io/badge/In%20progress-Working%20through%20the%20exercises-E69A2D?style=flat-square" alt="In progress" /> |
 | **Official brief** | [Open the Forage simulation](https://www.theforage.com/simulations/forage/sponsored-content-excel-skills-jf8r) |
 
-The purpose of this repository is to turn each exercise into a reviewable learning artifact. I use the workbook to practice, document the reasoning behind each Excel operation, validate the result, and capture the skills that transfer to data analysis and business intelligence work.
+The simulation was completed and submitted on **November 4, 2026**. The purpose of this repository is to turn each exercise into a reviewable learning artifact. I use the workbook to practice, document the reasoning behind each Excel operation, validate the result, and capture the skills that transfer to data analysis and business intelligence work.
 
 ## Learning roadmap
 
@@ -178,7 +180,7 @@ The completed calculations and documented findings have now been reviewed and ve
 <details open>
 <summary><strong>Task 03 — Prepare Your Data for Visualization</strong> · <code>Complete</code></summary>
 
-Task 03 Checkpoints 1–6 are complete based on the learner's reported Excel results. The `AccountSales` worksheet contains `A1:M41` (40 account records), the source data is an Excel Table named `AccountSales`, both required 2021 sales PivotTables and the 2016–2021 annual sales summary have been prepared, and all three required charts have been created: **Unit Sales by Year** (line), **Top 10 Accounts by 2021 Unit Sales** (bar), and **2021 Unit Sales by Account Type** (column). The finalized working workbook is saved in the repository. Dashboard assembly and formatting are learner-confirmed: the three KPI cards display Total 2021 Sales (17,278), Top Account (Cloudline Commerce), and Sales Growth (+76.8%); the title and subtitle are aligned; all three charts are visible and readable; and the final layout check has been completed by the learner. Task 03 dashboard production is recorded as complete on a learner-reported basis. Independent reconciliation of all six annual totals and submission through the Forage activity remain separate final-review items.
+Task 03 Checkpoints 1–6 are complete based on the learner's reported Excel results. The `AccountSales` worksheet contains `A1:M41` (40 account records), the source data is an Excel Table named `AccountSales`, both required 2021 sales PivotTables and the 2016–2021 annual sales summary have been prepared, and all three required charts have been created: **Unit Sales by Year** (line), **Top 10 Accounts by 2021 Unit Sales** (bar), and **2021 Unit Sales by Account Type** (column). The finalized working workbook is saved in the repository. Dashboard assembly and formatting are learner-confirmed: the three KPI cards display Total 2021 Sales (17,278), Top Account (Cloudline Commerce), and Sales Growth (+76.8%); the title and subtitle are aligned; all three charts are visible and readable; and the final layout check has been completed by the learner. Task 03 dashboard production is recorded as complete on a learner-reported basis. The learner subsequently completed and submitted the simulation on November 4, 2026. Independent reconciliation of all six annual source totals remains an optional portfolio-quality audit, not a blocker to the Forage completion.
 
 **Updated working workbook:** [Account Sales Data for Dashboard Practice — Working](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice_Working.xlsx) · [Original practice workbook](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
 
@@ -228,7 +230,7 @@ To create a run button for an Office Script, open the saved script from **Automa
 ## Task 04 — Automate Repetitive Tasks
 
 <details open>
-<summary><strong>Task 04 — Record, Sort, and Automate with Macros</strong> · <code>Practice complete; Forage submission pending</code></summary>
+<summary><strong>Task 04 — Record, Sort, and Automate with Macros</strong> · <code>Completed and submitted · November 4, 2026</code></summary>
 
 The learner confirms that the initial macro was recorded, tested, and inspected in the VBA editor, and that a Form Control button was added for it. The two required sorting macros — `SortBy5YrCAGR` and `SortBy2021UnitSales` — were recorded and assigned to separate buttons. Both sorting buttons were tested successfully. The learner captured the workbook screenshot showing both buttons and a VBA-code screenshot, assembled them into a PDF, then reopened the PDF and checked its readability. The exact first macro name/action has not been captured.
 
@@ -236,7 +238,7 @@ The learner confirms that the initial macro was recorded, tested, and inspected 
 
 **Guides:** [Task 04 — Record and Run a Macro](docs/05-record-and-run-a-macro.md) · [Task 04 — Sorting Macros and Buttons](docs/06-sort-macros-and-buttons.md)
 
-**Progress:** Macro recording, both sorting macros, all three Form Control buttons, successful tests of both sorting buttons, and readable PDF evidence — complete (learner-confirmed). **Remaining:** upload the macro-enabled workbook and PDF in the Forage activity and select **Submit file**. Forage submission is not yet confirmed.
+**Progress:** Macro recording, both sorting macros, all three Form Control buttons, successful tests of both sorting buttons, and readable PDF evidence — complete (learner-confirmed). **Remaining:** upload the macro-enabled workbook and PDF in the Forage activity and select **Submit file**. The Forage activity now displays its completion page and certificate.
 
 </details>
 
@@ -352,7 +354,7 @@ These are the skills covered by the learning plan; the presence of a badge does 
 
 ## Progress
 
-The overall simulation is **in progress**. Task 01 — Conditional Formatting and Task 02 — Put Formulas Into Practice are completed and documented. Task 03's data preparation, PivotTables, annual summary, three required charts, KPI cards, dashboard formatting, and final no-overlap layout check are complete based on learner confirmation. Task 04 — Record and Run a Macro has started; the learner reports downloading the supplied workbook, while the XLSM copy, recording, test, and VBA review remain pending. Independent reconciliation of all six Task 03 annual totals and submission through Forage remain outstanding.
+The overall simulation is **completed and submitted** (November 4, 2026). Task 01 — Conditional Formatting and Task 02 — Put Formulas Into Practice are completed and documented. Task 03's data preparation, PivotTables, annual summary, three required charts, KPI cards, dashboard formatting, and final no-overlap layout check are complete based on learner confirmation. Task 04 — Automate Repetitive Tasks is complete: the initial macro and two sorting macros were recorded, assigned to Form Control buttons, tested, and documented with a readable evidence PDF. The learner confirms that the Forage simulation was submitted and the platform now displays the completion page and certificate. Independent reconciliation of the six Task 03 annual source totals remains an optional portfolio-quality check.
 
 For session-by-session updates, see [LEARNING_LOG.md](LEARNING_LOG.md).
 
