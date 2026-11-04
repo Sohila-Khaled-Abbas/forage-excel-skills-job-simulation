@@ -27,7 +27,7 @@ The module is written from scratch for this learning project. It uses Excel's wo
 4. Choose File → Import File... and select DashboardAppStyle.bas.
 5. Review the module procedures and workbook/sheet/range names.
 6. Return to Excel, press Alt + F8, select ApplyDashboardAppStyle, and choose Run.
-7. Check the KPI cards, charts, and newly added navigation buttons.
+7. Check the KPI cards, charts, and newly added navigation buttons. Run RestoreDashboardEditView from Alt + F8 when you need normal row/column headings and gridlines again.
 8. Save the enhanced copy as Excel Macro-Enabled Workbook (.xlsm). Keep the original XLSX unchanged.
 
 ## Macro behavior and safety
@@ -35,6 +35,7 @@ The module is written from scratch for this learning project. It uses Excel's wo
 - No auto-run procedures such as Workbook_Open or Auto_Open are included.
 - The macro only formats the Dashboard worksheet, styles chart objects on that sheet, and creates or updates clearly named navigation buttons.
 - Navigation buttons switch to existing worksheets by name.
+- RestoreDashboardEditView returns the Dashboard window to visible headings/gridlines and 100% zoom for editing.
 - The module does not access the network, files, email, shell commands, or external processes.
 - The code uses error handling and restores the prior values of ScreenUpdating and EnableEvents after execution.
 - Do not enable all macros globally. Review this module and enable it only for the local workbook copy you control.
