@@ -4,6 +4,14 @@ Option Explicit
 Private Const DASHBOARD_SHEET As String = "Dashboard"
 Private Const FONT_NAME As String = "Aptos"
 
+' Local numeric values for Office drawing enums. This avoids compile failures
+' if the Office object-library constants are not exposed in the VBA project.
+Private Const SHAPE_ROUND_RECT As Long = 5
+Private Const OFFICE_FALSE As Long = 0
+Private Const OFFICE_TRUE As Long = -1
+Private Const OFFICE_ANCHOR_MIDDLE As Long = 3
+Private Const OFFICE_ALIGN_CENTER As Long = 2
+
 ' Run this manually from the Macro dialog.
 ' Formats the existing Dashboard and adds worksheet-navigation buttons.
 ' Does not rewrite worksheet values, formulas, PivotTables, or chart data sources.
@@ -12,13 +20,18 @@ Public Sub ApplyDashboardAppStyle()
     Dim oldScreenUpdating As Boolean
     Dim oldEnableEvents As Boolean
     Dim navigationRow As Long
+    Dim stage As String
+    Dim failureNumber As Long
+    Dim failureDescription As String
 
     oldScreenUpdating = Application.ScreenUpdating
     oldEnableEvents = Application.EnableEvents
 
     On Error GoTo HandleError
+    stage = "locating the Dashboard worksheet"
     Set ws = ThisWorkbook.Worksheets(DASHBOARD_SHEET)
 
+    stage = "switching to presentation mode"
     Application.ScreenUpdating = False
     Application.EnableEvents = False
 
@@ -27,6 +40,7 @@ Public Sub ApplyDashboardAppStyle()
     ActiveWindow.DisplayHeadings = False
     ActiveWindow.Zoom = 85
 
+    stage = "formatting the dashboard canvas and title"
     With ws
         .Cells.Font.Name = FONT_NAME
         .Range("A1:N46").Interior.Color = RGB(248, 250, 252)
@@ -56,12 +70,15 @@ Public Sub ApplyDashboardAppStyle()
         .Rows(4).RowHeight = 20
     End With
 
+    stage = "formatting the KPI cards"
     FormatKpiCard ws, "B6:D8", "B6:D6", "B7:D8", 20
     FormatKpiCard ws, "F6:H8", "F6:H6", "F7:H8", 15
     FormatKpiCard ws, "J6:L8", "J6:L6", "J7:L8", 20
 
+    stage = "styling dashboard charts"
     StyleDashboardCharts ws
 
+    stage = "adding worksheet-navigation buttons"
     navigationRow = GetNavigationStartRow(ws)
 
     AddNavigationButton ws, "navSourceData", "SOURCE DATA", "GoToAccountSales", _
@@ -79,7 +96,11 @@ CleanExit:
     Exit Sub
 
 HandleError:
-    MsgBox "Dashboard styling stopped: " & Err.Description, vbExclamation, "Dashboard App Style"
+    failureNumber = Err.Number
+    failureDescription = Err.Description
+    MsgBox "Dashboard styling stopped while " & stage & "." & vbCrLf & _
+        "Error " & CStr(failureNumber) & ": " & failureDescription, _
+        vbExclamation, "Dashboard App Style"
     Resume CleanExit
 End Sub
 
@@ -162,7 +183,7 @@ Private Sub StyleDashboardCharts(ByVal ws As Worksheet)
                 With .ChartTitle.Format.TextFrame2.TextRange.Font
                     .Name = FONT_NAME
                     .Size = 12
-                    .Bold = msoTrue
+                    .Bold = OFFICE_TRUE
                     .Fill.ForeColor.RGB = RGB(15, 23, 42)
                 End With
             End If
@@ -235,13 +256,14 @@ Private Sub AddNavigationButton( _
 
     Dim buttonShape As Shape
 
+    Set buttonShape = Nothing
     On Error Resume Next
     Set buttonShape = ws.Shapes(shapeName)
     On Error GoTo 0
 
     If buttonShape Is Nothing Then
         Set buttonShape = ws.Shapes.AddShape( _
-            msoShapeRoundRect, _
+            SHAPE_ROUND_RECT, _
             anchorRange.Left, _
             anchorRange.Top, _
             anchorRange.Width, _
@@ -256,21 +278,21 @@ Private Sub AddNavigationButton( _
         .Height = anchorRange.Height
         .Placement = xlMoveAndSize
         .Fill.ForeColor.RGB = RGB(15, 118, 110)
-        .Line.Visible = msoFalse
+        .Line.Visible = OFFICE_FALSE
         .OnAction = "'" & ThisWorkbook.Name & "'!" & macroName
 
         With .TextFrame2
-            .VerticalAnchor = msoAnchorMiddle
+            .VerticalAnchor = OFFICE_ANCHOR_MIDDLE
             .MarginLeft = 6
             .MarginRight = 6
             .MarginTop = 2
             .MarginBottom = 2
             .TextRange.Text = buttonText
-            .TextRange.ParagraphFormat.Alignment = msoAlignCenter
+            .TextRange.ParagraphFormat.Alignment = OFFICE_ALIGN_CENTER
             With .TextRange.Font
                 .Name = FONT_NAME
                 .Size = 9
-                .Bold = msoTrue
+                .Bold = OFFICE_TRUE
                 .Fill.ForeColor.RGB = RGB(255, 255, 255)
             End With
         End With
