@@ -1,6 +1,6 @@
 # Task 04 — Record and Run a Macro
 
-**Status:** In progress. The learner reports downloading the supplied Account Sales Data for Automation workbook. The workbook file is also present in this repository. Saving a macro-enabled working copy, enabling Developer, recording a macro, testing it, and reviewing its generated VBA are not yet confirmed.
+**Status:** Initial Record and Run a Macro exercise complete — learner-confirmed. The learner reports successfully completing the recording, test run, and VBA inspection steps. The exact macro name and action were not supplied, so this guide does not claim a specific macro was recorded. The next activity is documented in [Task 04 — Sorting Macros and Buttons](06-sort-macros-and-buttons.md).
 
 ## 1. Workbook and safe working copy
 
@@ -11,7 +11,7 @@
 - Use **File → Save As → Excel Macro-Enabled Workbook (*.xlsm)** and save a separate working copy, for example `Account_Sales_Data_for_Automation_Practice.xlsm`.
 - Keep the supplied `.xlsx` as the untouched source.
 
-The learner should keep the working `.xlsm` in a local practice location. Do not publish a macro-enabled copy or redistribute the supplied workbook unless the Forage materials' sharing terms permit it.
+The learner should keep the working `.xlsm` in a local practice location. Do not publish a macro-enabled copy or redistribute the supplied workbook unless the Forage materials' sharing terms permit it. The learner has confirmed that the initial recording, test, and code-inspection exercise was completed successfully.
 
 ## 2. Enable the Developer tab
 
@@ -88,20 +88,20 @@ Do not replace the Task 04 recorded macro with the Task 03 dashboard styling mod
 - Capture evidence of the macro dialog, successful formatting result, and the generated procedure in the VBA editor, while hiding any personal information.
 - Record the actual macro name, selected range, workbook sheet name, test result, and any errors in the learning log.
 
-## 8. What comes next
+## 8. Completion record
 
-The following Forage activity introduces assigning a macro to a Form Control button. After the button lesson, the later sorting exercise can be practiced with separate macros for **5 YR CAGR** and **2021 Unit Sales**. Keep each macro focused on one action and test each sort on a copy or reversible dataset state.
+The learner confirms successful completion of the initial recording exercise, including running the macro and inspecting the generated VBA. The exact recorded macro name/action has not been captured here. The XLSM copy and original workbook should remain separate.
+
+Continue with [Task 04 — Sorting Macros and Buttons](06-sort-macros-and-buttons.md) to assign the first macro to a Form Control button, record the **5 YR CAGR** and **2021 Unit Sales** sorting macros, assign each its own button, run the tests, and prepare the PDF evidence.
 
 ## Completion checklist
 
-- [ ] Clean automation workbook opened in desktop Excel.
-- [ ] Separate `.xlsm` working copy saved.
-- [ ] Developer tab enabled.
-- [ ] Data worksheet, header row, and last header column identified.
-- [ ] `FormatSalesHeaders` recorded and stored in This Workbook (or the exact action required by the Forage page).
-- [ ] Macro tested from Developer → Macros.
-- [ ] Generated VBA inspected in the Visual Basic Editor.
-- [ ] Workbook saved and evidence captured.
+- [x] Initial macro-recording exercise completed — learner-confirmed.
+- [x] Recorded macro tested successfully — learner-confirmed.
+- [x] Generated VBA inspected in the Visual Basic Editor — learner-confirmed.
+- [ ] Add a Form Control button for the initial recorded macro.
+- [ ] Complete the two sorting macros and their buttons.
+- [ ] Complete final button tests and requested PDF evidence.
 
 ## Safety notes
 
