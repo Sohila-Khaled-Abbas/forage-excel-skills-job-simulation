@@ -1,6 +1,6 @@
 # Charts and Dashboards
 
-**Status:** Task 03 — Build Charts and Dashboards is in progress. The annual sales summary and all three required charts are complete based on learner-reported workbook updates. Dashboard KPI planning has started, including a documented Sales Growth calculation of 76.8% from 2016 to 2021. KPI-card implementation, chart placement, dashboard formatting, and final review remain unconfirmed.
+**Status:** Task 03 — Build Charts and Dashboards is in progress. The annual sales summary and all three required charts are complete based on learner-reported workbook updates. The learner confirms that the Dashboard now has three consistently formatted KPI cards (17,278; Cloudline Commerce; +76.8%), an aligned title and subtitle, and all three charts visible and readable. The remaining layout check is to confirm that no charts or KPI cards overlap; final validation remains pending.
 
 ## Task 03 — Prepare Your Data for Visualization
 
@@ -22,7 +22,7 @@ The learner reported the following results after preparing the workbook in Excel
 | Account records | 40 |
 | Excel Table | `AccountSales` — created |
 
-Checkpoints 1–6 are complete based on learner-reported Excel results. Both 2021 sales PivotTables have been created, with their displayed totals adding up correctly. The annual sales summary and all three required charts are complete. The learner confirms that Cloudline Commerce appears at the top of the Top 10 bar chart and Online is the highest account-type column. The updated working workbook is saved in the repository. Dashboard assembly and final review remain in progress.
+Checkpoints 1–6 are complete based on learner-reported Excel results. Both 2021 sales PivotTables have been created, with their displayed totals adding up correctly. The annual sales summary and all three required charts are complete. The learner confirms that Cloudline Commerce appears at the top of the Top 10 bar chart and Online is the highest account-type column. The updated working workbook is saved in the repository. The Dashboard is assembled with all three charts and formatted KPI cards; the no-overlap check and final review remain.
 
 ## PivotTable plan
 
@@ -172,7 +172,7 @@ Suggested dashboard placement: title in `B2:N3`, subtitle in `B4:N4`, KPI cards 
 
 Style all cards consistently, use a restrained color palette, hide worksheet gridlines, and keep chart titles and labels readable. The PivotTables and annual summary should remain on their source worksheets; the dashboard should reference them.
 
-**Progress note:** The annual values and resulting KPI calculation are learner-provided/documented. The cell references assume the stated two-column table layout. The Sales Growth formula has been prepared in the documentation but has not been confirmed as entered in Excel; the other KPI cards and dashboard formatting also remain unconfirmed.
+**Progress note:** The learner confirms that the KPI cards are implemented and formatted, with values 17,278, Cloudline Commerce, and 76.8%. The dashboard title and subtitle are aligned, and all three charts are visible and readable. The formula assumes the annual summary headers are in row 1 with 2016 and 2021 in B2 and B7 respectively. The no-overlap inspection and final validation remain outstanding.
 
 ## Dashboard layout
 
@@ -205,9 +205,11 @@ Record only insights supported by the finished PivotTables and charts. Explain w
 - [x] Create the account-type column chart; Online is the highest category (learner-reported).
 - [x] Save the updated working workbook in the repository.
 - [x] Document the Sales Growth KPI formula and expected result (76.8%) from the learner-reported annual summary; workbook entry not yet confirmed.
-- [ ] Implement the three linked KPI cards in Excel.
-- [ ] Assemble all three charts on the `Dashboard` worksheet and apply consistent dashboard formatting.
+- [x] Implement and consistently format the three KPI cards (learner-confirmed).
+- [x] Assemble the three charts on the `Dashboard` worksheet; all are visible and readable (learner-confirmed).
+- [x] Align the dashboard title and subtitle (learner-confirmed).
+- [ ] Verify that no KPI card or chart overlaps another object.
 - [ ] Validate chart values, labels, layout, and totals.
 - [ ] Save and submit the completed workbook.
 
-**Documentation rule:** PivotTable, annual-summary, and chart details above are learner-reported. The annual summary's 2021 value matches the PivotTable total; all six source-column totals have not been independently audited. The three charts are marked complete based on the learner's confirmation, but their objects and plotted ranges have not been independently inspected. The Sales Growth KPI calculation assumes the annual summary occupies A1:B7; it is documented but not confirmed as entered in Excel. Do not mark KPI-card implementation or the dashboard complete until the learner confirms the changes in Excel.
+**Documentation rule:** PivotTable, annual-summary, and chart details above are learner-reported. The annual summary's 2021 value matches the PivotTable total; all six source-column totals have not been independently audited. KPI cards, title/subtitle alignment, and chart visibility/readability are learner-confirmed. Chart objects and plotted ranges have not been independently inspected. The remaining dashboard layout check is to verify that the KPI cards and charts do not overlap.
