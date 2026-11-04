@@ -62,7 +62,9 @@
 | **Portfolio status** | <img src="https://img.shields.io/badge/In%20progress-Working%20through%20the%20exercises-E69A2D?style=flat-square" alt="In progress" /> |
 | **Official brief** | [Open the Forage simulation](https://www.theforage.com/simulations/forage/sponsored-content-excel-skills-jf8r) |
 
-The simulation was completed and submitted on **November 4, 2026**. The purpose of this repository is to turn each exercise into a reviewable learning artifact. I use the workbook to practice, document the reasoning behind each Excel operation, validate the result, and capture the skills that transfer to data analysis and business intelligence work.
+The simulation was completed and submitted on **November 4, 2026**. **Completed:** November 4, 2026 · [Download the Forage completion certificate](https://www.theforage.com/completion-certificates/HgpPSsyQpzob6HEh9/SfGxkQ8FacaZR9LnZ_HgpPSsyQpzob6HEh9_6ae9f5fbcfb5bb576b61ccb2_1793821202129_completion_certificate.pdf) · [View submitted workbook and evidence](material/04-vba-and-marcos/)
+
+The purpose of this repository is to turn each exercise into a reviewable learning artifact. I use the workbook to practice, document the reasoning behind each Excel operation, validate the result, and capture the skills that transfer to data analysis and business intelligence work.
 
 ## Learning roadmap
 
