@@ -1,6 +1,6 @@
 # Charts and Dashboards
 
-**Status:** Task 03 — Build Charts and Dashboards is in progress. The annual sales summary and all three required charts are complete based on learner-reported workbook updates. The learner confirms that the Dashboard now has three consistently formatted KPI cards (17,278; Cloudline Commerce; +76.8%), an aligned title and subtitle, and all three charts visible and readable. The remaining layout check is to confirm that no charts or KPI cards overlap; final validation remains pending.
+**Status:** Task 03 dashboard production is complete based on the learner's finalized workbook update. The three required charts, three consistently formatted KPI cards (17,278; Cloudline Commerce; +76.8%), aligned title/subtitle, readable chart panels, and final no-overlap check are learner-confirmed. Independent reconciliation of the six annual source totals and Forage submission remain pending.
 
 ## Task 03 — Prepare Your Data for Visualization
 
@@ -208,8 +208,19 @@ Record only insights supported by the finished PivotTables and charts. Explain w
 - [x] Implement and consistently format the three KPI cards (learner-confirmed).
 - [x] Assemble the three charts on the `Dashboard` worksheet; all are visible and readable (learner-confirmed).
 - [x] Align the dashboard title and subtitle (learner-confirmed).
-- [ ] Verify that no KPI card or chart overlaps another object.
-- [ ] Validate chart values, labels, layout, and totals.
-- [ ] Save and submit the completed workbook.
+- [x] Verify that no KPI card or chart overlaps another object (learner-confirmed in the finalized workbook).
+- [x] Complete the dashboard visual review: KPI cards, title/subtitle, chart visibility, readability, and spacing (learner-confirmed).
+- [ ] Independently reconcile all six annual totals against the source columns.
+- [ ] Submit the completed workbook through the Forage activity.
 
-**Documentation rule:** PivotTable, annual-summary, and chart details above are learner-reported. The annual summary's 2021 value matches the PivotTable total; all six source-column totals have not been independently audited. KPI cards, title/subtitle alignment, and chart visibility/readability are learner-confirmed. Chart objects and plotted ranges have not been independently inspected. The remaining dashboard layout check is to verify that the KPI cards and charts do not overlap.
+**Documentation rule:** PivotTable, annual-summary, chart, KPI, title/subtitle, readability, and final no-overlap details are learner-reported from the finalized workbook. The workbook's chart objects, plotted ranges, and visual positions have not been independently inspected in this session. All six annual totals still require independent source-column reconciliation, and external Forage submission is not confirmed.
+
+
+## Advanced app-style presentation
+
+An optional visual enhancement is documented separately:
+
+- [Dashboard design and VBA setup guide](../docs/04-dashboard-advanced-formatting-and-vba.md)
+- [Importable DashboardAppStyle module](../material/03-build-charts-and-dashboards/DashboardAppStyle.bas)
+
+The design uses a light application canvas, a dark navy title band, white KPI cards with subtle borders, teal accents, consistent chart panels, and worksheet-navigation buttons. The VBA module is intended for desktop Excel and is imported into a copy of the finalized workbook. It remains optional and has not yet been imported or executed by the learner. Preserve the finalized XLSX as the macro-free master; save a separate XLSM only after reviewing and testing the code.
