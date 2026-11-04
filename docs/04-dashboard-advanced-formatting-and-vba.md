@@ -2,7 +2,7 @@
 
 **Purpose:** Extend the finalized Task 03 dashboard with an application-inspired visual design and optional desktop-Excel navigation automation.
 
-**Current status:** The finalized XLSX dashboard is learner-reported complete. The learner has imported DashboardAppStyle.bas into Excel. VBA compilation and execution are not yet confirmed. Office Scripts source files are committed, but have not yet been pasted into or run from Excel's Scripts editor.
+**Current status:** The finalized XLSX dashboard is learner-reported complete. The learner imported the original DashboardAppStyle.bas into Excel. A compatibility-hardened revision is now in the repository, but it must be re-imported into the learner's local XLSM before compilation and execution can be confirmed. Office Scripts source files are committed, but have not yet been pasted into or run from Excel's Scripts editor.
 
 ## 1. Keep the finalized workbook safe
 
@@ -90,10 +90,10 @@ The main macro adds or updates four named navigation buttons beneath the lowest 
 2. If the Developer tab is hidden, enable it through File → Options → Customize Ribbon → Developer.
 3. Press Alt + F11.
 4. In the Visual Basic Editor, select File → Import File....
-5. Select DashboardAppStyle.bas from the repository.
-6. Review the module and confirm the worksheet names and KPI card ranges match your workbook.
-7. Press Alt + F8, select ApplyDashboardAppStyle, then select Run.
-8. Confirm the colors, text, chart panels, and navigation buttons. Use RestoreDashboardEditView from Alt + F8 when you want to return to normal worksheet editing view.
+5. Back up the current local XLSM. Remove the older `DashboardAppStyle` module from Project Explorer (export it first if you want a backup), then import the latest repository version to avoid duplicate public macro names.
+6. Confirm the worksheet names and KPI card ranges match your workbook.
+7. In the VBE, run **Debug → Compile VBAProject**. If compilation succeeds, press Alt + F8, select ApplyDashboardAppStyle, then select Run.
+8. Confirm the colors, text, chart panels, and navigation buttons. If runtime execution stops, note the stage, error number, full description, and highlighted line from the updated diagnostic message. Use RestoreDashboardEditView from Alt + F8 when you want to return to normal worksheet editing view.
 9. Save the duplicate as Excel Macro-Enabled Workbook (*.xlsm).
 
 If the card or title cell ranges differ from the target layout above, edit the corresponding range strings inside ApplyDashboardAppStyle and FormatKpiCard before running.
@@ -153,3 +153,14 @@ Office Scripts availability depends on the signed-in account, platform, license,
 - [ ] Original macro-free XLSX opens normally.
 
 **Evidence rule:** VBA import is learner-confirmed; compilation and execution are pending. The Office Scripts are committed source code only until saved and run in Excel. Do not describe either automation route as tested until the learner verifies the results.
+
+
+## Latest VBA compatibility update — 2026-11-04
+
+The repository module was hardened after the learner reported a VBA runtime/compile error, but the exact Excel error message and highlighted line were not included. The update therefore addresses likely compatibility problems without claiming a confirmed root cause:
+
+- Replaces the module's `mso...` shape/text constants with local numeric constants to reduce dependence on the Office object-library reference.
+- Sets the shape object variable to `Nothing` before looking up an existing navigation shape.
+- Adds a stage label and reports the error number and description if the main macro fails.
+
+**Verification status:** the updated BAS source is committed and checked for the intended replacements; it has not been compiled or executed in desktop Excel. Re-import it into the local workbook copy, then compile and run. The exact highlighted line is still needed if an error persists.
