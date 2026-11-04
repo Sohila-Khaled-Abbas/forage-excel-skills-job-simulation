@@ -175,7 +175,7 @@ The completed calculations and documented findings have now been reviewed and ve
 ## Completed exercise: Build Charts and Dashboards
 
 <details open>
-<summary><strong>Task 03 — Prepare Your Data for Visualization</strong> · <code>In progress</code></summary>
+<summary><strong>Task 03 — Prepare Your Data for Visualization</strong> · <code>Complete</code></summary>
 
 Task 03 Checkpoints 1–6 are complete based on the learner's reported Excel results. The `AccountSales` worksheet contains `A1:M41` (40 account records), the source data is an Excel Table named `AccountSales`, both required 2021 sales PivotTables and the 2016–2021 annual sales summary have been prepared, and all three required charts have been created: **Unit Sales by Year** (line), **Top 10 Accounts by 2021 Unit Sales** (bar), and **2021 Unit Sales by Account Type** (column). The finalized working workbook is saved in the repository. Dashboard assembly and formatting are learner-confirmed: the three KPI cards display Total 2021 Sales (17,278), Top Account (Cloudline Commerce), and Sales Growth (+76.8%); the title and subtitle are aligned; all three charts are visible and readable; and the final layout check has been completed by the learner. Task 03 dashboard production is recorded as complete on a learner-reported basis. Independent reconciliation of all six annual totals and submission through the Forage activity remain separate final-review items.
 
@@ -210,7 +210,7 @@ The completed Task 03 dashboard can be given an optional app-inspired presentati
 - [RestoreDashboardEditView_Web.ts — Office Scripts reset](material/03-build-charts-and-dashboards/RestoreDashboardEditView_Web.ts)
 - [Automation and VBA learning notes](learning-notes/automation-and-vba.md)
 
-VBA runs in desktop Excel, not in Excel for the web. The VBA module has been imported by the learner, but compilation and execution are still pending. For browser-based automation, use the Office Scripts sources below; see the [Microsoft Office Scripts introduction](https://support.microsoft.com/en-us/office/introduction-to-office-scripts-in-excel-9fbe283d-adb8-4f13-a75b-a81c6baf163a).
+VBA runs in desktop Excel, not in Excel for the web. The original VBA module was imported by the learner; a compatibility-hardened revision has since been committed and must be re-imported before compilation and execution testing. For browser-based automation, use the Office Scripts sources below; see the [Microsoft Office Scripts introduction](https://support.microsoft.com/en-us/office/introduction-to-office-scripts-in-excel-9fbe283d-adb8-4f13-a75b-a81c6baf163a).
 
 ## VBA and Office Scripts implementation
 
@@ -256,7 +256,8 @@ forage-excel-skills-job-simulation/
 │   ├── 01-conditional-formatting-findings.md
 │   ├── 02-formulas-and-functions-findings.md
 │   ├── 03-chart-and-dashboard-preparation.md
-│   └── 04-dashboard-advanced-formatting-and-vba.md
+│   ├── 04-dashboard-advanced-formatting-and-vba.md
+│   └── 05-record-and-run-a-macro.md
 │
 ├── learning-notes/
 │   ├── data-preparation.md
@@ -272,11 +273,11 @@ forage-excel-skills-job-simulation/
     │   ├── Excel_Formula_Practice.xlsx
     │   └── Excel_Formula_Practice_Completed.xlsx
     ├── 03-build-charts-and-dashboards/
-        ├── Account_Sales_Data_for_Dashboard_Practice.xlsx
-        ├── Account_Sales_Data_for_Dashboard_Practice_Working.xlsx
-        ├── DashboardAppStyle.bas
-        ├── DashboardAppStyle_Web.ts
-        └── RestoreDashboardEditView_Web.ts
+    │   ├── Account_Sales_Data_for_Dashboard_Practice.xlsx
+    │   ├── Account_Sales_Data_for_Dashboard_Practice_Working.xlsx
+    │   ├── DashboardAppStyle.bas
+    │   ├── DashboardAppStyle_Web.ts
+    │   └── RestoreDashboardEditView_Web.ts
     └── 04-vba-and-marcos/
         └── Account_Sales_Data_for_Automation.xlsx
 ~~~
