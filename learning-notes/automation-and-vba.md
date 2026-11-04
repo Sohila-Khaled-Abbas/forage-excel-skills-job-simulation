@@ -95,8 +95,8 @@ Do not mark the VBA enhancement complete until it has been run and the tests abo
 | Milestone | Status |
 |---|---|
 | Automation workbook downloaded | Complete — learner-confirmed |
-| Macro-enabled local working copy saved | Pending confirmation |
-| Developer tab enabled | Pending confirmation |
+| Macro-enabled working copy saved and committed to the repository | Complete — XLSM file verified in GitHub |
+| Developer tab enabled for recording and Form Control insertion | Complete — implied by the learner-confirmed workflow |
 | First macro recorded in This Workbook | Complete — learner-confirmed |
 | Macro tested from Developer → Macros | Complete — learner-confirmed |
 | Generated VBA reviewed | Complete — learner-confirmed |
