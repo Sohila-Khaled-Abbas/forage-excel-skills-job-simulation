@@ -1,12 +1,14 @@
 # Task 04 — Sorting Macros and Buttons
 
-**Status:** In progress. The learner confirms that the preceding Record and Run a Macro exercise was completed successfully. The two sort macros, their buttons, final tests, and PDF evidence are not yet confirmed.
+**Status:** Complete — learner-confirmed. The learner reports 8/8 completion: the first recorded macro has a Form Control button; `SortBy5YrCAGR` and `SortBy2021UnitSales` were recorded; each sorting macro has its own button; both buttons passed their tests; and the two required screenshots were assembled into a PDF that was reopened and checked for readability. The macro-enabled working copy and PDF are both present in the repository. Forage upload and submission are still pending confirmation.
 
 ## 1. Continue in the same Task 04 workbook
 
 Use the same local macro-enabled file, for example `Account_Sales_Data_for_Automation_Practice.xlsm`.
 
 - Source workbook: [Account_Sales_Data_for_Automation.xlsx](../material/04-vba-and-marcos/Account_Sales_Data_for_Automation.xlsx)
+- Macro-enabled working copy: [Account_Sales_Data_for_Automation_Practice.xlsm](../material/04-vba-and-marcos/Account_Sales_Data_for_Automation_Practice.xlsm)
+- Completed evidence PDF: [Task_04_Macro_Buttons_Evidence.pdf](../material/04-vba-and-marcos/Task_04_Macro_Buttons_Evidence.pdf)
 - Keep the original XLSX unchanged.
 - Continue using desktop Excel.
 - Save the XLSM before making changes.
@@ -158,17 +160,20 @@ Do not include login information, personal files, or unrelated desktop content i
 
 ## 9. Final completion checklist
 
-- [ ] Button added for the first recorded macro and tested.
-- [ ] `SortBy5YrCAGR` recorded in This Workbook.
-- [ ] `SortBy2021UnitSales` recorded in This Workbook.
-- [ ] Both sorts include the full data range and preserve the header.
-- [ ] Button assigned to `SortBy5YrCAGR` and labeled **Sort by 5 YR CAGR**.
-- [ ] Button assigned to `SortBy2021UnitSales` and labeled **Sort by 2021 Unit Sales**.
-- [ ] CAGR button tested and verified.
-- [ ] 2021 Unit Sales button tested and verified.
-- [ ] PDF contains the workbook screenshot with both buttons.
-- [ ] PDF contains a readable VBA procedure screenshot.
-- [ ] XLSM saved; original XLSX preserved.
+- [x] Form Control button added for the first recorded macro.
+- [x] `SortBy5YrCAGR` recorded.
+- [x] `SortBy2021UnitSales` recorded.
+- [x] Each sorting macro assigned to its own Form Control button.
+- [x] CAGR sorting button tested successfully.
+- [x] 2021 Unit Sales sorting button tested successfully.
+- [x] Workbook screenshot showing both sorting buttons captured.
+- [x] VBA code screenshot captured.
+- [x] Both screenshots assembled into `Task_04_Macro_Buttons_Evidence.pdf`.
+- [x] PDF reopened and checked for readability.
+- [x] Macro-enabled working copy and evidence PDF present in the repository; original XLSX retained.
+- [ ] Upload the macro-enabled XLSM and PDF to the Forage task page and select **Submit file**.
+
+**Completion boundary:** The Excel implementation and evidence preparation are complete on a learner-confirmed basis. Do not mark the Forage activity submitted until the upload is accepted and the platform confirms the submission.
 
 ## 10. Safety and reproducibility
 
