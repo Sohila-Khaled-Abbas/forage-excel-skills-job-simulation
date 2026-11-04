@@ -1,6 +1,6 @@
 # Task 03 — Build Charts and Dashboards
 
-**Status:** In progress. Checkpoints 1–6 are complete based on learner-reported Excel results, including the annual summary and all three required charts. Dashboard assembly and final review remain.
+**Status:** In progress. Checkpoints 1–6 are complete based on learner-reported Excel results, including the annual summary and all three required charts. Dashboard KPI planning has started: the Sales Growth KPI is calculated at 76.8% using the reported 2016 and 2021 totals. The learner has not yet confirmed implementation of the KPI cards, chart placement, or dashboard formatting.
 
 Updated working workbook: [Account Sales Data for Dashboard Practice — Working](../material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice_Working.xlsx)  
 Original practice workbook: [Account Sales Data for Dashboard Practice](../material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
@@ -194,6 +194,53 @@ The chart selections and key visual checks are learner-confirmed. The workbook's
 4. Use consistent titles, readable labels, and restrained formatting.
 5. Check that all chart data is current and that the layout is understandable at a glance.
 
+
+### KPI cards and dashboard formatting
+
+The learner-provided annual summary is:
+
+| Year | Total Unit Sales |
+|---|---:|
+| 2016 | 9,773 |
+| 2017 | 10,380 |
+| 2018 | 11,115 |
+| 2019 | 12,283 |
+| 2020 | 14,193 |
+| 2021 | 17,278 |
+
+Assuming the summary headers are in row 1, with 2016 in row 2 and 2021 in row 7, use this formula for the **Sales Growth (2016–2021)** KPI:
+
+```excel
+=('Annual_Sales_Summary'!$B$7-'Annual_Sales_Summary'!$B$2)/'Annual_Sales_Summary'!$B$2
+```
+
+Format the result as **Percentage** with one decimal place. The expected result is **76.8%**, representing an increase of 7,505 units from 2016 to 2021. The absolute references keep the source cells fixed if the formula is copied.
+
+Suggested KPI cards:
+
+| KPI card | Value | Source / calculation |
+|---|---:|---|
+| Total 2021 Sales | 17,278 units | Link to the Grand Total in `PT_Sales_by_Type`; use the actual Grand Total cell. |
+| Top Account | Cloudline Commerce | Link to the first account in `PT_Top10_2021`; use the actual account-name cell. |
+| Sales Growth (2016–2021) | 76.8% | Formula above, formatted as a percentage with one decimal place. |
+
+Suggested worksheet layout:
+
+| Dashboard element | Suggested cell area |
+|---|---|
+| Main title | `B2:N3` |
+| Subtitle | `B4:N4` |
+| Total 2021 Sales card | `B6:D8` |
+| Top Account card | `F6:H8` |
+| Sales Growth card | `J6:L8` |
+| Annual sales line chart | `B10:N23` |
+| Top 10 bar chart | `B25:H42` |
+| Account type column chart | `J25:N42` |
+
+Use consistent fills, borders, font sizes, and alignment across the three KPI cards. Keep the dashboard background uncluttered, hide worksheet gridlines, use a clear title and subtitle, and ensure the charts are readable and non-overlapping. Keep the PivotTables and annual summary on their own worksheets; the Dashboard should present linked KPI values and charts rather than duplicate source tables.
+
+**Progress boundary:** The annual summary values and the Sales Growth calculation above are documented from learner-provided information. The formula is based on the stated row layout and has not been confirmed as entered into the workbook. Do not mark the KPI cards or dashboard formatting complete until the learner confirms the changes in Excel.
+
 ## 7. Final review and submission
 
 - [ ] Dashboard worksheet exists and is named `Dashboard`.
@@ -219,7 +266,10 @@ The chart selections and key visual checks are learner-confirmed. The workbook's
 | Create and format the Top 10 bar chart | Complete — learner-reported; Cloudline Commerce is at the top |
 | Create and format the account-type column chart | Complete — learner-reported; Online is the highest category |
 | Save updated working workbook in the repository | Complete — repository file confirmed |
-| Assemble Dashboard worksheet | Pending |
+| Document Sales Growth KPI calculation (76.8%) from the reported annual summary | Complete — calculation documented; workbook entry not yet confirmed |
+| Implement and format the three KPI cards | Pending — learner confirmation required |
+| Assemble Dashboard worksheet and position all three charts | Pending — learner confirmation required |
+| Format title, subtitle, chart layout, and card styling | Pending — learner confirmation required |
 | Final validation and submission | Pending |
 
-**Documentation rule:** Chart completion and visual checks in this guide are learner-reported; the updated workbook's chart objects and plotted ranges have not been independently inspected. The Dashboard worksheet remains pending until it is created and checked in Excel.
+**Documentation rule:** Chart completion and visual checks in this guide are learner-reported; the updated workbook's chart objects and plotted ranges have not been independently inspected. The Sales Growth KPI calculation is documented from the learner-provided annual summary and assumes headers in row 1 with data in rows 2–7; its entry in Excel, the other KPI cards, the Dashboard worksheet, chart placement, and formatting remain unconfirmed until the learner verifies them.
