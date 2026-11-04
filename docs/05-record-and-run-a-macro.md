@@ -1,6 +1,6 @@
 # Task 04 — Record and Run a Macro
 
-**Status:** Initial Record and Run a Macro exercise complete — learner-confirmed. The learner reports successfully completing the recording, test run, and VBA inspection steps. The exact macro name and action were not supplied, so this guide does not claim a specific macro was recorded. The next activity is documented in [Task 04 — Sorting Macros and Buttons](06-sort-macros-and-buttons.md).
+**Status:** Initial Record and Run a Macro exercise complete — learner-confirmed. The learner reports successfully completing the recording, test run, and VBA inspection steps. The exact macro name and action were not supplied, so this guide does not claim a specific macro was recorded. The learner has also confirmed adding a Form Control button for that first recorded macro. The exact macro name and recorded action remain undocumented. The two sorting macros, their individual buttons, successful tests, and readable PDF evidence are complete; only the Forage upload/submission remains. See [Task 04 — Sorting Macros and Buttons](06-sort-macros-and-buttons.md).
 
 ## 1. Workbook and safe working copy
 
@@ -92,16 +92,17 @@ Do not replace the Task 04 recorded macro with the Task 03 dashboard styling mod
 
 The learner confirms successful completion of the initial recording exercise, including running the macro and inspecting the generated VBA. The exact recorded macro name/action has not been captured here. The XLSM copy and original workbook should remain separate.
 
-Continue with [Task 04 — Sorting Macros and Buttons](06-sort-macros-and-buttons.md) to assign the first macro to a Form Control button, record the **5 YR CAGR** and **2021 Unit Sales** sorting macros, assign each its own button, run the tests, and prepare the PDF evidence.
+The learner has completed the sorting-and-buttons workflow described in [Task 04 — Sorting Macros and Buttons](06-sort-macros-and-buttons.md). The remaining action is to upload the macro-enabled workbook and evidence PDF to Forage and submit them.
 
 ## Completion checklist
 
 - [x] Initial macro-recording exercise completed — learner-confirmed.
 - [x] Recorded macro tested successfully — learner-confirmed.
 - [x] Generated VBA inspected in the Visual Basic Editor — learner-confirmed.
-- [ ] Add a Form Control button for the initial recorded macro.
-- [ ] Complete the two sorting macros and their buttons.
-- [ ] Complete final button tests and requested PDF evidence.
+- [x] Add a Form Control button for the initial recorded macro — learner-confirmed.
+- [x] Complete the two sorting macros and their buttons — learner-confirmed.
+- [x] Complete final sorting-button tests and requested PDF evidence — learner-confirmed.
+- [ ] Upload the XLSM and PDF to Forage and submit the task.
 
 ## Safety notes
 
