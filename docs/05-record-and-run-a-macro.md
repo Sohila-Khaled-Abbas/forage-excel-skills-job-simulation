@@ -1,6 +1,6 @@
 # Task 04 — Record and Run a Macro
 
-**Status:** Initial Record and Run a Macro exercise complete — learner-confirmed. The learner reports successfully completing the recording, test run, and VBA inspection steps. The exact macro name and action were not supplied, so this guide does not claim a specific macro was recorded. The learner has also confirmed adding a Form Control button for that first recorded macro. The exact macro name and recorded action remain undocumented. The two sorting macros, their individual buttons, successful tests, and readable PDF evidence are complete; only the Forage upload/submission remains. See [Task 04 — Sorting Macros and Buttons](06-sort-macros-and-buttons.md).
+**Status:** Initial Record and Run a Macro exercise complete — learner-confirmed. The learner reports successfully completing the recording, test run, and VBA inspection steps. The exact macro name and action were not supplied, so this guide does not claim a specific macro was recorded. The learner has also confirmed adding a Form Control button for that first recorded macro. The exact macro name and recorded action remain undocumented. The two sorting macros, their individual buttons, successful tests, and readable PDF evidence are complete; the Forage upload/submission has also been completed; the activity now displays its completion page and certificate dated November 4, 2026. See [Task 04 — Sorting Macros and Buttons](06-sort-macros-and-buttons.md).
 
 ## 1. Workbook and safe working copy
 
@@ -102,7 +102,7 @@ The learner has completed the sorting-and-buttons workflow described in [Task 04
 - [x] Add a Form Control button for the initial recorded macro — learner-confirmed.
 - [x] Complete the two sorting macros and their buttons — learner-confirmed.
 - [x] Complete final sorting-button tests and requested PDF evidence — learner-confirmed.
-- [ ] Upload the XLSM and PDF to Forage and submit the task.
+- [x] Upload the XLSM and PDF to Forage and submit the task — learner-confirmed; completion page visible.
 
 ## Safety notes
 
