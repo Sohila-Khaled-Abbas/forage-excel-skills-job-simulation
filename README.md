@@ -40,7 +40,7 @@
 - [Completed exercise: Conditional Formatting](#completed-exercise-conditional-formatting)
 - [Completed exercise: Formulas and Functions](#completed-exercise-formulas-and-functions)
 - [Completed exercise: Build Charts and Dashboards](#completed-exercise-build-charts-and-dashboards)
-- [Current exercise: Record and Run a Macro](#current-exercise-record-and-run-a-macro)
+- [Task 04 — Automate Repetitive Tasks](#task-04--automate-repetitive-tasks)
 - [Task 04 sorting macros and buttons](#task-04-sorting-macros-and-buttons)
 - [Advanced dashboard styling and VBA](#advanced-dashboard-styling-and-vba)
 - [VBA and Office Scripts implementation](#vba-and-office-scripts-implementation)
@@ -225,18 +225,18 @@ The VBA module has been **imported into Excel by the learner**. Compilation and 
 To create a run button for an Office Script, open the saved script from **Automate**, enable **Associate with workbook**, then select **Add button to worksheet**. This is separate from the workbook navigation hyperlinks created by the script. See Microsoft's [script-button instructions](https://support.microsoft.com/en-us/excel/office-scripts/create-a-button-to-run-an-office-script).
 
 
-## Current exercise: Record and Run a Macro
+## Task 04 — Automate Repetitive Tasks
 
 <details open>
-<summary><strong>Task 04 — Record and Run a Macro</strong> · <code>In progress</code></summary>
+<summary><strong>Task 04 — Record, Sort, and Automate with Macros</strong> · <code>Practice complete; Forage submission pending</code></summary>
 
-The learner confirms completing the initial Record and Run a Macro exercise: a macro was recorded, tested, and its generated VBA inspected. The exact macro name and recorded action have not yet been captured in the repository. The current Task 04 work is to add Form Control buttons, record the two required descending-sort macros, test each button, and prepare the requested PDF evidence.
+The learner confirms that the initial macro was recorded, tested, and inspected in the VBA editor, and that a Form Control button was added for it. The two required sorting macros — `SortBy5YrCAGR` and `SortBy2021UnitSales` — were recorded and assigned to separate buttons. Both sorting buttons were tested successfully. The learner captured the workbook screenshot showing both buttons and a VBA-code screenshot, assembled them into a PDF, then reopened the PDF and checked its readability. The exact first macro name/action has not been captured.
 
-**Workbook:** [Account Sales Data for Automation](material/04-vba-and-marcos/Account_Sales_Data_for_Automation.xlsx)
+**Workbooks and evidence:** [Original automation workbook](material/04-vba-and-marcos/Account_Sales_Data_for_Automation.xlsx) · [Macro-enabled working copy](material/04-vba-and-marcos/Account_Sales_Data_for_Automation_Practice.xlsm) · [Task 04 evidence PDF](material/04-vba-and-marcos/Task_04_Macro_Buttons_Evidence.pdf)
 
-**Step-by-step guide:** [Task 04 — Record and Run a Macro](docs/05-record-and-run-a-macro.md)
+**Guides:** [Task 04 — Record and Run a Macro](docs/05-record-and-run-a-macro.md) · [Task 04 — Sorting Macros and Buttons](docs/06-sort-macros-and-buttons.md)
 
-**Progress:** Initial macro recording, testing, and VBA inspection — complete (learner-confirmed). **Current:** Sorting macros, their two Form Control buttons, final tests, and PDF evidence — in progress. See [Task 04 sorting macros and buttons](docs/06-sort-macros-and-buttons.md).
+**Progress:** Macro recording, both sorting macros, all three Form Control buttons, successful tests of both sorting buttons, and readable PDF evidence — complete (learner-confirmed). **Remaining:** upload the macro-enabled workbook and PDF in the Forage activity and select **Submit file**. Forage submission is not yet confirmed.
 
 </details>
 
@@ -281,7 +281,9 @@ forage-excel-skills-job-simulation/
     │   ├── DashboardAppStyle_Web.ts
     │   └── RestoreDashboardEditView_Web.ts
     └── 04-vba-and-marcos/
-        └── Account_Sales_Data_for_Automation.xlsx
+        ├── Account_Sales_Data_for_Automation.xlsx
+        ├── Account_Sales_Data_for_Automation_Practice.xlsm
+        └── Task_04_Macro_Buttons_Evidence.pdf
 ~~~
 
 ### Quick navigation
@@ -302,7 +304,9 @@ forage-excel-skills-job-simulation/
 | [Advanced dashboard and VBA guide](docs/04-dashboard-advanced-formatting-and-vba.md) | Apply an app-inspired Excel layout and import optional desktop VBA enhancements. |
 | [Task 04 macro guide](docs/05-record-and-run-a-macro.md) | Save an XLSM working copy, record and test a macro, and inspect the generated VBA. |
 | [Task 04 sorting macros and buttons](docs/06-sort-macros-and-buttons.md) | Record the two descending sorts, assign Form Control buttons, test them, and assemble PDF evidence. |
-| [Task 04 automation workbook](material/04-vba-and-marcos/Account_Sales_Data_for_Automation.xlsx) | Clean Forage workbook supplied for the macro-recording exercise. |
+| [Task 04 automation workbook](material/04-vba-and-marcos/Account_Sales_Data_for_Automation.xlsx) | Original Forage workbook supplied for the macro-recording exercise. |
+| [Task 04 macro-enabled workbook](material/04-vba-and-marcos/Account_Sales_Data_for_Automation_Practice.xlsm) | Learner's working copy containing the recorded macros and Form Control buttons. |
+| [Task 04 evidence PDF](material/04-vba-and-marcos/Task_04_Macro_Buttons_Evidence.pdf) | PDF containing the workbook/buttons screenshot and VBA-code screenshot; readability checked by the learner. |
 | [Dashboard VBA module](material/03-build-charts-and-dashboards/DashboardAppStyle.bas) | Importable desktop-Excel module for visual styling and worksheet-navigation buttons. |
 | [Dashboard Office Script](material/03-build-charts-and-dashboards/DashboardAppStyle_Web.ts) | TypeScript source for web-compatible dashboard formatting and worksheet hyperlinks. |
 | [Dashboard edit-view reset](material/03-build-charts-and-dashboards/RestoreDashboardEditView_Web.ts) | Restores gridlines and headings after the presentation-style script. |
