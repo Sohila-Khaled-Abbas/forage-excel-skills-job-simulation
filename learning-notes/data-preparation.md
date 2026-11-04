@@ -50,5 +50,5 @@ Detailed findings, account-level records, conditional-formatting logic, and vali
 ## Related materials
 
 - [Original workbook](../material/01-conditional-formatting/Account%20Sales%20Data%20for%20Analysis.xlsx)
-- [Completed workbook](../material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx.xlsx)
+- [Completed workbook](../material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx)
 - [Full findings and account-level detail](../docs/01-conditional-formatting-findings.md)

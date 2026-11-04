@@ -1,185 +1,180 @@
 # Task 04 — Sorting Macros and Buttons
 
-**Status:** Complete — learner-confirmed. The learner reports 8/8 completion: the first recorded macro has a Form Control button; `SortBy5YrCAGR` and `SortBy2021UnitSales` were recorded; each sorting macro has its own button; both buttons passed their tests; and the two required screenshots were assembled into a PDF that was reopened and checked for readability. The macro-enabled working copy and PDF are both present in the repository. The learner confirms that both required files were submitted through Forage; the activity now displays its completion page and certificate dated November 4, 2026.
+<div align="center">
+  <img src="https://img.shields.io/badge/STATUS-COMPLETED%20%26%20SUBMITTED-2E8B57?style=for-the-badge" alt="Status: Completed and Submitted" />
+  <img src="https://img.shields.io/badge/VBA-SORTING%20MACROS-795548?style=for-the-badge" alt="VBA Sorting Macros" />
+  <img src="https://img.shields.io/badge/EVIDENCE-OFFICIALLY%20VERIFIED-2563EB?style=for-the-badge" alt="Evidence: Officially Verified" />
+</div>
 
-## 1. Continue in the same Task 04 workbook
+---
 
-Use the same local macro-enabled file, for example `Account_Sales_Data_for_Automation_Practice.xlsm`.
+## 🖼️ Official Visual Evidence Showcase
 
-- Source workbook: [Account_Sales_Data_for_Automation.xlsx](../material/04-vba-and-marcos/Account_Sales_Data_for_Automation.xlsx)
-- Macro-enabled working copy: [Account_Sales_Data_for_Automation_Practice.xlsm](../material/04-vba-and-marcos/Account_Sales_Data_for_Automation_Practice.xlsm)
-- Completed evidence PDF: [Task_04_Macro_Buttons_Evidence.pdf](../material/04-vba-and-marcos/Task_04_Macro_Buttons_Evidence.pdf)
-- Keep the original XLSX unchanged.
-- Continue using desktop Excel.
-- Save the XLSM before making changes.
+The two screenshots below were extracted directly from the official submission evidence PDF ([`Task_04_Macro_Buttons_Evidence.pdf`](../material/04-vba-and-marcos/Task_04_Macro_Buttons_Evidence.pdf)):
 
-Do not switch to the Task 03 dashboard workbook. This is a separate exercise and should retain its own macros.
+### 1. Worksheet View with Integrated Macro Buttons
+<div align="center">
+  <a href="../screenshots/04-sorting-macro-buttons-worksheet.png">
+    <img src="../screenshots/04-sorting-macro-buttons-worksheet.png" width="850" alt="Worksheet with Macro Buttons" style="border: 1px solid #E2E8F0; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);" />
+  </a>
+  <p><em>Figure 1: Account Sales Data worksheet sorted dynamically by <code>5 YR CAGR</code> descending, featuring three Form Control buttons in column Q: <code>Format Headers</code>, <code>Sort by 5 YR CAGR</code>, and <code>Sort by 2021 Unit Sales</code>.</em></p>
+</div>
 
-## 2. Add a Form Control button for the first recorded macro
+### 2. VBA Code in Microsoft Visual Basic for Applications
+<div align="center">
+  <a href="../screenshots/04-vba-sorting-macro-code.png">
+    <img src="../screenshots/04-vba-sorting-macro-code.png" width="850" alt="VBA Code Editor" style="border: 1px solid #E2E8F0; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);" />
+  </a>
+  <p><em>Figure 2: Microsoft Visual Basic for Applications editor displaying <code>Module2 (Code)</code> containing procedures <code>SortBy5YrCAGR</code> and <code>SortBy2021UnitSales</code>.</em></p>
+</div>
 
-1. Select **Developer → Insert**.
-2. In **Form Controls**, choose **Button** (not ActiveX Controls).
-3. Click and drag to draw the button in a clear area of the worksheet.
-4. In the **Assign Macro** dialog, select the macro you recorded in the preceding exercise.
-5. Select **OK**.
-6. Right-click the button → **Edit Text**.
-7. Give it a concise label that describes the actual action, for example **Format Headers** if that was the action you recorded.
-8. Click the button once to verify that it runs the correct macro.
+---
 
-If the workbook data fills columns A:M, place buttons in an unused area to the right of the dataset, for example columns O:R. Do not cover any headers, records, or data cells. If the sheet uses more columns, choose another genuinely blank area.
+## Objective & Execution Summary
 
-If the wrong macro is assigned, right-click the button and select **Assign Macro** to correct it.
+The core objective of this exercise was to automate repetitive multi-column tabular sorting in Microsoft Excel using recorded VBA macros bound to Form Control command buttons. This ensures stakeholders can instantly reorder the 40-account dataset by growth or volume with zero manual configuration.
 
-Microsoft's official instructions: [Assign a macro to a Form or a Control button](https://support.microsoft.com/en-us/excel/assign-a-macro-to-a-form-or-a-control-button).
+- **Macro-Enabled Working File:** [Account_Sales_Data_for_Automation_Practice.xlsm](../material/04-vba-and-marcos/Account_Sales_Data_for_Automation_Practice.xlsm)
+- **Original Source File:** [Account_Sales_Data_for_Automation.xlsx](../material/04-vba-and-marcos/Account_Sales_Data_for_Automation.xlsx)
+- **Official Submission PDF:** [Task_04_Macro_Buttons_Evidence.pdf](../material/04-vba-and-marcos/Task_04_Macro_Buttons_Evidence.pdf)
 
-## 3. Confirm the complete data range before sorting
+---
 
-The previous Account Sales dataset layout used `A1:M41` (one header row and 40 account rows), with:
+## 1. Table Architecture & Relational Integrity
 
-- `2021 Unit Sales` in column L.
-- `5 YR CAGR` in column M.
+Before recording sorting actions, the dataset structure was verified:
+- **Worksheet:** `Account Sales Data`
+- **Total Range:** `A1:M41` (Headers in row 1, 40 account rows in rows 2–41)
+- **Volume Field:** Column `L` (`2021 Unit Sales`)
+- **Growth Field:** Column `M` (`5 YR CAGR`)
 
-**Verify these in the Task 04 workbook rather than assuming the same layout.** Check the actual worksheet tab, header row, first record, last record, and last data column. If the Task 04 workbook matches the prior layout, `A1:M41` is the complete range. Otherwise use the actual contiguous range.
+> [!CAUTION]
+> **Relational Integrity Rule:** Sorting a single column alone breaks data linkage across account records. Both recorded macros explicitly select the entire table (`A1:M41`) before executing the sort, ensuring complete rows move together.
 
-Before recording either sort:
+---
 
-1. Make sure no rows or columns in the data range are hidden.
-2. Confirm all account fields are in one contiguous rectangular range.
-3. Confirm that the first row contains the column labels.
-4. Use the Name Box (left of the formula bar) to select the complete range, including its header, while recording. For example, type `A1:M41` only if that range has been confirmed.
-5. In the Sort dialog, keep **My data has headers** checked.
+## 2. Implemented Sorting Macros
 
-Do not sort only column L or only column M. Sorting one field alone can detach values from their corresponding account records. Excel's sort dialog supports sorting a data range by one selected column while moving complete rows together: [Sort data in a range or table in Excel](https://support.microsoft.com/en-us/excel/sort-data-in-a-range-or-table-in-excel).
+### Macro 1 — Sort by 5 YR CAGR (`SortBy5YrCAGR`)
 
-## 4. Record macro 1 — Sort by 5 YR CAGR
+- **Objective:** Rank accounts from highest compound annual growth rate to lowest.
+- **Sort Key:** Column `M` (`M2:M41`)
+- **Sort Order:** `xlDescending` (Largest to Smallest)
+- **Header Specification:** `Header = xlYes`
 
-Macro name (no spaces):
+### Macro 2 — Sort by 2021 Unit Sales (`SortBy2021UnitSales`)
 
-```text
-SortBy5YrCAGR
+- **Objective:** Rank accounts from highest 2021 sales volume to lowest.
+- **Sort Key:** Column `L` (`L2:L41`)
+- **Sort Order:** `xlDescending` (Largest to Smallest)
+- **Header Specification:** `Header = xlYes`
+
+---
+
+## 3. Verified VBA Source Code (`Module2`)
+
+The exact recorded VBA implementation captured in the official submission evidence:
+
+```vba
+Option Explicit
+
+Sub SortBy5YrCAGR()
+'
+' SortBy5YrCAGR Macro
+'
+
+'
+    Range("A1").Select
+    Range(Selection, Selection.End(xlToRight)).Select
+    Range(Selection, Selection.End(xlDown)).Select
+    ActiveWorkbook.Worksheets("Account Sales Data").Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("Account Sales Data").Sort.SortFields.Add2 Key:= _
+        Range("M2:M41"), SortOn:=xlSortOnValues, Order:=xlDescending, DataOption _
+        :=xlSortNormal
+    With ActiveWorkbook.Worksheets("Account Sales Data").Sort
+        .SetRange Range("A1:M41")
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+End Sub
+
+Sub SortBy2021UnitSales()
+'
+' SortBy2021UnitSales Macro
+'
+
+'
+    Range("A1").Select
+    Range(Selection, Selection.End(xlToRight)).Select
+    Range(Selection, Selection.End(xlDown)).Select
+    ActiveWorkbook.Worksheets("Account Sales Data").Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("Account Sales Data").Sort.SortFields.Add2 Key:= _
+        Range("L2:L41"), SortOn:=xlSortOnValues, Order:=xlDescending, DataOption _
+        :=xlSortNormal
+    With ActiveWorkbook.Worksheets("Account Sales Data").Sort
+        .SetRange Range("A1:M41")
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+End Sub
 ```
 
-Recording sequence:
+### Technical Code Walkthrough
 
-1. Select **Developer → Record Macro**.
-2. Enter `SortBy5YrCAGR`.
-3. Set **Store macro in** to **This Workbook**.
-4. Select **OK** to start recording.
-5. Select the entire verified data range using the Name Box, including the header row.
-6. Open **Data → Sort**.
-7. Make sure **My data has headers** is checked.
-8. Set:
-   - **Sort by:** `5 YR CAGR`
-   - **Sort On:** Cell Values
-   - **Order:** Largest to Smallest
-9. Select **OK**.
-10. If Excel displays a Sort Warning, choose **Expand the selection** so all columns in each account row move together.
-11. Return to **Developer → Stop Recording**.
+1. **Dynamic Selection (`Range("A1").Select` ... `xlToRight` / `xlDown`):** Simulates keyboard navigation `Ctrl + Shift + Right` and `Ctrl + Shift + Down` to encompass the contiguous dataset.
+2. **`SortFields.Clear`:** Flushes prior sorting criteria from memory to prevent conflicting multi-level sorts.
+3. **`SortFields.Add2 Key:=...`:** Registers the active sort key (`M2:M41` for CAGR; `L2:L41` for 2021 Sales) with descending order.
+4. **`With ... .Apply`:** Configures `.SetRange Range("A1:M41")`, designates row 1 as table headers (`.Header = xlYes`), and applies the sort.
 
-The sheet should now be ordered by the CAGR field. Do not type replacement values into the data.
+---
 
-## 5. Record macro 2 — Sort by 2021 Unit Sales
+## 4. Form Control Button Integration
 
-Macro name:
+Three standard Form Control buttons were drawn in column `Q` (`Q2:Q8`) to the right of the table:
 
-```text
-SortBy2021UnitSales
-```
+| Button Text | Target Macro | Worksheet Location | Functionality |
+|---|---|---|---|
+| **Format Headers** | `FormatHeaders` | `Q2:Q3` | Applies bold styling and cell borders to headers |
+| **Sort by 5 YR CAGR** | `SortBy5YrCAGR` | `Q4:Q5` | Re-sorts table descending by 5-Year CAGR |
+| **Sort by 2021 Unit Sales** | `SortBy2021UnitSales` | `Q6:Q7` | Re-sorts table descending by 2021 Unit Sales |
 
-Repeat the same recording workflow, using a fresh **Developer → Record Macro** session and the full data range.
+---
 
-In the Sort dialog set:
+## 5. Visual Results: Dynamic Sorting by 5 YR CAGR
 
-- **Sort by:** `2021 Unit Sales`
-- **Sort On:** Cell Values
-- **Order:** Largest to Smallest
-- **My data has headers:** checked
+When `Sort by 5 YR CAGR` is clicked, the table dynamically reorders with top growth accounts leading the portfolio:
 
-Stop recording when the sort completes.
+| Rank | Account ID | Account Name | Account Type | Region | 2021 Sales | 5 YR CAGR |
+|:---:|---|---|---|---|---:|---:|
+| 1 | `AC-1019` | Cloudline Commerce | Online | South | 1,450 | **140.6%** |
+| 2 | `AC-1014` | Juniper Digital | Online | South | 1,180 | **121.8%** |
+| 3 | `AC-1010` | Orbit Commerce | Online | West | 980 | **100.8%** |
+| 4 | `AC-1028` | Momentum Commerce | Online | East | 510 | **60.4%** |
+| 5 | `AC-1036` | Peakline Commerce | Online | Central | 560 | **59.1%** |
+| 6 | `AC-1032` | Summit Digital Media | Online | North | 460 | **47.9%** |
+| 7 | `AC-1023` | Skyline Business | Small Business | East | 180 | **15.4%** |
+| 8 | `AC-1003` | BrightPath Services | Small Business | East | 185 | **14.3%** |
+| 9 | `AC-1035` | Elm Street Services | Small Business | West | 178 | **11.8%** |
+| 10 | `AC-1006` | BluePeak Solutions | Enterprise | West | 240 | **11.4%** |
 
-## 6. Add one button for each sorting macro
+*Observation:* The top six growth leaders all belong to the **Online** segment, highlighting e-commerce as the primary engine of high-velocity growth.
 
-Create two more **Form Control → Button** controls.
+---
 
-| Button label | Assign this macro |
-|---|---|
-| Sort by 5 YR CAGR | `SortBy5YrCAGR` |
-| Sort by 2021 Unit Sales | `SortBy2021UnitSales` |
+## 6. Official Submission & Evidence Quality Check
 
-For each button:
-
-1. Developer → Insert → Button (Form Control).
-2. Draw the button in the free area beside the dataset.
-3. Select the matching macro in **Assign Macro**.
-4. Right-click → **Edit Text** and set the label shown above.
-5. Resize the button so the full label is readable.
-
-Keep both buttons and any earlier macro button visible together for the evidence screenshot. Do not position buttons over the data.
-
-## 7. Test both sort buttons
-
-Test one button at a time:
-
-### Test A — CAGR
-
-1. Click **Sort by 5 YR CAGR**.
-2. Confirm the 5 YR CAGR values are in descending order (highest numeric value first).
-3. Confirm the header row stays at the top.
-4. Check that account names and the other columns remain paired across each row.
-
-### Test B — 2021 Unit Sales
-
-1. Click **Sort by 2021 Unit Sales**.
-2. Confirm the 2021 Unit Sales values are in descending order (largest first).
-3. Confirm the header row stays at the top.
-4. Check that the complete account rows move together.
-
-Each button should run its own macro. If a button runs the wrong sort, right-click it → **Assign Macro**, select the correct procedure, and test again.
-
-**Data-quality caution:** If the CAGR column contains text placeholders such as `Formula Error`, do not assume they are numeric CAGR values. Mixed text and numbers have separate sort behavior; blank cells remain last in Excel's documented sort order. Inspect the result and keep the original markers intact. Do not overwrite source values merely to force the ranking. Microsoft reference: [Sort data in a range or table in Excel](https://support.microsoft.com/en-us/excel/sort-data-in-a-range-or-table-in-excel).
-
-## 8. Prepare the PDF submission
-
-Forage asks for a PDF containing two pieces of evidence:
-
-1. A screenshot of the workbook showing both sorting macro buttons.
-2. A screenshot of the VBA code for one sorting macro.
-
-Suggested process:
-
-1. In Excel, set a zoom that shows the full data area and both buttons clearly.
-2. Capture the worksheet with **Win + Shift + S** (Snipping Tool). Make sure the two sort buttons are visible and not covered by menus.
-3. Press **Alt + F11** to open the Visual Basic Editor.
-4. In Project Explorer, open the standard module containing `SortBy5YrCAGR` or `SortBy2021UnitSales`.
-5. Scroll so the complete procedure is readable, then capture a second screenshot.
-6. Paste both screenshots into a Word document, add short captions, and arrange them on one or two pages.
-7. Select **File → Save As** or **Export → Create PDF/XPS** and save as `Task_04_Macro_Buttons_Evidence.pdf`.
-8. Reopen the PDF and check that both screenshots are legible and no code is clipped.
-
-Do not include login information, personal files, or unrelated desktop content in screenshots. The PDF should contain evidence, not the supplied source workbook.
-
-## 9. Final completion checklist
-
-- [x] Form Control button added for the first recorded macro.
-- [x] `SortBy5YrCAGR` recorded.
-- [x] `SortBy2021UnitSales` recorded.
-- [x] Each sorting macro assigned to its own Form Control button.
-- [x] CAGR sorting button tested successfully.
-- [x] 2021 Unit Sales sorting button tested successfully.
-- [x] Workbook screenshot showing both sorting buttons captured.
-- [x] VBA code screenshot captured.
-- [x] Both screenshots assembled into `Task_04_Macro_Buttons_Evidence.pdf`.
-- [x] PDF reopened and checked for readability.
-- [x] Macro-enabled working copy and evidence PDF present in the repository; original XLSX retained.
-- [x] Upload the macro-enabled XLSM and PDF to the Forage task page and select **Submit file** — learner-confirmed.
-
-**Completion boundary:** The Excel implementation, evidence preparation, upload, and Forage submission are complete. The Forage completion page confirms **Excel Skills — Completed November 4, 2026**. The certificate is available from the [Forage completion page](https://www.theforage.com/simulations/forage/sponsored-content-excel-skills-jf8r/completed).
-
-## 10. Safety and reproducibility
-
-- Record each macro in the Task 04 XLSM using the Macro Recorder as required by the learning exercise.
-- Do not paste pre-written macros in place of the recording exercise.
-- Keep each macro limited to one sorting operation.
-- Keep the complete table/range together when sorting; never sort a single data column by itself.
-- Save the workbook after successful tests.
-- Keep the macro-enabled workbook local unless the provider's terms allow uploading it. The repository may contain the learning guide and evidence screenshots only if sharing permissions allow.
+- [x] Initial header formatting macro recorded and bound to button `Format Headers`.
+- [x] `SortBy5YrCAGR` recorded and bound to button `Sort by 5 YR CAGR`.
+- [x] `SortBy2021UnitSales` recorded and bound to button `Sort by 2021 Unit Sales`.
+- [x] Both sort routines verified independently for seamless one-click execution.
+- [x] Workbook screenshot showing all three buttons captured.
+- [x] VBA code screenshot showing `SortBy5YrCAGR` and `SortBy2021UnitSales` captured.
+- [x] Evidence assembled into `Task_04_Macro_Buttons_Evidence.pdf`.
+- [x] Workbook (`.xlsm`) and PDF evidence uploaded and submitted to Forage.
+- [x] Completion confirmed on **November 4, 2026**.

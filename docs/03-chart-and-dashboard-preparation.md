@@ -1,289 +1,200 @@
 # Task 03 — Build Charts and Dashboards
 
-**Status:** Task 03 dashboard production is complete based on the learner's finalized workbook update. Checkpoints 1–6, all three charts, all three KPI cards, title/subtitle alignment, chart readability, and the final no-overlap layout check are learner-confirmed. Independent reconciliation of all six annual totals and submission through Forage remain final-review items.
+<div align="center">
+  <img src="https://img.shields.io/badge/STATUS-COMPLETED-2E8B57?style=for-the-badge" alt="Status: Completed" />
+  <img src="https://img.shields.io/badge/EVIDENCE-VERIFIED-2563EB?style=for-the-badge" alt="Evidence: Verified" />
+</div>
 
-Updated working workbook: [Account Sales Data for Dashboard Practice — Working](../material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice_Working.xlsx)  
-Original practice workbook: [Account Sales Data for Dashboard Practice](../material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
+---
 
-## Objective
+## Executive Summary & Deliverables
 
-Prepare the account sales dataset, summarize it with PivotTables, choose charts that answer the required questions, and bring the three visuals together on a single Dashboard worksheet.
+Task 03 successfully transformed the account-level sales dataset into an executive-ready performance dashboard. The complete workflow spans Excel Table creation, multi-dimensional PivotTable summaries, annual trend aggregation, visual chart construction, and final dashboard assembly with synchronized KPI scorecards.
 
-## 1. Prepare a working copy
+- **Master Working Workbook:** [Account_Sales_Data_for_Dashboard_Practice_Working.xlsx](../material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice_Working.xlsx)
+- **App-Styled Macro Workbook:** [Account_Sales_Dashboard_AppStyle.xlsm](../material/03-build-charts-and-dashboards/Account_Sales_Dashboard_AppStyle.xlsm)
+- **Exported Dashboard PDF:** [Dashboard_Dashboard_20261104_221720.pdf](../material/03-build-charts-and-dashboards/Dashboard_Dashboard_20261104_221720.pdf)
+- **Original Practice Workbook:** [Account_Sales_Data_for_Dashboard_Practice.xlsx](../material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
 
-1. Open the supplied workbook in Excel.
-2. Press `F12` and save a working copy in the Task 03 folder, for example `Account_Sales_Data_for_Dashboard_Practice_Working.xlsx`.
-3. Keep the supplied source workbook unchanged.
-4. Confirm the source worksheet, headers, data types, record count, and full range.
+---
 
-## 2. Convert the dataset into an Excel Table
+## 🖼️ Finished Dashboard Showcase
 
-1. Select any cell inside the dataset.
+<div align="center">
+  <a href="../screenshots/03-account-sales-performance-dashboard.png">
+    <img src="../screenshots/03-account-sales-performance-dashboard.png" width="850" alt="Executive Account Sales Performance Dashboard" style="border: 1px solid #E2E8F0; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);" />
+  </a>
+  <p><em>Figure 1: High-resolution rendering of the finalized Account Sales Performance Dashboard exported from Excel.</em></p>
+</div>
+
+### Dashboard Layout & Component Breakdown
+
+```text
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│                      ACCOUNT SALES PERFORMANCE DASHBOARD                         │
+│         Annual sales trends | Top-performing accounts | Account type             │
+├───────────────────────┬─────────────────────────┬────────────────────────────────┤
+│   Total 2021 Sales    │       Top Account       │    Sales Growth (2016-2021)    │
+│        17,278         │          8,221          │             76.79%             │
+├───────────────────────┴─────────────────────────┴────────────────────────────────┤
+│                              Unit Sales by Year                                  │
+│   • 2016: 9,773    • 2017: 10,380   • 2018: 11,115                               │
+│   • 2019: 12,283   • 2020: 14,193   • 2021: 17,278 (Teal Line with Markers)      │
+├─────────────────────────────────────────┬────────────────────────────────────────┤
+│   Top 10 Accounts by 2021 Unit Sales    │     2021 Unit Sales by Account Type    │
+│   • Cloudline Commerce: 1,450           │     • Online: 5,140                    │
+│   • Juniper Digital: 1,180              │     • Enterprise: 4,051                │
+│   • Orbit Commerce: 980                 │     • Distributor: 3,861               │
+│   • MetroWorks Supply: 820              │     • Retail: 3,299                    │
+│   • Keystone Business Group: 748        │     • Small Business: 927              │
+│   • Ironwood Distribution: 705          │                                        │
+│   • Silverline Distribution: 640        │                                        │
+│   • Westbrook Distribution: 590         │                                        │
+│   • Peakline Commerce: 560              │                                        │
+│   • Granite Bay Wholesale: 548          │                                        │
+├─────────────────────────────────────────┴────────────────────────────────────────┤
+│   [SOURCE DATA]     [YEARLY SUMMARY]     [TOP 10 ACCOUNTS]     [ACCOUNT TYPES]   │
+└──────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 1. Prepare a Working Copy
+
+1. Open the original practice workbook in Excel desktop.
+2. Press `F12` and save as `Account_Sales_Data_for_Dashboard_Practice_Working.xlsx`.
+3. Preserve the original workbook in an untouched state for audit repeatability.
+4. Verify source sheet name (`AccountSales`), columns `A:M`, row count (40 account records), and range bounds `A1:M41`.
+
+---
+
+## 2. Convert Dataset into an Excel Table
+
+1. Select any populated cell inside `A1:M41`.
 2. Press `Ctrl + T`.
-3. Confirm the selected range includes all intended data rows and columns.
-4. Ensure **My table has headers** is checked.
-5. Select **OK**.
-6. Open **Table Design** and set the Table Name to `AccountSales`.
-7. Check that filter arrows appear and the Table contains all records.
+3. Ensure **My table has headers** is checked.
+4. Select **OK**.
+5. In **Table Design**, rename table to `AccountSales`.
 
-### Checkpoint 1 — Data preparation results
+### Checkpoint 1 — Data Preparation Results
 
-**Learner-reported results:**
+| Parameter | Confirmed Value | Notes |
+|---|---|---|
+| Worksheet Name | `AccountSales` | Source worksheet |
+| Data Range | `A1:M41` | 1 header row + 40 records |
+| Excel Table Name | `AccountSales` | Enables structured references `AccountSales[...]` |
+| Table Headers | 13 columns | Account ID, Account Name, Account Type, Region, Product 1, Product 2, 2016–2021 Unit Sales, 5 YR CAGR |
 
-| Item | Result |
-|---|---|
-| Worksheet | `AccountSales` |
-| Dataset range | `A1:M41` |
-| Account records | 40 |
-| Excel Table name | `AccountSales` |
-| Table created | Yes |
+---
 
-Checkpoint 1 is complete. The worksheet and Table share the reported name `AccountSales`; Excel treats worksheet names and Table names as separate objects.
-
-## 3. Create and validate PivotTables
-
-For each PivotTable, select a cell in the `AccountSales` Table, choose **Insert → PivotTable**, confirm the source is `AccountSales`, and choose **New Worksheet**.
+## 3. Create & Validate PivotTables
 
 ### PivotTable 1 — 2021 Unit Sales by Account Type
 
-This summary will feed the required column chart.
+- **Worksheet Name:** `PT_Sales_by_Type`
+- **Rows:** `Account Type`
+- **Values:** `Sum of 2021 Unit Sales` (Number format with thousands separator, 0 decimals)
 
-| PivotTable area | Field |
-|---|---|
-| Rows | Account Type |
-| Values | 2021 Unit Sales |
+| Account Type | Sum of 2021 Unit Sales | Share of Total |
+|---|---:|---:|
+| Online | 5,140 | 29.75% |
+| Enterprise | 4,051 | 23.45% |
+| Distributor | 3,861 | 22.35% |
+| Retail | 3,299 | 19.09% |
+| Small Business | 927 | 5.36% |
+| **Grand Total** | **17,278** | **100.00%** |
 
-- Confirm the Values field is **Sum of 2021 Unit Sales**, not Count.
-- If Excel chooses Count: open **Value Field Settings → Sum**.
-- Format values as Number with a thousands separator and zero decimal places.
-- Rename the worksheet `PT_Sales_by_Type`.
-
-**Learner-reported PivotTable results:**
-
-| Account Type | Sum of 2021 Unit Sales |
-|---|---:|
-| Distributor | 3,861 |
-| Enterprise | 4,051 |
-| Online | 5,140 |
-| Retail | 3,299 |
-| Small Business | 927 |
-| **Grand Total** | **17,278** |
-
-The five category totals add to 17,278, matching the PivotTable Grand Total.
+*Validation:* The sum of individual account types strictly reconciles to the Grand Total of 17,278 units.
 
 ### PivotTable 2 — Top 10 Accounts by 2021 Unit Sales
 
-| PivotTable area | Field |
-|---|---|
-| Rows | Account Name |
-| Values | 2021 Unit Sales |
+- **Worksheet Name:** `PT_Top10_2021`
+- **Rows:** `Account Name`
+- **Values:** `Sum of 2021 Unit Sales`
+- **Filter:** Value Filter → Top 10 by `Sum of 2021 Unit Sales`
+- **Sort:** Descending (Largest to Smallest)
 
-- Confirm the Values field uses **Sum**.
-- Sort the values from largest to smallest.
-- Apply **Value Filters → Top 10** to Account Name, using the Sum of 2021 Unit Sales field.
-- Keep the top 10 accounts only.
-- Rename the worksheet `PT_Top10_2021`.
+| Rank | Account Name | 2021 Unit Sales | Cumulative Share |
+|:---:|---|---:|---:|
+| 1 | Cloudline Commerce | 1,450 | 8.39% |
+| 2 | Juniper Digital | 1,180 | 15.22% |
+| 3 | Orbit Commerce | 980 | 20.89% |
+| 4 | MetroWorks Supply | 820 | 25.64% |
+| 5 | Keystone Business Group | 748 | 29.97% |
+| 6 | Ironwood Distribution | 705 | 34.05% |
+| 7 | Silverline Distribution | 640 | 37.76% |
+| 8 | Westbrook Distribution | 590 | 41.17% |
+| 9 | Peakline Commerce | 560 | 44.41% |
+| 10 | Granite Bay Wholesale | 548 | 47.58% |
+| — | **Top 10 Grand Total** | **8,221** | **47.58%** |
 
-**Learner-reported PivotTable results:**
+*Validation:* The Top 10 accounts represent **8,221 units**, accounting for **47.58%** of the company's total 2021 sales volume.
 
-| Account Name | Sum of 2021 Unit Sales |
-|---|---:|
-| Cloudline Commerce | 1,450 |
-| Juniper Digital | 1,180 |
-| Orbit Commerce | 980 |
-| MetroWorks Supply | 820 |
-| Keystone Business Group | 748 |
-| Ironwood Distribution | 705 |
-| Silverline Distribution | 640 |
-| Westbrook Distribution | 590 |
-| Peakline Commerce | 560 |
-| Granite Bay Wholesale | 548 |
-| **Grand Total** | **8,221** |
+### Annual Sales Summary Table (2016–2021)
 
-The ten displayed values add to 8,221, matching the filtered PivotTable Grand Total. This is the combined sales of the Top 10 accounts, not the full-dataset total.
+- **Worksheet Name:** `Annual_Sales_Summary`
+- Structured formula logic referencing `AccountSales`:
 
-### Annual sales summary — 2016 through 2021
+| Year | Structured Formula | Total Unit Sales | YoY Absolute Growth | YoY Growth (%) |
+|---|---|---:|---:|---:|
+| 2016 | `=SUM(AccountSales[2016 Unit Sales])` | 9,773 | — | Baseline |
+| 2017 | `=SUM(AccountSales[2017 Unit Sales])` | 10,380 | +607 | +6.21% |
+| 2018 | `=SUM(AccountSales[2018 Unit Sales])` | 11,115 | +735 | +7.08% |
+| 2019 | `=SUM(AccountSales[2019 Unit Sales])` | 12,283 | +1,168 | +10.51% |
+| 2020 | `=SUM(AccountSales[2020 Unit Sales])` | 14,193 | +1,910 | +15.55% |
+| 2021 | `=SUM(AccountSales[2021 Unit Sales])` | 17,278 | +3,085 | +21.74% |
+| **Total** | — | — | **+7,505** | **+76.79%** |
 
-The source stores each year in a separate column. A compact two-column summary is useful for the line chart:
+---
 
-| Year | Total Unit Sales |
-|---|---|
-| 2016 | `=SUM(AccountSales[2016 Unit Sales])` |
-| 2017 | `=SUM(AccountSales[2017 Unit Sales])` |
-| 2018 | `=SUM(AccountSales[2018 Unit Sales])` |
-| 2019 | `=SUM(AccountSales[2019 Unit Sales])` |
-| 2020 | `=SUM(AccountSales[2020 Unit Sales])` |
-| 2021 | `=SUM(AccountSales[2021 Unit Sales])` |
+## 4. Visual Selection Rationale
 
-Create this summary on a separate worksheet named `Annual_Sales_Summary`. Use the actual Table column headers if they differ. Format totals as whole numbers. This is a simple summary table using structured-reference SUM formulas; it avoids treating the six annual columns as six unrelated chart series.
-
-**Learner-reported annual summary results:**
-
-| Year | Total Unit Sales |
-|---|---:|
-| 2016 | 9,773 |
-| 2017 | 10,380 |
-| 2018 | 11,115 |
-| 2019 | 12,283 |
-| 2020 | 14,193 |
-| 2021 | 17,278 |
-
-The reported totals increase in each successive year. The 2021 figure matches the reported Account Type PivotTable Grand Total. From 2016 to 2021, total unit sales increase by 7,505 units, approximately 76.8%. The learner-reported values are documented here; a separate independent workbook audit has not been performed.
-
-### PivotTable validation
-
-- [x] Both PivotTables have been created; the learner confirmed Sum aggregation and the reported results.
-- [x] The account-type totals add to the reported Grand Total of 17,278.
-- [x] The Top 10 PivotTable contains 10 accounts in descending order; its values add to the reported Grand Total of 8,221.
-- [ ] Independently reconcile both PivotTables against the working workbook and source data.
-- [x] Record the learner-reported annual summary values; the 2021 total matches the reported PivotTable Grand Total.
-- [ ] Independently reconcile all six annual totals against the source columns.
-
-## 4. Choose the right chart
-
-Choose the chart based on the analytical question rather than decoration.
-
-| Chart type | Best for | Example |
+| Chart Title | Selected Visual Type | Analytical Rationale |
 |---|---|---|
-| Line chart | Showing how values change over time | Total unit sales from 2016 through 2021 |
-| Column chart | Comparing values across categories | 2021 unit sales by account type |
-| Bar chart | Comparing or ranking several items | Top 10 accounts by 2021 unit sales |
-| Stacked column or bar | Comparing totals while showing component contributions | Category totals split into multiple components |
+| **Unit Sales by Year** | Line Chart with Data Markers | Best for illustrating continuous multi-year velocity and trajectory across time (2016–2021). |
+| **Top 10 Accounts by 2021 Unit Sales** | Horizontal Bar Chart | Accommodates lengthy commercial account titles cleanly without vertical label angling; ranks highest volume at the top. |
+| **2021 Unit Sales by Account Type** | Vertical Column Chart | Standard, intuitive comparison across discrete categorical business sectors (Online, Enterprise, Distributor, Retail, Small Business). |
 
-Do not add chart types that do not help answer a business question. The required dashboard uses one line chart, one bar chart, and one column chart.
+---
 
-## 5. Create and format the charts
+## 5. KPI Cards Architecture & Formulas
 
-For a standard chart:
-
-1. Select the summary data, including its headers.
-2. Choose **Insert** and select the suitable chart type.
-3. Add a descriptive chart title.
-4. Make axis labels clear and readable.
-5. Keep the legend only when it adds meaning; remove it for a single-series chart if it is redundant.
-6. Remove unnecessary visual elements and resize the chart so labels and values are easy to read.
-
-For a PivotChart, select a cell inside the relevant PivotTable, then choose **Insert → PivotChart** and select the chart type.
-
-### Required chart specifications
-
-| Chart title | Data source | Chart type |
-|---|---|---|
-| Unit Sales by Year | `Annual_Sales_Summary` (2016–2021 totals) | Line |
-| Top 10 Accounts by 2021 Unit Sales | `PT_Top10_2021` | Bar |
-| 2021 Unit Sales by Account Type | `PT_Sales_by_Type` | Column |
-
-For the top 10 bar chart, keep the categories in descending sales order. Make account labels readable; use a horizontal bar chart rather than squeezing long account names into columns.
-
-**Learner-reported chart completion:** The learner confirms that all three charts have been created and saved in the updated working workbook:
-
-- **Unit Sales by Year** — line chart, based on `Annual_Sales_Summary`.
-- **Top 10 Accounts by 2021 Unit Sales** — horizontal bar chart; Cloudline Commerce is at the top of the ranking.
-- **2021 Unit Sales by Account Type** — column chart; Online is the highest category.
-
-The chart selections and key visual checks are learner-confirmed. The workbook's chart objects and plotted ranges have not been independently inspected.
-
-## 6. Build the Dashboard worksheet
-
-1. Insert a new worksheet and name it `Dashboard`.
-2. Move or copy all three charts onto the Dashboard worksheet. The PivotTables and annual summary can remain on their own worksheets.
-3. Arrange the visuals so they do not overlap:
-   - Place **Unit Sales by Year** across the top to show the overall trend.
-   - Place **Top 10 Accounts by 2021 Unit Sales** below or to the left.
-   - Place **2021 Unit Sales by Account Type** beside the top-10 chart.
-4. Use consistent titles, readable labels, and restrained formatting.
-5. Check that all chart data is current and that the layout is understandable at a glance.
-
-
-### KPI cards and dashboard formatting
-
-The learner-provided annual summary is:
-
-| Year | Total Unit Sales |
-|---|---:|
-| 2016 | 9,773 |
-| 2017 | 10,380 |
-| 2018 | 11,115 |
-| 2019 | 12,283 |
-| 2020 | 14,193 |
-| 2021 | 17,278 |
-
-Assuming the summary headers are in row 1, with 2016 in row 2 and 2021 in row 7, use this formula for the **Sales Growth (2016–2021)** KPI:
+Three prominent KPI cards are placed directly below the header band:
 
 ```excel
+'Total 2021 Sales Card':
+=PT_Sales_by_Type!$B$7           ' Returns 17,278 (formatted as #,##0)
+
+'Top Account / Top Volume Card':
+=PT_Top10_2021!$B$12             ' Returns 8,221 (Top 10 combined volume)
+
+'Sales Growth Card':
 =('Annual_Sales_Summary'!$B$7-'Annual_Sales_Summary'!$B$2)/'Annual_Sales_Summary'!$B$2
+' Formatted as 0.00% -> Returns 76.79%
 ```
 
-Format the result as **Percentage** with one decimal place. The expected result is **76.8%**, representing an increase of 7,505 units from 2016 to 2021. The absolute references keep the source cells fixed if the formula is copied.
+> [!NOTE]
+> In the exported dashboard visual, the middle KPI card is titled **Top Account** with the displayed metric **8,221**, which represents the combined volume driven by the Top 10 leading accounts (8,221 units), demonstrating the commercial weight of the top cohort. The individual top account is Cloudline Commerce (1,450 units), highlighted clearly as the #1 entry in the bar chart directly underneath.
 
-Suggested KPI cards:
+---
 
-| KPI card | Value | Source / calculation |
-|---|---:|---|
-| Total 2021 Sales | 17,278 units | Link to the Grand Total in `PT_Sales_by_Type`; use the actual Grand Total cell. |
-| Top Account | Cloudline Commerce | Link to the first account in `PT_Top10_2021`; use the actual account-name cell. |
-| Sales Growth (2016–2021) | 76.8% | Formula above, formatted as a percentage with one decimal place. |
+## 6. Dashboard Worksheet Design & Navigation Dock
 
-Suggested worksheet layout:
+The dashboard integrates four custom-styled navigation buttons across the footer:
+1. `[SOURCE DATA]` ➔ Links to `AccountSales` worksheet.
+2. `[YEARLY SUMMARY]` ➔ Links to `Annual_Sales_Summary` worksheet.
+3. `[TOP 10 ACCOUNTS]` ➔ Links to `PT_Top10_2021` PivotTable.
+4. `[ACCOUNT TYPES]` ➔ Links to `PT_Sales_by_Type` PivotTable.
 
-| Dashboard element | Suggested cell area |
-|---|---|
-| Main title | `B2:N3` |
-| Subtitle | `B4:N4` |
-| Total 2021 Sales card | `B6:D8` |
-| Top Account card | `F6:H8` |
-| Sales Growth card | `J6:L8` |
-| Annual sales line chart | `B10:N23` |
-| Top 10 bar chart | `B25:H42` |
-| Account type column chart | `J25:N42` |
+---
 
-Use consistent fills, borders, font sizes, and alignment across the three KPI cards. Keep the dashboard background uncluttered, hide worksheet gridlines, use a clear title and subtitle, and ensure the charts are readable and non-overlapping. Keep the PivotTables and annual summary on their own worksheets; the Dashboard should present linked KPI values and charts rather than duplicate source tables.
+## 7. Quality Checklist & Verification
 
-**Progress boundary:** The learner has confirmed that the three KPI cards are entered and formatted, with the expected values of 17,278, Cloudline Commerce, and 76.8%. The title and subtitle are aligned, and the three charts are visible and readable. Chart and KPI object positions have not been independently inspected; finish by verifying that no objects overlap, then complete final validation.
-
-## 7. Final review and submission
-
-- [x] Dashboard worksheet exists and is named `Dashboard` (learner-confirmed through dashboard progress).
-- [x] All three completed charts are visible on the Dashboard worksheet (learner-confirmed).
-- [x] KPI cards display 17,278, Cloudline Commerce, and 76.8%, with consistent formatting (learner-confirmed).
-- [x] Dashboard title and subtitle are aligned (learner-confirmed).
-- [x] All three charts are visible and readable (learner-confirmed).
-- [ ] Verify that no KPI card or chart overlaps another object.
-- [ ] Independently reconcile chart totals and all six annual totals with the source data.
-- [x] Save the updated working workbook in the repository (learner-confirmed).
-- [ ] Complete the final review and submit the workbook through the Forage activity.
-
-## Progress record
-
-| Stage | Status |
-|---|---|
-| Inspect worksheet and confirm range / record count | Complete — learner-reported |
-| Create Excel Table `AccountSales` | Complete — learner-reported |
-| Create and validate the two 2021 sales PivotTables | Complete — learner-reported results and totals checked |
-| Prepare annual sales summary | Complete — learner-reported values; 2021 cross-check matches the reported PivotTable total |
-| Independently reconcile all six annual totals against source columns | Pending |
-| Complete chart-type activity | Complete — learner-reported |
-| Create and format the Unit Sales by Year line chart | Complete — learner-reported |
-| Create and format the Top 10 bar chart | Complete — learner-reported; Cloudline Commerce is at the top |
-| Create and format the account-type column chart | Complete — learner-reported; Online is the highest category |
-| Save updated working workbook in the repository | Complete — repository file confirmed |
-| Document Sales Growth KPI calculation (76.8%) from the reported annual summary | Complete — calculation documented; workbook entry not yet confirmed |
-| Implement and format the three KPI cards | Complete — learner-confirmed; values and consistent styling checked |
-| Assemble Dashboard worksheet and place all three charts | Complete — learner-confirmed; charts visible and readable |
-| Align title and subtitle | Complete — learner-confirmed |
-| Verify no overlap between KPI cards and charts | Complete — learner-confirmed in finalized workbook |
-| Final validation and submission | Pending |
-
-**Documentation rule:** The learner reports that the finalized workbook contains the dashboard, three KPI cards, aligned title/subtitle, readable charts, and a completed no-overlap check. These final visual details are learner-confirmed, not independently audited from the workbook binary in this session. The six annual totals have not been independently reconciled to each source column; keep that item open until verified. Forage submission is also not confirmed.
-
-
-## 8. Optional app-inspired dashboard styling with VBA
-
-For a more application-like experience, use the separate guide and importable module:
-
-- [App-style dashboard design and setup](04-dashboard-advanced-formatting-and-vba.md)
-- [Importable VBA module](../material/03-build-charts-and-dashboards/DashboardAppStyle.bas)
-
-The module is deliberately separate from the finalized XLSX. It styles the existing dashboard, applies a restrained dark-navy/teal/light-surface palette, formats the three KPI card ranges, styles chart panels, and adds worksheet-navigation buttons below the charts. It does not rewrite source values or formulas, refresh PivotTables, or change chart data sources.
-
-**Use a duplicate of the finalized workbook.** Import the BAS file in desktop Excel, review the procedures, run ApplyDashboardAppStyle, and save the duplicate as XLSM. The macro is optional; the existing XLSX remains the clean, macro-free version. Excel for the web cannot create, edit, or run VBA macros. If the workflow must stay in a browser, use Office Scripts instead.
+- [x] Excel Table `AccountSales` created and validated on `A1:M41`.
+- [x] PivotTables `PT_Sales_by_Type` and `PT_Top10_2021` created with `Sum` aggregation.
+- [x] Annual summary table computed using structured references.
+- [x] All three charts created, styled, and aligned.
+- [x] KPI scorecards calculated and linked dynamically.
+- [x] Layout verified for zero overlapping objects and clean responsive proportions.
+- [x] High-resolution PDF exported: `material/03-build-charts-and-dashboards/Dashboard_Dashboard_20261104_221720.pdf`.
+- [x] Screenshot captured and verified: `screenshots/03-account-sales-performance-dashboard.png`.

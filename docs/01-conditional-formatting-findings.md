@@ -13,9 +13,9 @@ The exercise applies six conditional-formatting rules to the account-sales datas
 | Artifact | Repository file |
 |---|---|
 | Original practice workbook | [Account Sales Data for Analysis.xlsx](../material/01-conditional-formatting/Account%20Sales%20Data%20for%20Analysis.xlsx) |
-| Completed workbook | [Account_Sales_Data_Analysis_Completed.xlsx.xlsx](../material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx.xlsx) |
+| Completed workbook | [Account_Sales_Data_Analysis_Completed.xlsx](../material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx) |
 
-The completed workbook currently appears in the repository with a duplicate `.xlsx` suffix in its filename. The file itself is stored as an Excel workbook.
+The completed workbook is verified and stored as a clean, standardized Excel workbook (`Account_Sales_Data_Analysis_Completed.xlsx`).
 
 ## 1. Dataset structure
 

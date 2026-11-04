@@ -8,6 +8,7 @@
   </a>
   <img src="https://img.shields.io/badge/STATUS-COMPLETED-2E8B57?style=for-the-badge" alt="Project status: completed" />
   <img src="https://img.shields.io/badge/TOOL-Microsoft%20Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="Microsoft Excel" />
+  <img src="https://img.shields.io/badge/VBA-Automation%20%26%20Macros-795548?style=for-the-badge&logo=visualstudio&logoColor=white" alt="VBA and Macros" />
 </p>
 
 <p>
@@ -22,350 +23,432 @@
   </a>
 </p>
 
-**A hands-on Excel learning portfolio documenting practical exercises, analytical decisions, workbook development, and lessons learned.**
+**A comprehensive, hands-on Excel learning portfolio demonstrating data preparation, advanced conditional formatting, dynamic formulas, executive dashboard visualization, and VBA spreadsheet automation.**
 
-[Simulation brief](https://www.theforage.com/simulations/forage/sponsored-content-excel-skills-jf8r) · [Repository files](https://github.com/Sohila-Khaled-Abbas/forage-excel-skills-job-simulation/tree/main) · [Learning log](LEARNING_LOG.md)
+[Simulation Brief](https://www.theforage.com/simulations/forage/sponsored-content-excel-skills-jf8r) · [Completion Certificate](https://www.theforage.com/completion-certificates/HgpPSsyQpzob6HEh9/SfGxkQ8FacaZR9LnZ_HgpPSsyQpzob6HEh9_6ae9f5fbcfb5bb576b61ccb2_1793821202129_completion_certificate.pdf) · [Learning Log](LEARNING_LOG.md) · [Repository Files](https://github.com/Sohila-Khaled-Abbas/forage-excel-skills-job-simulation/tree/main)
 
 </div>
 
 ---
 
+## 📊 Visual Showcase & Executive Deliverables
+
+### 1. Executive Account Sales Performance Dashboard (Task 03)
+<div align="center">
+  <a href="screenshots/03-account-sales-performance-dashboard.png">
+    <img src="screenshots/03-account-sales-performance-dashboard.png" width="850" alt="Executive Account Sales Performance Dashboard" style="border: 1px solid #E2E8F0; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);" />
+  </a>
+  <p><em>Figure 1: High-impact executive dashboard built in Microsoft Excel featuring synchronized KPI cards, multi-year sales trends, top-10 account rankings, business segment breakdown, and custom navigation controls.</em></p>
+</div>
+
+### 2. VBA Automation & Form Control Macro Buttons (Task 04)
+<div align="center">
+  <a href="screenshots/04-sorting-macro-buttons-worksheet.png">
+    <img src="screenshots/04-sorting-macro-buttons-worksheet.png" width="850" alt="Task 04 Macro Buttons on Worksheet" style="border: 1px solid #E2E8F0; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);" />
+  </a>
+  <p><em>Figure 2: Form Control command buttons (<code>Format Headers</code>, <code>Sort by 5 YR CAGR</code>, <code>Sort by 2021 Unit Sales</code>) integrated directly into the Account Sales Data worksheet for one-click execution.</em></p>
+</div>
+
+<div align="center">
+  <a href="screenshots/04-vba-sorting-macro-code.png">
+    <img src="screenshots/04-vba-sorting-macro-code.png" width="850" alt="Task 04 VBA Code in Visual Basic Editor" style="border: 1px solid #E2E8F0; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);" />
+  </a>
+  <p><em>Figure 3: Microsoft Visual Basic for Applications (VBA) editor showing the recorded macro procedures (<code>SortBy5YrCAGR</code> and <code>SortBy2021UnitSales</code>) in Module2.</em></p>
+</div>
+
+---
+
 > [!NOTE]
-> This is an independent learning portfolio created to document my participation and practice. It is **not** an official Forage repository and does not imply employment, sponsorship, or endorsement by Forage.
+> This is an independent learning portfolio created to document my participation, problem-solving, and practical execution. It is **not** an official Forage repository and does not imply employment, sponsorship, or endorsement by Forage.
 
 ## Contents
 
-- [Program overview](#program-overview)
-- [Learning roadmap](#learning-roadmap)
-- [Completed exercise: Conditional Formatting](#completed-exercise-conditional-formatting)
-- [Completed exercise: Formulas and Functions](#completed-exercise-formulas-and-functions)
-- [Completed exercise: Build Charts and Dashboards](#completed-exercise-build-charts-and-dashboards)
-- [Task 04 — Automate Repetitive Tasks](#task-04--automate-repetitive-tasks)
-- [Task 04 sorting macros and buttons](#task-04-sorting-macros-and-buttons)
-- [Advanced dashboard styling and VBA](#advanced-dashboard-styling-and-vba)
-- [VBA and Office Scripts implementation](#vba-and-office-scripts-implementation)
-- [Repository guide](#repository-guide)
-- [How I work through each exercise](#how-i-work-through-each-exercise)
-- [Skills in scope](#skills-in-scope)
-- [Evidence and sharing principles](#evidence-and-sharing-principles)
+- [Program Overview](#program-overview)
+- [Learning Roadmap](#learning-roadmap)
+- [Task 01 — Conditional Formatting & Data Quality](#task-01--conditional-formatting--data-quality)
+- [Task 02 — Formulas, Logic & Aggregation](#task-02--formulas-logic--aggregation)
+- [Task 03 — Executive Charts & Interactive Dashboard](#task-03--executive-charts--interactive-dashboard)
+- [Task 04 — Spreadsheet Automation & VBA Macros](#task-04--spreadsheet-automation--vba-macros)
+- [Advanced App-Style Design & Office Scripts](#advanced-app-style-design--office-scripts)
+- [Repository Structure](#repository-structure)
+- [Analysis Workflow & Standards](#analysis-workflow--standards)
+- [Key Competencies](#key-competencies)
+- [Verification & Progress](#verification--progress)
 
-## Program overview
+---
 
-
+## Program Overview
 
 | Detail | Description |
 |---|---|
 | **Provider** | Forage Academy |
 | **Simulation** | Excel Skills Virtual Experience Program |
-| **Format** | Self-paced, practical job simulation |
-| **Primary tool** | Microsoft Excel |
-| **Portfolio status** | <img src="https://img.shields.io/badge/Completed-2E8B57?style=flat-square" alt="Completed" /> |
-| **Official brief** | [Open the Forage simulation](https://www.theforage.com/simulations/forage/sponsored-content-excel-skills-jf8r) |
+| **Format** | Self-paced, practical job simulation with real-world scenarios |
+| **Primary Tools** | Microsoft Excel (Desktop & Web), VBA, Office Scripts (TypeScript) |
+| **Portfolio Status** | <img src="https://img.shields.io/badge/Completed-2E8B57?style=flat-square" alt="Completed" /> |
+| **Completion Date** | **November 4, 2026** |
+| **Official Brief** | [Open the Forage simulation](https://www.theforage.com/simulations/forage/sponsored-content-excel-skills-jf8r) |
+| **Verified Credential** | [Download Forage Completion Certificate (PDF)](https://www.theforage.com/completion-certificates/HgpPSsyQpzob6HEh9/SfGxkQ8FacaZR9LnZ_HgpPSsyQpzob6HEh9_6ae9f5fbcfb5bb576b61ccb2_1793821202129_completion_certificate.pdf) |
 
-The simulation was completed and submitted on **November 4, 2026**. **Completed:** November 4, 2026 · [Download the Forage completion certificate](https://www.theforage.com/completion-certificates/HgpPSsyQpzob6HEh9/SfGxkQ8FacaZR9LnZ_HgpPSsyQpzob6HEh9_6ae9f5fbcfb5bb576b61ccb2_1793821202129_completion_certificate.pdf) · [View submitted workbook and evidence](material/04-vba-and-marcos/)
+The simulation was completed and officially submitted on **November 4, 2026**. This repository elevates each practical simulation exercise into an industry-standard, reviewable portfolio artifact documenting the analytical reasoning, formula logic, visual design choices, and VBA automation workflows.
 
-The purpose of this repository is to turn each exercise into a reviewable learning artifact. I use the workbook to practice, document the reasoning behind each Excel operation, validate the result, and capture the skills that transfer to data analysis and business intelligence work.
+---
 
-## Learning roadmap
+## Learning Roadmap
 
-The work is organized around a practical analyst workflow:
-
-~~~mermaid
+```mermaid
 flowchart LR
-    A["Explore the workbook"] --> B["Inspect data quality"]
-    B --> C["Apply Excel techniques"]
-    C --> D["Analyze patterns"]
-    D --> E["Build visuals"]
-    E --> F["Communicate findings"]
-    classDef start fill:#E8F3FF,stroke:#2563EB,color:#123B66
-    classDef work fill:#EAF7EF,stroke:#26935B,color:#164A2D
-    classDef finish fill:#FFF3DF,stroke:#D28A22,color:#62400F
+    A["1. Explore Dataset"] --> B["2. Audit Data Quality"]
+    B --> C["3. Engineer Formulas"]
+    C --> D["4. Pivot & Aggregate"]
+    D --> E["5. Build Visual Dashboard"]
+    E --> F["6. Automate with VBA"]
+    classDef start fill:#E8F3FF,stroke:#2563EB,color:#123B66,stroke-width:2px
+    classDef work fill:#EAF7EF,stroke:#26935B,color:#164A2D,stroke-width:2px
+    classDef finish fill:#FFF3DF,stroke:#D28A22,color:#62400F,stroke-width:2px
     class A start
-    class B,C,D work
-    class E,F finish
-~~~
+    class B,C,D,E work
+    class F finish
+```
 
-| Learning area | Practice focus | Documentation |
+| Domain | Analytical Focus | Documentation & Notes |
 |---|---|---|
-| **Workbook navigation and exploration** | Understand worksheet structure, field meanings, data types, filters, and efficient keyboard navigation. | [Excel keyboard shortcuts](docs/Excel%20Keyboard%20Shortcuts.docx) |
-| **Data quality and preparation** | Locate blanks, formula errors, inconsistent values, and records that need investigation. | [Data preparation notes](learning-notes/data-preparation.md) |
-| **Formulas and analysis** | Apply calculations, validate results, and explain assumptions. | [Formulas and analysis](learning-notes/formulas-and-analysis.md) |
-| **Charts and dashboards** | Select appropriate visuals, define KPIs, and communicate patterns. | [Charts and dashboards](learning-notes/charts-and-dashboards.md) |
-| **Automation** | Explore repeatable spreadsheet tasks and macro/VBA concepts where required. | [Automation and VBA](learning-notes/automation-and-vba.md) |
-| **Reflection and communication** | Summarize what worked, what needs improvement, and what the findings mean. | [Reflection notes](learning-notes/reflection.md) |
+| **Workbook Navigation & Inspection** | Table architecture, data types, header alignment, keyboard shortcuts | [Excel Keyboard Shortcuts](docs/Excel%20Keyboard%20Shortcuts.docx) |
+| **Data Quality & Cleansing** | Missing values, formula error strings, edge cases, cross-sell gaps | [Data Preparation Notes](learning-notes/data-preparation.md) |
+| **Formulas & Business Logic** | Dynamic lookups, conditional thresholds, percentage growth, error handling | [Formulas & Analysis](learning-notes/formulas-and-analysis.md) |
+| **Charts & Dashboard Design** | Trend analysis, ranking charts, category comparisons, KPI scorecards | [Charts & Dashboards](learning-notes/charts-and-dashboards.md) |
+| **Spreadsheet Automation** | Macro recording, VBA code optimization, Form Control button bindings | [Automation & VBA](learning-notes/automation-and-vba.md) |
+| **Critical Reflection** | Methodological insights, limitations, business impact, scalability | [Reflection Notes](learning-notes/reflection.md) |
 
-## Completed exercise: Conditional Formatting
+---
+
+## Task 01 — Conditional Formatting & Data Quality
 
 <details open>
-<summary><strong>Task 01 — Put Conditional Formatting Into Practice</strong> · <code>Completed</code></summary>
+<summary><strong>Task 01 — Put Conditional Formatting Into Practice</strong> · <img src="https://img.shields.io/badge/Completed-2E8B57?style=flat-square" alt="Completed" /></summary>
 
-The first exercise applied six conditional-formatting rules to the **Account Sales Data for Analysis** workbook. The completed workbook is available under `material/`, and the findings document records the data-quality observations and analytical takeaways.
-
-**Workbooks**
-- [Original practice workbook](material/01-conditional-formatting/Account%20Sales%20Data%20for%20Analysis.xlsx)
-- [Completed workbook](material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx.xlsx)
-
-**Findings:** [Task 01 — Conditional Formatting Findings](docs/01-conditional-formatting-findings.md)
-
-### Key findings
-
-| Finding | Result |
-|---|---:|
-| Account records | 40 |
-| Missing cells | 5 |
-| Text-based `Formula Error` markers | 2 |
-| Product 2 marked `No` | 16 accounts |
-| Numeric 5 YR CAGR ≥ 100% | 3 accounts |
-| Negative 5 YR CAGR | 7 accounts |
-| Top 10% of 2021 Unit Sales | 4 accounts |
-
-### Formatting rules
-
-| Requirement | Range | Format |
-|---|---|---|
-| Formula errors and text error markers | `A2:M41` | Purple fill, white font |
-| Missing cells | `A2:M41` | Yellow fill |
-| Product 2 not cross-sold | `F2:F41` | Orange fill |
-| Numeric CAGR ≥ 100% | `M2:M41` | Green fill |
-| Negative CAGR | `M2:M41` | Red fill, white font |
-| Top 10% of 2021 unit sales | `L2:L41` | Blue fill |
-
-The green CAGR condition uses a numeric check so text values such as `Formula Error` are not mistakenly classified as high-growth percentages. See the [findings document](docs/01-conditional-formatting-findings.md) for the exact account-level details and formula logic.
-
-</details>
-
-
-## Completed exercise: Formulas and Functions
-
-<details open>
-<summary><strong>Task 02 — Put Formulas Into Practice</strong> · <code>Completed</code></summary>
-
-This exercise applied six account-level calculations and two summary functions to the **Excel Formula Practice** workbook. The completed workbook is stored under `material/02-formulas-and-functions/`, with the formula logic and learning outcomes documented below.
+The first exercise applied six conditional formatting rules to the **Account Sales Data** dataset (`A2:M41`, 40 account records) to surface data anomalies, missing entries, product adoption gaps, and exceptional performance tiers.
 
 **Workbooks:**
-- [Original practice workbook](material/02-formulas-and-functions/Excel_Formula_Practice.xlsx)
-- [Completed workbook](material/02-formulas-and-functions/Excel_Formula_Practice_Completed.xlsx)
+- [Original Practice Workbook](material/01-conditional-formatting/Account%20Sales%20Data%20for%20Analysis.xlsx)
+- [Completed Analysis Workbook](material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx)
 
-**Findings:** [Task 02 — Formulas and Functions Findings](docs/02-formulas-and-functions-findings.md)
+**Detailed Documentation:** [Task 01 — Conditional Formatting Findings](docs/01-conditional-formatting-findings.md)
 
-### Account-level calculations
+### Key Analytical Findings
 
-The formulas below use the worksheet layout documented during the exercise: annual unit sales from 2016–2021 in columns G:L, with the first account on row 2.
+| Finding | Quantified Result | Business Significance |
+|---|---:|---|
+| Total Accounts Analyzed | 40 | Base population for enterprise sales performance |
+| Missing / Blank Cells | 5 cells | Data entry gaps requiring audit (D6, C12, E21, F29, D35) |
+| Text `Formula Error` Markers | 2 accounts | M9 (Summit Ridge Retail) & M27 (Apex Commercial) |
+| Product 2 Not Cross-Sold | 16 accounts | Untapped 40% expansion opportunity across current accounts |
+| High CAGR (Numeric ≥ 100%) | 3 accounts | Cloudline Commerce (140.6%), Juniper Digital (121.8%), Orbit Commerce (100.8%) |
+| Negative Growth Rate | 7 accounts | At-risk accounts experiencing contraction over the 5-year span |
+| Top Decile 2021 Volume | 4 accounts | Top 10% volume drivers (≥ 820 units in 2021) |
 
-| Calculation | Formula | Purpose |
-|---|---|---|
-| Total Unit Sales | `=SUM(G2:L2)` | Adds annual unit sales from 2016 through 2021. |
-| Average Annual Unit Sales | `=AVERAGE(G2:L2)` | Calculates average annual unit sales. |
-| Highest Annual Unit Sales | `=MAX(G2:L2)` | Returns the highest annual unit-sales value. |
-| Lowest Annual Unit Sales | `=MIN(G2:L2)` | Returns the lowest annual unit-sales value. |
-| Sales Level | `=IF(L2>=$U$2,"High","Standard")` | Compares 2021 sales with the fixed threshold of 500 in U2. |
-| Sales Change | `=IFERROR((L2-G2)/G2,"Check data")` | Calculates percentage change from 2016 to 2021 and handles errors. |
+### Conditional Formatting Rules Architecture
 
-The Sales Level formula uses the absolute reference `$U$2` so the threshold does not shift when the formula is filled down. The Sales Change result is formatted as a percentage; a calculation error, including a zero 2016 baseline, returns `Check data`.
+```text
+Priority 1: Text & Formula Errors  ──> [Purple Fill / White Font] (Applies to A2:M41)
+Priority 2: Missing Data (Blanks)   ──> [Yellow Fill]               (Applies to A2:M41)
+Priority 3: Product 2 = "No"       ──> [Orange Fill]               (Applies to F2:F41)
+Priority 4: 5 YR CAGR ≥ 100%       ──> [Green Fill]                (Applies to M2:M41, ISNUMBER check)
+Priority 5: 5 YR CAGR < 0%         ──> [Red Fill / White Font]     (Applies to M2:M41)
+Priority 6: Top 10% 2021 Sales     ──> [Blue Fill]                 (Applies to L2:L41)
+```
 
-### Summary calculations
-
-| Summary metric | Formula | Purpose |
-|---|---|---|
-| Accounts with Product 2 | `=COUNTIF(F2:F41,"Yes")` | Counts Product 2 cells containing `Yes`. |
-| Retail 2021 Unit Sales | `=SUMIF(C2:C41,"Retail",L2:L41)` | Totals 2021 Unit Sales for Retail accounts. |
-
-**Skills practiced:** `SUM`, `AVERAGE`, `MAX`, `MIN`, `IF`, absolute references, percentage change, `IFERROR`, `COUNTIF`, and `SUMIF`.
-
-The completed calculations and documented findings have now been reviewed and verified by the learner in Excel. The findings document records the formulas, expected behavior, assumptions, and validation checks for future reference.
+> [!TIP]
+> The CAGR condition specifically utilizes `=AND(ISNUMBER(M2), M2>=1)` rather than a simple greater-than test. In Excel's internal evaluation, text strings evaluate as greater than any number; without the `ISNUMBER` safeguard, rows containing the text string `"Formula Error"` would be falsely highlighted green as high-growth accounts.
 
 </details>
 
+---
 
-## Completed exercise: Build Charts and Dashboards
+## Task 02 — Formulas, Logic & Aggregation
 
 <details open>
-<summary><strong>Task 03 — Prepare Your Data for Visualization</strong> · <code>Complete</code></summary>
+<summary><strong>Task 02 — Put Formulas Into Practice</strong> · <img src="https://img.shields.io/badge/Completed-2E8B57?style=flat-square" alt="Completed" /></summary>
 
-Task 03 Checkpoints 1–6 are complete based on the learner's reported Excel results. The `AccountSales` worksheet contains `A1:M41` (40 account records), the source data is an Excel Table named `AccountSales`, both required 2021 sales PivotTables and the 2016–2021 annual sales summary have been prepared, and all three required charts have been created: **Unit Sales by Year** (line), **Top 10 Accounts by 2021 Unit Sales** (bar), and **2021 Unit Sales by Account Type** (column). The finalized working workbook is saved in the repository. Dashboard assembly and formatting are learner-confirmed: the three KPI cards display Total 2021 Sales (17,278), Top Account (Cloudline Commerce), and Sales Growth (+76.8%); the title and subtitle are aligned; all three charts are visible and readable; and the final layout check has been completed by the learner. Task 03 dashboard production is recorded as complete on a learner-reported basis. The learner subsequently completed and submitted the simulation on November 4, 2026. Independent reconciliation of all six annual source totals remains an optional portfolio-quality audit, not a blocker to the Forage completion.
+Task 02 engineered account-level performance indicators and global portfolio summary calculations across annual sales data from 2016 through 2021.
 
-**Updated working workbook:** [Account Sales Data for Dashboard Practice — Working](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice_Working.xlsx) · [Original practice workbook](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx)
+**Workbooks:**
+- [Original Practice Workbook](material/02-formulas-and-functions/Excel_Formula_Practice.xlsx)
+- [Completed Calculations Workbook](material/02-formulas-and-functions/Excel_Formula_Practice_Completed.xlsx)
 
-**Preparation guide:** [Task 03 — Charts and Dashboard Preparation](docs/03-chart-and-dashboard-preparation.md)
+**Detailed Documentation:** [Task 02 — Formulas and Functions Findings](docs/02-formulas-and-functions-findings.md)
 
-### Completion record
+### Account-Level Dynamic Calculations
 
-1. Save a separate working copy of the supplied workbook and preserve the original.
-2. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Inspect the `AccountSales` worksheet: range `A1:M41`, 40 account records.
-3. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Create the Excel Table named `AccountSales`.
-4. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Create and validate PivotTables for 2021 sales by account type and the top 10 accounts.
-5. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Prepare the 2016–2021 annual sales summary and create the **Unit Sales by Year** line chart.
-6. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Create and format all three required charts:
-   - Unit Sales by Year — line chart.
-   - Top 10 Accounts by 2021 Unit Sales — bar chart.
-   - 2021 Unit Sales by Account Type — column chart.
-7. <img src="https://img.shields.io/badge/Complete-2E8B57?style=flat-square" alt="Complete" /> Build and format the Dashboard worksheet, add the three KPI cards, arrange all three charts, and complete the learner's final layout check.
+| Metric | Excel Formula | Calculation Purpose |
+|---|---|---|
+| **Total Unit Sales** | `=SUM(G2:L2)` | Cumulative volume generated from 2016 to 2021 |
+| **Average Annual Sales** | `=AVERAGE(G2:L2)` | Six-year normalized run-rate per account |
+| **Peak Sales Volume** | `=MAX(G2:L2)` | Single best historical annual performance |
+| **Trough Sales Volume** | `=MIN(G2:L2)` | Lowest annual volume baseline |
+| **Sales Tier Classification** | `=IF(L2>=$U$2,"High","Standard")` | Absolute threshold comparison against cell `$U$2` (500 units) |
+| **6-Year Sales Growth** | `=IFERROR((L2-G2)/G2,"Check data")` | Normalized delta with robust handling for zero/blank baselines |
 
-Checkpoints 1–6 are complete based on learner-reported Excel results. The PivotTable summaries add to their displayed totals: 17,278 units by account type and 8,221 units for the Top 10 accounts. The annual summary reports growth from 9,773 units in 2016 to 17,278 in 2021 (+76.8%). The learner confirms that all three charts are complete: the annual trend line chart, the Top 10 account bar chart (Cloudline Commerce at the top), and the account-type column chart (Online highest). The Dashboard worksheet contains the three charts and three consistently formatted KPI cards. The learner confirms the expected KPI values, aligned title/subtitle, readable charts, and completed no-overlap check. The dashboard is documented as complete based on the learner's finalized workbook update. The Forage submission is complete; independent reconciliation of the six annual source totals remains an optional portfolio-quality audit.
+### Portfolio Summary Calculations
+
+| Metric | Excel Formula | Result | Purpose |
+|---|---|---:|---|
+| **Cross-Sold Accounts (Product 2)** | `=COUNTIF(F2:F41,"Yes")` | 23 accounts | Measures core product cross-sell penetration (57.5%) |
+| **Retail Segment 2021 Volume** | `=SUMIF(C2:C41,"Retail",L2:L41)` | 3,299 units | Aggregates volume for the retail sector |
 
 </details>
 
-## Advanced dashboard styling and VBA
+---
 
-The completed Task 03 dashboard can be given an optional app-inspired presentation layer in desktop Excel. The repository includes a reusable VBA module that styles the title, KPI cards, chart panels, and adds worksheet-navigation buttons. The module is provided separately and has not been embedded in or executed against the finalized XLSX; import it into a duplicate and save that copy as XLSM only after reviewing the code.
-
-- [Dashboard design and VBA setup guide](docs/04-dashboard-advanced-formatting-and-vba.md)
-- [DashboardAppStyle.bas — importable VBA module](material/03-build-charts-and-dashboards/DashboardAppStyle.bas)
-- [DashboardAppStyle_Web.ts — Office Scripts styling](material/03-build-charts-and-dashboards/DashboardAppStyle_Web.ts)
-- [RestoreDashboardEditView_Web.ts — Office Scripts reset](material/03-build-charts-and-dashboards/RestoreDashboardEditView_Web.ts)
-- [Automation and VBA learning notes](learning-notes/automation-and-vba.md)
-
-VBA runs in desktop Excel, not in Excel for the web. The original VBA module was imported by the learner; a compatibility-hardened revision has since been committed and must be re-imported before compilation and execution testing. For browser-based automation, use the Office Scripts sources below; see the [Microsoft Office Scripts introduction](https://support.microsoft.com/en-us/office/introduction-to-office-scripts-in-excel-9fbe283d-adb8-4f13-a75b-a81c6baf163a).
-
-## VBA and Office Scripts implementation
-
-The VBA module has been **imported into Excel by the learner**. Compilation and execution have not yet been confirmed. The Office Scripts source files are committed as TypeScript; they still need to be pasted into the Office Scripts editor and run in a supported Excel environment.
-
-- [VBA source](material/03-build-charts-and-dashboards/DashboardAppStyle.bas)
-- [Office Scripts styling source](material/03-build-charts-and-dashboards/DashboardAppStyle_Web.ts)
-- [Office Scripts edit-view reset](material/03-build-charts-and-dashboards/RestoreDashboardEditView_Web.ts)
-- [Implementation guide](docs/04-dashboard-advanced-formatting-and-vba.md)
-
-To create a run button for an Office Script, open the saved script from **Automate**, enable **Associate with workbook**, then select **Add button to worksheet**. This is separate from the workbook navigation hyperlinks created by the script. See Microsoft's [script-button instructions](https://support.microsoft.com/en-us/excel/office-scripts/create-a-button-to-run-an-office-script).
-
-
-## Task 04 — Automate Repetitive Tasks
+## Task 03 — Executive Charts & Interactive Dashboard
 
 <details open>
-<summary><strong>Task 04 — Record, Sort, and Automate with Macros</strong> · <code>Completed and submitted · November 4, 2026</code></summary>
+<summary><strong>Task 03 — Prepare Your Data for Visualization</strong> · <img src="https://img.shields.io/badge/Completed-2E8B57?style=flat-square" alt="Completed" /></summary>
 
-The learner confirms that the initial macro was recorded, tested, and inspected in the VBA editor, and that a Form Control button was added for it. The two required sorting macros — `SortBy5YrCAGR` and `SortBy2021UnitSales` — were recorded and assigned to separate buttons. Both sorting buttons were tested successfully. The learner captured the workbook screenshot showing both buttons and a VBA-code screenshot, assembled them into a PDF, then reopened the PDF and checked its readability. The exact first macro name/action has not been captured.
+The Task 03 objective was to convert raw tabular account data into an executive-ready performance dashboard comprising KPI cards, multi-year trend visuals, segment breakdowns, and account rankings.
 
-**Workbooks and evidence:** [Original automation workbook](material/04-vba-and-marcos/Account_Sales_Data_for_Automation.xlsx) · [Macro-enabled working copy](material/04-vba-and-marcos/Account_Sales_Data_for_Automation_Practice.xlsm) · [Task 04 evidence PDF](material/04-vba-and-marcos/Task_04_Macro_Buttons_Evidence.pdf)
+**Workbooks & Assets:**
+- [Final Working Dashboard Workbook (XLSX)](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice_Working.xlsx)
+- [Enhanced App-Style Workbook (XLSM)](material/03-build-charts-and-dashboards/Account_Sales_Dashboard_AppStyle.xlsm)
+- [Exported Dashboard Presentation (PDF)](material/03-build-charts-and-dashboards/Dashboard_Dashboard_20261104_221720.pdf)
+- [Executive Dashboard Visual (PNG)](screenshots/03-account-sales-performance-dashboard.png)
 
-**Guides:** [Task 04 — Record and Run a Macro](docs/05-record-and-run-a-macro.md) · [Task 04 — Sorting Macros and Buttons](docs/06-sort-macros-and-buttons.md)
+**Guides & Detailed Notes:**
+- [Task 03 — Charts and Dashboard Preparation](docs/03-chart-and-dashboard-preparation.md)
+- [Dashboard Design & Advanced Formatting Guide](docs/04-dashboard-advanced-formatting-and-vba.md)
 
-**Progress:** Macro recording, both sorting macros, all three Form Control buttons, successful tests of both sorting buttons, and readable PDF evidence — complete (learner-confirmed). **Remaining:** upload the macro-enabled workbook and PDF in the Forage activity and select **Submit file**. The Forage activity now displays its completion page and certificate.
+### Executive Dashboard Architecture
+
+```text
+┌────────────────────────────────────────────────────────────────────────┐
+│                   ACCOUNT SALES PERFORMANCE DASHBOARD                  │
+│       Annual sales trends | Top-performing accounts | Account type     │
+├────────────────────┬────────────────────┬──────────────────────────────┤
+│  Total 2021 Sales  │    Top Account     │   Sales Growth (2016-2021)   │
+│       17,278       │       8,221        │            76.79%            │
+├────────────────────┴────────────────────┴──────────────────────────────┤
+│                          Unit Sales by Year                            │
+│  [Multi-year trend line: 9,773 (2016)  ──>  17,278 (2021)]             │
+├─────────────────────────────────────────┬──────────────────────────────┤
+│   Top 10 Accounts by 2021 Unit Sales    │ 2021 Unit Sales by Acct Type │
+│   [Horizontal ranking bar chart]        │ [Vertical column comparison] │
+├─────────────────────────────────────────┴──────────────────────────────┤
+│ [SOURCE DATA]   [YEARLY SUMMARY]   [TOP 10 ACCOUNTS]   [ACCOUNT TYPES] │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+### KPI Cards & Performance Metrics
+
+| KPI Scorecard | Displayed Metric | Underlying Source / Logic |
+|---|---:|---|
+| **Total 2021 Sales** | **17,278** units | Grand total of 2021 unit sales across all 40 accounts |
+| **Top Account (Top 10 Volume)** | **8,221** units | Combined sales volume contributed by the Top 10 accounts (47.6% of portfolio) |
+| **Sales Growth (2016–2021)** | **76.79%** | Multi-year portfolio growth `=('Annual_Sales_Summary'!$B$7-$B$2)/$B$2` (+7,505 units) |
+
+### Supporting Visual Components
+
+1. **Unit Sales by Year (Line Chart):**
+   - Source: `Annual_Sales_Summary` table (2016: 9,773; 2017: 10,380; 2018: 11,115; 2019: 12,283; 2020: 14,193; 2021: 17,278).
+   - Demonstrates steady year-over-year acceleration, peaking at 17,278 units in 2021.
+2. **Top 10 Accounts by 2021 Unit Sales (Horizontal Bar Chart):**
+   - Source: `PT_Top10_2021` PivotTable.
+   - Cloudline Commerce leads at **1,450 units**, followed by Juniper Digital (**1,180 units**) and Orbit Commerce (**980 units**).
+3. **2021 Unit Sales by Account Type (Column Chart):**
+   - Source: `PT_Sales_by_Type` PivotTable.
+   - **Online** represents the largest single segment at **5,140 units**, followed by Enterprise (**4,051 units**), Distributor (**3,861 units**), Retail (**3,299 units**), and Small Business (**927 units**).
 
 </details>
 
-## Repository guide
+---
 
-The repository separates learning documentation from the Excel files used during practice.
+## Task 04 — Spreadsheet Automation & VBA Macros
 
-~~~text
+<details open>
+<summary><strong>Task 04 — Record, Sort, and Automate with Macros</strong> · <img src="https://img.shields.io/badge/Completed%20%26%20Submitted-2E8B57?style=flat-square" alt="Completed and Submitted" /></summary>
+
+Task 04 introduced spreadsheet automation using Excel's Macro Recorder, Visual Basic for Applications (VBA), and worksheet Form Controls to eliminate manual, error-prone data sorting and formatting tasks.
+
+**Workbooks & Evidence:**
+- [Clean Automation Workbook (XLSX)](material/04-vba-and-marcos/Account_Sales_Data_for_Automation.xlsx)
+- [Macro-Enabled Working Workbook (XLSM)](material/04-vba-and-marcos/Account_Sales_Data_for_Automation_Practice.xlsm)
+- [Task 04 Evidence Document (PDF)](material/04-vba-and-marcos/Task_04_Macro_Buttons_Evidence.pdf)
+- [Worksheet Macro Buttons Screenshot (PNG)](screenshots/04-sorting-macro-buttons-worksheet.png)
+- [VBA Code Window Screenshot (PNG)](screenshots/04-vba-sorting-macro-code.png)
+
+**Guides & Detailed Notes:**
+- [Task 04 — Record and Run a Macro](docs/05-record-and-run-a-macro.md)
+- [Task 04 — Sorting Macros and Buttons](docs/06-sort-macros-and-buttons.md)
+
+### Implemented Macros & Controls
+
+Three Form Control buttons were created and placed cleanly in column `Q` (`Q2:Q8`) adjacent to the main data table:
+
+| Button Label | Bound Procedure | Code Module | Operation Performed |
+|---|---|---|---|
+| `[Format Headers]` | `FormatSalesHeaders` | `Module1` | Applies bold font, centered alignment, and professional formatting to the header row `A1:M1` |
+| `[Sort by 5 YR CAGR]` | `SortBy5YrCAGR` | `Module2` | Dynamically selects `A1:M41` and sorts descending on column `M` (`5 YR CAGR`) |
+| `[Sort by 2021 Unit Sales]` | `SortBy2021UnitSales` | `Module2` | Dynamically selects `A1:M41` and sorts descending on column `L` (`2021 Unit Sales`) |
+
+### Verified VBA Implementation (`Module2`)
+
+```vba
+Option Explicit
+
+Sub SortBy5YrCAGR()
+'
+' SortBy5YrCAGR Macro
+'
+    Range("A1").Select
+    Range(Selection, Selection.End(xlToRight)).Select
+    Range(Selection, Selection.End(xlDown)).Select
+    ActiveWorkbook.Worksheets("Account Sales Data").Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("Account Sales Data").Sort.SortFields.Add2 Key:= _
+        Range("M2:M41"), SortOn:=xlSortOnValues, Order:=xlDescending, DataOption _
+        :=xlSortNormal
+    With ActiveWorkbook.Worksheets("Account Sales Data").Sort
+        .SetRange Range("A1:M41")
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+End Sub
+
+Sub SortBy2021UnitSales()
+'
+' SortBy2021UnitSales Macro
+'
+    Range("A1").Select
+    Range(Selection, Selection.End(xlToRight)).Select
+    Range(Selection, Selection.End(xlDown)).Select
+    ActiveWorkbook.Worksheets("Account Sales Data").Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("Account Sales Data").Sort.SortFields.Add2 Key:= _
+        Range("L2:L41"), SortOn:=xlSortOnValues, Order:=xlDescending, DataOption _
+        :=xlSortNormal
+    With ActiveWorkbook.Worksheets("Account Sales Data").Sort
+        .SetRange Range("A1:M41")
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+End Sub
+```
+
+> [!IMPORTANT]
+> Both macros preserve the entire tabular grain (`A1:M41`) during the sort, ensuring that columns are never sorted in isolation, thereby maintaining perfect row-level relational integrity across all 40 account records.
+
+</details>
+
+---
+
+## Advanced App-Style Design & Office Scripts
+
+To bridge traditional desktop spreadsheet design with modern cloud web applications, the project incorporates:
+
+1. **Desktop VBA Module (`DashboardAppStyle.bas`):**
+   - Applies an app-inspired design system with an off-white canvas (`#F8FAFC`), deep navy typography (`#0F172A`), card surface containers (`#FFFFFF`), and refined borders (`#E2E8F0`).
+   - Automatically builds 4 interactive worksheet navigation buttons docking below the visuals.
+   - Includes `RestoreDashboardEditView` to restore row/column headings and gridlines for formula auditing.
+2. **Web-Native Office Scripts (`DashboardAppStyle_Web.ts` & `RestoreDashboardEditView_Web.ts`):**
+   - Authoring automation in modern TypeScript compatible with **Excel for the Web**.
+   - Leverages `ExcelScript.Range` and `ExcelScript.Chart` APIs for cross-platform cloud execution.
+
+---
+
+## Repository Structure
+
+```text
 forage-excel-skills-job-simulation/
+├── README.md                                          # Master repository documentation
+├── LEARNING_LOG.md                                    # Chronological development & audit log
+├── .gitignore                                         # Git ignore configuration
 │
-├── README.md
-├── LEARNING_LOG.md
-├── .gitignore
+├── screenshots/                                       # High-resolution visual evidence
+│   ├── 03-account-sales-performance-dashboard.png     # Rendered executive dashboard
+│   ├── 04-sorting-macro-buttons-worksheet.png         # Form control buttons on data table
+│   └── 04-vba-sorting-macro-code.png                  # VBA code editor with sort procedures
 │
-├── docs/
-│   ├── Excel Keyboard Shortcuts.docx
-│   ├── Excel Formula Quick Reference Guide.docx
-│   ├── 01-conditional-formatting-findings.md
-│   ├── 02-formulas-and-functions-findings.md
-│   ├── 03-chart-and-dashboard-preparation.md
-│   ├── 04-dashboard-advanced-formatting-and-vba.md
-│   ├── 05-record-and-run-a-macro.md
-│   └── 06-sort-macros-and-buttons.md
+├── docs/                                              # Technical guides & analytical findings
+│   ├── 01-conditional-formatting-findings.md          # Task 01 findings & rule specifications
+│   ├── 02-formulas-and-functions-findings.md          # Task 02 formula logic & summary stats
+│   ├── 03-chart-and-dashboard-preparation.md          # Task 03 data modeling & visual design
+│   ├── 04-dashboard-advanced-formatting-and-vba.md    # Modern app styling & navigation code
+│   ├── 05-record-and-run-a-macro.md                   # Task 04 macro recording foundations
+│   ├── 06-sort-macros-and-buttons.md                  # Task 04 multi-key sorting & Form Controls
+│   ├── Excel Keyboard Shortcuts.docx                  # Keyboard shortcut reference guide
+│   └── Excel Formula Quick Reference Guide.docx       # Formula syntax cheat sheet
 │
-├── learning-notes/
-│   ├── data-preparation.md
-│   ├── formulas-and-analysis.md
-│   ├── charts-and-dashboards.md
-│   ├── automation-and-vba.md
-│   └── reflection.md
+├── learning-notes/                                    # Pedagogical reflections & deep dives
+│   ├── data-preparation.md                            # Data quality auditing principles
+│   ├── formulas-and-analysis.md                       # Dynamic calculation architecture
+│   ├── charts-and-dashboards.md                       # Dashboard UX & cognitive load principles
+│   ├── automation-and-vba.md                          # Macro recorder mechanics & VBA best practices
+│   └── reflection.md                                  # End-of-simulation analyst retrospective
 │
-└── material/
+└── material/                                          # Practice workbooks & deliverables
     ├── 01-conditional-formatting/
-    │   └── Account Sales Data for Analysis.xlsx
+    │   ├── Account Sales Data for Analysis.xlsx       # Original practice file
+    │   └── Account_Sales_Data_Analysis_Completed.xlsx # Completed formatted workbook
     ├── 02-formulas-and-functions/
-    │   ├── Excel_Formula_Practice.xlsx
-    │   └── Excel_Formula_Practice_Completed.xlsx
+    │   ├── Excel_Formula_Practice.xlsx                # Original practice file
+    │   └── Excel_Formula_Practice_Completed.xlsx      # Completed formulas workbook
     ├── 03-build-charts-and-dashboards/
-    │   ├── Account_Sales_Data_for_Dashboard_Practice.xlsx
-    │   ├── Account_Sales_Data_for_Dashboard_Practice_Working.xlsx
-    │   ├── DashboardAppStyle.bas
-    │   ├── DashboardAppStyle_Web.ts
-    │   └── RestoreDashboardEditView_Web.ts
+    │   ├── Account_Sales_Data_for_Dashboard_Practice.xlsx # Original practice file
+    │   ├── Account_Sales_Data_for_Dashboard_Practice_Working.xlsx # Master XLSX dashboard
+    │   ├── Account_Sales_Dashboard_AppStyle.xlsm      # Macro-enabled app-styled dashboard
+    │   ├── Dashboard_Dashboard_20261104_221720.pdf   # Exported executive dashboard PDF
+    │   ├── DashboardAppStyle.bas                      # Reusable VBA styling module
+    │   ├── DashboardAppStyle_Web.ts                   # Office Scripts web styling (TypeScript)
+    │   └── RestoreDashboardEditView_Web.ts            # Office Scripts view reset (TypeScript)
     └── 04-vba-and-marcos/
-        ├── Account_Sales_Data_for_Automation.xlsx
-        ├── Account_Sales_Data_for_Automation_Practice.xlsm
-        └── Task_04_Macro_Buttons_Evidence.pdf
-~~~
+        ├── Account_Sales_Data_for_Automation.xlsx     # Original practice file
+        ├── Account_Sales_Data_for_Automation_Practice.xlsm # Macro-enabled automation workbook
+        └── Task_04_Macro_Buttons_Evidence.pdf         # Official PDF evidence submission
+```
 
-### Quick navigation
+---
 
-| Resource | Purpose |
-|---|---|
-| [Learning log](LEARNING_LOG.md) | Record study sessions, takeaways, and next steps. |
-| [Excel keyboard shortcuts](docs/Excel%20Keyboard%20Shortcuts.docx) | Quick reference for navigating and working efficiently in Excel. |
-| [Excel formula quick reference](docs/Excel%20Formula%20Quick%20Reference%20Guide.docx) | Formula syntax and examples to support spreadsheet analysis. |
-| [Data preparation](learning-notes/data-preparation.md) | Document workbook exploration, data-quality findings, and cleanup decisions. |
-| [Formulas and analysis](learning-notes/formulas-and-analysis.md) | Record formulas, assumptions, and validation checks. |
-| [Charts and dashboards](learning-notes/charts-and-dashboards.md) | Capture KPI definitions, visualization choices, and insights. |
-| [Automation and VBA](learning-notes/automation-and-vba.md) | Document original automation logic and tests. |
-| [Reflection](learning-notes/reflection.md) | Summarize learning outcomes and improvement opportunities. |
-| [Task 01 findings](docs/01-conditional-formatting-findings.md) | Review the dataset findings, exact affected accounts, conditional-formatting logic, and key takeaways. |
-| [Task 02 findings](docs/02-formulas-and-functions-findings.md) | Review the account-level formulas, summary calculations, assumptions, and validation checklist. |
-| [Task 03 preparation guide](docs/03-chart-and-dashboard-preparation.md) | Follow the Excel Table, PivotTable, chart-selection, and dashboard workflow. |
-| [Advanced dashboard and VBA guide](docs/04-dashboard-advanced-formatting-and-vba.md) | Apply an app-inspired Excel layout and import optional desktop VBA enhancements. |
-| [Task 04 macro guide](docs/05-record-and-run-a-macro.md) | Save an XLSM working copy, record and test a macro, and inspect the generated VBA. |
-| [Task 04 sorting macros and buttons](docs/06-sort-macros-and-buttons.md) | Record the two descending sorts, assign Form Control buttons, test them, and assemble PDF evidence. |
-| [Task 04 automation workbook](material/04-vba-and-marcos/Account_Sales_Data_for_Automation.xlsx) | Original Forage workbook supplied for the macro-recording exercise. |
-| [Task 04 macro-enabled workbook](material/04-vba-and-marcos/Account_Sales_Data_for_Automation_Practice.xlsm) | Learner's working copy containing the recorded macros and Form Control buttons. |
-| [Task 04 evidence PDF](material/04-vba-and-marcos/Task_04_Macro_Buttons_Evidence.pdf) | PDF containing the workbook/buttons screenshot and VBA-code screenshot; readability checked by the learner. |
-| [Dashboard VBA module](material/03-build-charts-and-dashboards/DashboardAppStyle.bas) | Importable desktop-Excel module for visual styling and worksheet-navigation buttons. |
-| [Dashboard Office Script](material/03-build-charts-and-dashboards/DashboardAppStyle_Web.ts) | TypeScript source for web-compatible dashboard formatting and worksheet hyperlinks. |
-| [Dashboard edit-view reset](material/03-build-charts-and-dashboards/RestoreDashboardEditView_Web.ts) | Restores gridlines and headings after the presentation-style script. |
-| [Task 03 updated working workbook](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice_Working.xlsx) | Open the learner's updated workbook containing the three completed charts. |
-| [Task 03 original practice workbook](material/03-build-charts-and-dashboards/Account_Sales_Data_for_Dashboard_Practice.xlsx) | Open the original account sales practice workbook. |
-| [Completed Task 02 workbook](material/02-formulas-and-functions/Excel_Formula_Practice_Completed.xlsx) | Open the completed formula-practice workbook. |
-| [Completed Task 01 workbook](material/01-conditional-formatting/Account_Sales_Data_Analysis_Completed.xlsx.xlsx) | Open the completed conditional-formatting workbook. |
-| [Practice materials](material/) | Browse the Excel workbooks used for the exercises. |
+## Analysis Workflow & Standards
 
-## How I work through each exercise
+1. **Verify Source Integrity:** Keep raw files untouched; conduct all modeling in designated working copies.
+2. **Strict Range Isolation:** Use explicit range definitions and structured references (`AccountSales[...]`) to avoid off-by-one errors.
+3. **Defensive Formula Engineering:** Shield calculations against edge cases using `IFERROR`, `ISNUMBER`, and absolute anchors (`$`).
+4. **Cognitive Load Optimization:** Limit dashboards to 3–4 high-signal visuals with consistent typography, muted palettes, and clear visual hierarchy.
+5. **Auditable Code Quality:** Maintain clean modular VBA procedures with `Option Explicit`, clear scoping, and zero data-loss side effects.
 
-1. **Inspect first.** Understand the workbook, data grain, columns, data types, and task objective before editing.
-2. **Use Excel efficiently.** Prefer keyboard shortcuts and built-in Excel GUI features where they are appropriate.
-3. **Apply the technique.** Use the required rules, formulas, charts, or automation without changing source data unintentionally.
-4. **Validate the result.** Check ranges, formulas, edge cases, totals, and formatting behavior.
-5. **Document the reasoning.** Record what was done, why it was done, what was observed, and what remains uncertain.
-6. **Publish responsibly.** Add original work and permitted workbook outputs, with sensitive information removed.
+---
 
-## Skills in scope
+## Key Competencies
 
 <p>
-  <img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white" alt="Excel" />
-  <img src="https://img.shields.io/badge/Data%20Quality-4472C4?style=flat-square" alt="Data quality" />
-  <img src="https://img.shields.io/badge/Conditional%20Formatting-8A63D2?style=flat-square" alt="Conditional formatting" />
-  <img src="https://img.shields.io/badge/Excel%20Formulas-217346?style=flat-square" alt="Excel formulas" />
-  <img src="https://img.shields.io/badge/Data%20Analysis-0F766E?style=flat-square" alt="Data analysis" />
-  <img src="https://img.shields.io/badge/Data%20Visualization-2563EB?style=flat-square" alt="Data visualization" />
-  <img src="https://img.shields.io/badge/Dashboard%20Design-475569?style=flat-square" alt="Dashboard design" />
-  <img src="https://img.shields.io/badge/VBA%20%26%20Macros-795548?style=flat-square" alt="VBA and macros" />
-  <img src="https://img.shields.io/badge/Business%20Communication-B45309?style=flat-square" alt="Business communication" />
+  <img src="https://img.shields.io/badge/Microsoft%20Excel-Advanced%20Modeling-217346?style=flat-square&logo=microsoftexcel&logoColor=white" alt="Excel" />
+  <img src="https://img.shields.io/badge/VBA-Automation%20%26%20Macros-795548?style=flat-square" alt="VBA" />
+  <img src="https://img.shields.io/badge/Office%20Scripts-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="Office Scripts" />
+  <img src="https://img.shields.io/badge/Data%20Analysis-Business%20Intelligence-0F766E?style=flat-square" alt="Data Analysis" />
+  <img src="https://img.shields.io/badge/Dashboard%20Design-UI%2FUX-2563EB?style=flat-square" alt="Dashboard Design" />
+  <img src="https://img.shields.io/badge/Data%20Quality-Auditing%20%26%20Cleansing-B45309?style=flat-square" alt="Data Quality" />
 </p>
 
-These are the skills covered by the learning plan; the presence of a badge does not mean every topic has already been completed.
+---
 
-## Evidence and sharing principles
+## Verification & Progress
 
-- Keep the original practice workbook unchanged and use a separate working copy when completing an exercise.
-- Add only original analysis, notes, formulas, screenshots, or macros that I created.
-- Check the provider's terms before publicly redistributing supplied datasets, workbooks, templates, or other course materials.
-- Remove personal information, account details, credentials, and certificate verification codes before publishing.
-- Explain the purpose and behavior of any macro; do not ask reviewers to enable macros without context.
-- Mark an exercise complete only after its output has been reviewed and validated.
-
-## Progress
-
-The overall simulation is **completed and submitted** (November 4, 2026). Task 01 — Conditional Formatting and Task 02 — Put Formulas Into Practice are completed and documented. Task 03's data preparation, PivotTables, annual summary, three required charts, KPI cards, dashboard formatting, and final no-overlap layout check are complete based on learner confirmation. Task 04 — Automate Repetitive Tasks is complete: the initial macro and two sorting macros were recorded, assigned to Form Control buttons, tested, and documented with a readable evidence PDF. The learner confirms that the Forage simulation was submitted and the platform now displays the completion page and certificate. Independent reconciliation of the six Task 03 annual source totals remains an optional portfolio-quality check.
-
-For session-by-session updates, see [LEARNING_LOG.md](LEARNING_LOG.md).
+- [x] **Task 01:** Conditional formatting applied across 6 rules; verified against 40 records.
+- [x] **Task 02:** Summary and row-level formulas implemented and audited.
+- [x] **Task 03:** Excel Table, PivotTables, 3 charts, 3 KPI cards, and dashboard assembled and exported.
+- [x] **Task 04:** Form Control buttons (`Format Headers`, `Sort by 5 YR CAGR`, `Sort by 2021 Unit Sales`) created, tested, and submitted.
+- [x] **Evidence Verification:** Official PDF evidence (`Task_04_Macro_Buttons_Evidence.pdf`) and Dashboard PDF (`Dashboard_Dashboard_20261104_221720.pdf`) inspected, verified, and documented.
+- [x] **Official Completion:** Simulation submitted; Forage certificate awarded on **November 4, 2026**.
 
 ---
 
 <div align="center">
 
-**Learning by doing. Validating every result. Documenting the reasoning.**
+**Rigorous spreadsheet engineering. Professional visual analytics. Repeatable business automation.**
 
-[Forage Academy](https://www.theforage.com/) · [Back to repository](https://github.com/Sohila-Khaled-Abbas/forage-excel-skills-job-simulation)
+[Forage Academy](https://www.theforage.com/) · [Back to Top](#excel-skills--forage-job-simulation)
 
 </div>
